@@ -53,4 +53,39 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+  .controller('LoginCtrl', function($state, $rootScope,$scope) {
+    var users=[
+      {username: "alice",    password: "alice",    },
+      {username: "bob",      password: "bob",      },
+      {username: "charly",   password: "charly",   },
+      {username: "jannunzi", password: "jannunzi"}
+    ]
+    console.log("inside login controller");
+    var login = this;
+    login.signin = signin;
+
+    function signin(emailId,password) {
+      console.log("inside signin function");
+      console.log(emailId+" "+password);
+
+      for(var i in users){
+        if(users[i].username===emailId&&users[i].password===password){
+          // $state.go('event');
+          var result=true;
+        }
+      }
+      if(result){
+        $state.go('event');
+      }
+      else{
+        login.error="No data found in controller";
+      }
+        
+    }
+  })
+
+;
+
+
