@@ -72,6 +72,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     .state('login', {
       url: '/login',
       templateUrl: 'views/login.html',
+      controller: 'LoginCtrl as login',
+    })
+
+    .state('event', {
+      url: '/event',
+      templateUrl: 'views/event.html',
     })
 
   ;
