@@ -46,16 +46,25 @@
 
   <!--login div-->
   <form novalidate>
-    <div class="container-fluid">
     <div class="list list-inset top-space">
+
+      <div ng-show="login.error" class="alert alert-success" role="alert">
+        <h1>Username or Password Incorrect</h1>
+      </div>
+
       <label class="item item-input">
-        <input  type="email" placeholder="Husky Email">
+        <input  type="text" placeholder="Husky Email" ng-model="emailId">
       </label>
       <label class="item item-input">
-        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Password" ng-model="password">
       </label>
-    </div>
-     <a class="btn btn-primary btn-block">Login</a>
+      <a ng-click="login.signin(emailId,password)" class="button button-block button-assertive">
+      Sign In
+      </a>
+      <!--<input type="submit" ng-click="login.signin()">-->
+      <!--<button ng-click="login.googleLogin()" class="button button-block button-assertive" type="submit">-->
+        <!--Login-->
+      <!--</button>-->
     </div>
   </form>
 
