@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+  .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -40,8 +40,7 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
-.controller('PlaylistsCtrl', function($scope) {
+  .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -51,11 +50,13 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 })
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+  .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
-
   .controller('LoginCtrl', function($state, $rootScope,$scope) {
+
+    //adding $scope.title for Jasmine testing purposes//
+    $scope.title = 'testing';
+
     var users=[
       {username: "alice",    password: "alice",    },
       {username: "bob",      password: "bob",      },
@@ -82,7 +83,7 @@ angular.module('starter.controllers', [])
       else{
         login.error="No data found in controller";
       }
-        
+
     }
   })
 
