@@ -51,7 +51,10 @@ angular.module('starter.controllers', [])
   ];
 })
   .controller('PlaylistCtrl', function($scope, $stateParams) {
-})
+
+    $scope.title = 'testing';
+
+  })
   .controller('LoginCtrl', function($state, $rootScope,$scope) {
 
     //adding $scope.title for Jasmine testing purposes//
