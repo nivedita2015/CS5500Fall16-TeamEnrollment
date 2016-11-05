@@ -17,9 +17,10 @@ describe('LoginCtrl', function() {
       var $state = {};
       var rootScope = {};
       var controller = $controller('LoginCtrl', {$state:$state,rootScope:rootScope,$scope: $scope });
-      spyOn($state,'go');
+      // spyOn($state,'go');
       controller.signin('alice@husky.neu.edu','alice');
-      expect($state.go).toHaveBeenCalledWith('event');
+      // expect($state.go).toHaveBeenCalledWith('event',{});
+      expect($state.current.name).toBe('event');
       // expect($scope.msg).toEqual('Success');
     });
   });

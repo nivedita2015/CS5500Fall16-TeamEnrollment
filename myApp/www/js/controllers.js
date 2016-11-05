@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ui.router'])
 
   .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -59,7 +59,7 @@ angular.module('starter.controllers', [])
 
     //adding $scope.title for Jasmine testing purposes//
     $scope.title = 'testing';
-    $scope.val = 'null';
+    // $scope.val = 'null';
 
 
     var users=[
@@ -72,12 +72,12 @@ angular.module('starter.controllers', [])
     var login = this;
     login.signin = signin;
 
-    console.log($scope.val);
+    // console.log($scope.val);
 
 
     function signin(emailId,password) {
       console.log("inside signin function");
-      console.log(emailId+" "+password);
+      // console.log(emailId+" "+password);
 
       for(var i in users){
         // console.log(i);
@@ -91,7 +91,6 @@ angular.module('starter.controllers', [])
 
 
       if(result){
-
         $state.go('event');
       }
       else{
