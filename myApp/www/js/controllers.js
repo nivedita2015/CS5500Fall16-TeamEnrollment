@@ -89,10 +89,11 @@ angular.module('starter.controllers', [])
       }
 
       if(result){
+        login.msg="Success";
         $state.go('event');
       }
       else{
-        login.error="No data found in controller";
+        login.msg="Failure";
       }
     }
   })
