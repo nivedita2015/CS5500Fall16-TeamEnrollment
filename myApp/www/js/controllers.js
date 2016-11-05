@@ -55,10 +55,12 @@ angular.module('starter.controllers', [])
     $scope.title = 'testing';
 
   })
-  .controller('LoginCtrl', function($state, $rootScope,$scope) {
+  .controller('LoginCtrl', function($state,$rootScope,$scope) {
 
     //adding $scope.title for Jasmine testing purposes//
     $scope.title = 'testing';
+    $scope.val = 'null';
+
 
     var users=[
       {username: "alice@husky.neu.edu",    password: "alice",    },
@@ -70,23 +72,30 @@ angular.module('starter.controllers', [])
     var login = this;
     login.signin = signin;
 
+    console.log($scope.val);
+
+
     function signin(emailId,password) {
       console.log("inside signin function");
       console.log(emailId+" "+password);
 
       for(var i in users){
+        console.log(i);
         if(users[i].username===emailId&&users[i].password===password){
           // $state.go('event');
           var result=true;
+
         }
       }
+
       if(result){
         $state.go('event');
       }
       else{
         login.error="No data found in controller";
+        $scope.val = "No data found in controller";
+        console.log($scope.val);
       }
-
     }
   })
 
