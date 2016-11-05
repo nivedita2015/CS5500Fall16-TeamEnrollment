@@ -57,9 +57,9 @@ angular.module('starter.controllers', [])
 
   .controller('LoginCtrl', function($state, $rootScope,$scope) {
     var users=[
-      {username: "alice",    password: "alice",    },
-      {username: "bob",      password: "bob",      },
-      {username: "charly",   password: "charly",   },
+      {username: "alice@husky.neu.edu",    password: "alice",    },
+      {username: "bob@northeastern.neu.edu",      password: "bob",      },
+      {username: "charley@neu.edu",   password: "charly",   },
       {username: "jannunzi", password: "jannunzi"}
     ]
     console.log("inside login controller");
@@ -82,7 +82,7 @@ angular.module('starter.controllers', [])
       else{
         login.error="No data found in controller";
       }
-        
+
     }
   })
 
