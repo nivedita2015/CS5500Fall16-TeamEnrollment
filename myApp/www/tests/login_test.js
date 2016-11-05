@@ -56,7 +56,7 @@ describe('LoginCtrl', function() {
   }));
 
 
-  //Test case when username-password dont match
+  //Test case uername=alice@husky.neu.edu and password=bob. Expecting no login with error.
   describe('Login Controller', function() {
     it('checks the value login.error', function() {
       var $scope = {};
@@ -69,7 +69,7 @@ describe('LoginCtrl', function() {
   });
 
 
-  //Test case when username
+  //Test case when username=Singh and password=
 
 });
 

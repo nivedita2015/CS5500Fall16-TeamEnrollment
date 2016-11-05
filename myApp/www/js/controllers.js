@@ -80,7 +80,7 @@ angular.module('starter.controllers', [])
       console.log(emailId+" "+password);
 
       for(var i in users){
-        console.log(i);
+        // console.log(i);
         if(users[i].username===emailId&&users[i].password===password){
           // $state.go('event');
           var result=true;
@@ -93,8 +93,6 @@ angular.module('starter.controllers', [])
       }
       else{
         login.error="No data found in controller";
-        $scope.val = "No data found in controller";
-        console.log($scope.val);
       }
     }
   })
