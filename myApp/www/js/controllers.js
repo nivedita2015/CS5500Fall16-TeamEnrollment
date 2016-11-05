@@ -65,7 +65,7 @@ angular.module('starter.controllers', [])
     var users=[
       {username: "alice@husky.neu.edu",    password: "alice",    },
       {username: "bob@northeastern.neu.edu",      password: "bob",      },
-      {username: "charley@neu.edu",   password: "charly",   },
+      {username: "charley@neu.edu",   password: "charley",   },
       {username: "jannunzi", password: "jannunzi"}
     ]
     console.log("inside login controller");
@@ -84,16 +84,18 @@ angular.module('starter.controllers', [])
         if(users[i].username===emailId&&users[i].password===password){
           // $state.go('event');
           var result=true;
+          $scope.msg="Success";
 
         }
       }
 
+
       if(result){
-        login.msg="Success";
+
         $state.go('event');
       }
       else{
-        login.msg="Failure";
+        $scope.msg="Failure";
       }
     }
   })
