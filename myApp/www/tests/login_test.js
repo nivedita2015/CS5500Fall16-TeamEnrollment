@@ -46,6 +46,23 @@
 
 
 describe('LoginCtrl', function() {
+<<<<<<< HEAD
+  var scope,$state,$rootScope, $stateParams, createController;
+  beforeEach(module('starter.controllers')); //<--- Hook module
+  beforeEach(inject(function ($rootScope, $controller,$state) {
+    scope = $rootScope.$new();
+
+    createController = function() {
+      return $controller('LoginCtrl', {
+        // $state:$state,
+        // $rootScope:$rootScope,
+        $state:$state,
+        $rootScope:$rootScope,
+        $scope: scope
+        // $stateParams:$stateParams
+      });
+    };
+=======
   beforeEach(module('starter.controllers'));
 
   var $controller;
@@ -53,6 +70,7 @@ describe('LoginCtrl', function() {
   beforeEach(inject(function(_$controller_){
     // The injector unwraps the underscores (_) from around the parameter names when matching
     $controller = _$controller_;
+>>>>>>> 70910ac5bcc3182b4fa635c38e82131f9e7d095d
   }));
 
 
