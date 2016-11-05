@@ -56,7 +56,7 @@ describe('LoginCtrl', function() {
   }));
 
 
-  //Test case uername=alice@husky.neu.edu and password=bob. Expecting no login with error.
+  //Test case uername=alice@husky.neu.edu and password=bob. Expecting no login with response is failed..
   describe('Login Controller', function() {
     it('checks the value login.error', function() {
       var $scope = {};
@@ -69,7 +69,30 @@ describe('LoginCtrl', function() {
   });
 
 
-  //Test case when username=Singh and password=
+  //Test case when username=alice@husky.neu.edu and password=alice. Correct combination so response is success.
+  describe('Login Controller', function() {
+    it('checks the value login.error', function() {
+      var $scope = {};
+      var $state = {};
+      var rootScope = {};
+      var controller = $controller('LoginCtrl', {$state:$state,rootScope:rootScope,$scope: $scope });
+      controller.signin('alice@husky.neu.edu','alice')
+      expect(controller.error).toEqual('No data found in controller');
+    });
+  });
+
+  //Test case when username=alice@husky.neu.edu and password=alice. Correct combination so response is success.
+  describe('Login Controller', function() {
+    it('checks the value login.error', function() {
+      var $scope = {};
+      var $state = {};
+      var rootScope = {};
+      var controller = $controller('LoginCtrl', {$state:$state,rootScope:rootScope,$scope: $scope });
+      controller.signin('bob@northeastern.neu.edu','bob')
+      expect(controller.error).toEqual('No data found in controller');
+    });
+  });
+
 
 });
 
