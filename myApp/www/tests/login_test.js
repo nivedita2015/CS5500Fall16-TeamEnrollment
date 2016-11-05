@@ -1,17 +1,19 @@
 
 
 describe('LoginCtrl', function() {
-  var scope, $stateParams, createController;
+  var scope,$state,$rootScope, $stateParams, createController;
   beforeEach(module('starter.controllers')); //<--- Hook module
-  beforeEach(inject(function ($rootScope, $controller) {
+  beforeEach(inject(function ($rootScope, $controller,$state) {
     scope = $rootScope.$new();
 
     createController = function() {
-      return $controller('PlaylistCtrl', {
+      return $controller('LoginCtrl', {
         // $state:$state,
         // $rootScope:$rootScope,
-        $scope: scope,
-        $stateParams:$stateParams
+        $state:$state,
+        $rootScope:$rootScope,
+        $scope: scope
+        // $stateParams:$stateParams
       });
     };
   }));
