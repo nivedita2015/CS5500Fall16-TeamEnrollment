@@ -59,8 +59,6 @@ angular.module('starter.controllers', ['ui.router'])
 
     //adding $scope.title for Jasmine testing purposes//
     $scope.title = 'testing';
-    // $scope.val = 'null';
-
 
     var users=[
       {username: "alice@husky.neu.edu",    password: "alice",    },
@@ -72,12 +70,9 @@ angular.module('starter.controllers', ['ui.router'])
     var login = this;
     login.signin = signin;
 
-    // console.log($scope.val);
-
 
     function signin(emailId,password) {
       console.log("inside signin function");
-      // console.log(emailId+" "+password);
 
       for(var i in users){
         // console.log(i);
@@ -88,7 +83,6 @@ angular.module('starter.controllers', ['ui.router'])
 
         }
       }
-
 
       if(result){
         $state.go('event');
