@@ -1,3 +1,6 @@
+//Angular Mock for properly resolving ui-router $state in Karma unit tests//
+//https://gist.github.com/alexanderjeurissen/1c45ca694ad333baeddd//
+
 'use strict';
 
 angular.module('stateMock', []);
