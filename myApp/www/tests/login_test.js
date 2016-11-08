@@ -13,10 +13,6 @@ describe('LoginCtrl', function() {
     state.expectTransitionTo('event');
   }));
 
-  //-------------------------------------------------------//
-  //-----------------Positive Test Cases ------------------//
-  //-------------------------------------------------------//
-
   //Test case username=alice@husky.neu.edu and password=alice.
   //Since username password is correct, on signin the application moves to page 'Event'
   describe('Login Controller', function() {
@@ -50,10 +46,6 @@ describe('LoginCtrl', function() {
       expect(state.current.name).toBe('event');
     });
   });
-
-  //-------------------------------------------------------//
-  //-----------------Negative Test Cases ------------------//
-  //-------------------------------------------------------//
 
   //Test case username='' and password=charley. Expecting no login with msg Failure.
   describe('Login Controller', function() {
