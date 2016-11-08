@@ -15,11 +15,11 @@ describe('EventDetailsController',function(){
   }));
 
   //testing behaviour on add to calendar button click//
-  describe('Event Controller', function() {
+  describe('Event Details Controller', function() {
     it('check behaviour on add to calendar button click ', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('EventCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var controller = $controller('EventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
       controller.calendarClick();
       //checking page is not routed out of event page.
       expect(state.current.name).toBe('event');
@@ -29,7 +29,7 @@ describe('EventDetailsController',function(){
   });
 
   //testing behaviour on chare to fb button click //
-  describe('Event Controller', function() {
+  describe('Event Details Controller', function() {
     it('check behaviour on share to facebook button click ', function() {
       var $scope = {};
       var rootScope = {};
@@ -43,7 +43,7 @@ describe('EventDetailsController',function(){
   });
 
   //testing variable values when no button is clicked//
-  describe('Event Controller', function() {
+  describe('Event Details Controller', function() {
     it('check behaviour on share to facebook button click ', function() {
       var $scope = {};
       var rootScope = {};
