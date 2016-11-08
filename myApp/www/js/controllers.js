@@ -92,6 +92,38 @@ angular.module('starter.controllers', ['ui.router'])
       }
     }
   })
+  .controller('EventCtrl',function($state,$rootScope,$scope) {
+
+    //adding $scope.title for Jasmine testing purposes//
+    var event=this;
+
+
+    event.events=[
+      {
+        pic:"/android_asset/www/img/NUlogo.png",
+        name:"NU Homecoming",
+        group:"Association for Student Welfare",
+        id:"123",
+        dt:"11/09/2016"
+
+      },
+      {
+        pic:"/android_asset/www/img/ionic.png",
+        name:"Huskies vs Wildcats",
+        group:"Northeastern Sports Association",
+        id:"234",
+        dt:"12/07/2016"
+
+      }
+    ]
+    console.log("inside events controller");
+    var event = this;
+
+
+
+
+
+  })
 
 ;
 
