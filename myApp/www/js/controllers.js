@@ -39,9 +39,7 @@ angular.module('starter.controllers', ['ui.router'])
   })
   .controller('EventCtrl',function($state,$rootScope,$scope) {
 
-    //adding $scope.title for Jasmine testing purposes//
     var event=this;
-
 
     event.events=[
       {
@@ -63,13 +61,21 @@ angular.module('starter.controllers', ['ui.router'])
     ]
     console.log("inside events controller");
     var event = this;
+    event.eventClick = eventClick;
 
-
-
-
-
-  })
-
-;
+    function eventClick(id) {
+      console.log("inside eventClick");
+      var result="Failure";
+      for(var i in event.events){
+        if(event.events[i].id===id){
+          result="Success";
+          $state.go('eventDetails',{'id':id});
+        }
+      }
+      if(result==="Failure"){
+        $scope.msg="Failure";
+      }
+    }
+  });
 
 

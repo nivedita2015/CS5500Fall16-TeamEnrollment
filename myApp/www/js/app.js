@@ -56,7 +56,6 @@ angular.module('starter', ['ionic', 'starter.controllers','ui.router'])
         }
       }
     })
-
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -66,18 +65,22 @@ angular.module('starter', ['ionic', 'starter.controllers','ui.router'])
       }
     }
   })
-
     .state('login', {
       url: '/login',
       templateUrl: 'views/login.html',
-      controller: 'LoginCtrl as login',
+      controller: 'LoginCtrl as login'
     })
-
     .state('event', {
       url: '/event',
       templateUrl: 'views/event.html',
+      controller: 'EventCtrl as event'
     })
-
+    .state('eventDetails', {
+      url: '/eventDetails',
+      templateUrl: 'views/eventDetails.html',
+      params: {'id':null},
+      controller: 'EventDetailsCtrl as eventDetails',
+    })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
