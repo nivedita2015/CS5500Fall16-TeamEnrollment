@@ -82,27 +82,31 @@ angular.module('starter.controllers', ['ui.router'])
 
   var eventDetails=this;
 
-  var events=[
-    {
-      pic:"/android_asset/www/img/NUlogo.png",
-      map:"/android_asset/www/img/ionic.png",
-      name:"NU Homecoming",
-      group:"Association for Student Welfare",
-      id:"123",
-      dt:"11/09/2016",
-      desc:"This should be the description of the event. The details are unique to the event"
-    },
-    {
-      pic:"/android_asset/www/img/ionic.png",
-      map:"/android_asset/www/img/NUlogo.png",
-      name:"Library events",
-      group:"Sigma Kappa",
-      id:"234",
-      dt:"12/17/2016",
-      desc:"This should be the description of the event. The details are unique to the event"
-    }
+    var events=[
+      {
+        pic:"/android_asset/www/img/NUlogo.png",
+        map:"/android_asset/www/img/ionic.png",
+        name:"NU Homecoming",
+        group:"Association for Student Welfare",
+        id:"123",
+        dt:"11/09/2016",
+        desc:"This should be the description of the event. The details are unique to the event",
+        lat:"42.338452",
+        longt:"-71.087834",
+      },
+      {
+        pic:"/android_asset/www/img/ionic.png",
+        map:"/android_asset/www/img/NUlogo.png",
+        name:"Library events",
+        group:"Sigma Kappa",
+        id:"234",
+        dt:"12/17/2016",
+        desc:"This should be the description of the event. The details are unique to the event",
+        lat:"42.338628",
+        longt:"-71.092285",
+      }
 
-  ];
+    ];
   eventDetails.init=init;
   var id=$stateParams.id;
   console.log("after id"+id);
