@@ -77,7 +77,7 @@ angular.module('starter.controllers', ['ui.router'])
       }
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams) {
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation) {
 
   var eventDetails=this;
 
@@ -105,7 +105,15 @@ angular.module('starter.controllers', ['ui.router'])
   eventDetails.init=init;
   var id=$stateParams.id;
   console.log("after id"+id);
+
     function init() {
+
+      console.log("inside event details init");
+
+      eventDetails.shareOnFb = false;
+      eventDetails.addToCalendar = false;
+
+
       for(var i in events){
         if(events[i].id===id){
           console.log("id matched "+id);
@@ -114,6 +122,7 @@ angular.module('starter.controllers', ['ui.router'])
         }
       }
       var options = {timeout: 10000, enableHighAccuracy: true};
+
       $cordovaGeolocation.getCurrentPosition(options).then(function(position){
         var latLng = new google.maps.LatLng(eventDetails.event.lat,eventDetails.event.longt);
         var mapOptions = {
@@ -129,25 +138,15 @@ angular.module('starter.controllers', ['ui.router'])
             position: latLng
           });
         });
+
+        eventDetails.mapLoaded = true;
       }, function(error){
         console.log("Could not get location");
+        eventDetails.mapLoaded = false;
       });}
   init();
   console.log("inside events details controller");
 
 })
-  .controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
-    var options = {timeout: 10000, enableHighAccuracy: true};
-    $cordovaGeolocation.getCurrentPosition(options).then(function(position){
-      var latLng = new google.maps.LatLng(42.338452, -71.087834);
-      var mapOptions = {
-        center: latLng,
-        zoom: 17,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    }, function(error){
-      console.log("Could not get location");
-    });
-  })
+
 ;
