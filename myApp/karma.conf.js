@@ -39,7 +39,7 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     // reporters: ['progress','coverage'],
-    reporters: ['dots','json-result'],
+    reporters: ['dots','json-result', 'junit'],
 
 
     // web server port
@@ -71,6 +71,10 @@ module.exports = function(config) {
     jsonResultReporter: {
   outputFile: "karma-result.json",
   isSynchronous: "true"
+},
+    
+       junitReporter: {
+  outputFile: 'test-results.xml'
 },
     // Concurrency level
     // how many browser should be started simultaneous
