@@ -55,8 +55,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="e#116#1018#0" expanded="false" />
                 <element signature="e#1081#1952#0" expanded="false" />
@@ -88,8 +88,8 @@
         <option value="$PROJECT_DIR$/myApp/www/tests/event_test.js" />
         <option value="$PROJECT_DIR$/myApp/www/views/event.html" />
         <option value="$PROJECT_DIR$/myApp/www/js/app.js" />
-        <option value="$PROJECT_DIR$/myApp/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/myApp/www/tests/event_details_test.js" />
+        <option value="$PROJECT_DIR$/myApp/www/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -354,7 +354,7 @@
       <workItem from="1478525078846" duration="4858000" />
       <workItem from="1478557710000" duration="3442000" />
       <workItem from="1478715146977" duration="9774000" />
-      <workItem from="1478735846083" duration="3100000" />
+      <workItem from="1478735846083" duration="3258000" />
     </task>
     <servers />
   </component>
@@ -385,7 +385,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49654000" />
+    <option name="totallyTimeSpent" value="49812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="e#116#1018#0" expanded="false" />
             <element signature="e#1081#1952#0" expanded="false" />
