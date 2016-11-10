@@ -25,7 +25,10 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
     "npm": "^3.10.9",
-    "shelljs": "^0.7.5"
+    "shelljs": "^0.7.5",
+    "karma-structured-json-reporter": "*",
+    "karma-phantomjs-launcher": "*"
+
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
