@@ -81,6 +81,11 @@ angular.module('starter', ['ionic', 'starter.controllers','ui.router'])
       params: {'id':null},
       controller: 'EventDetailsCtrl as eventDetails',
     })
+    .state('map', {
+      url: '/map',
+      templateUrl: 'views/map.html',
+      controller: 'MapCtrl',
+    })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');

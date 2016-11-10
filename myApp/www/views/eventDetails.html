@@ -1,0 +1,35 @@
+<div class="bar bar-assertive pull-left">
+  <h1 class="title">Event Details</h1>
+</div>
+<ion-content>
+
+  <div class="list card" style="padding-top:40px">
+
+    <div class="item item-avatar">
+      <img src={{eventDetails.event.pic}}>
+      <h2>{{eventDetails.event.name}}</h2>
+      <p>{{eventDetails.event.group}}</p>
+      <p>{{eventDetails.event.dt}}</p>
+    </div>
+
+
+    <div class="item item-body">
+      <p>
+        {{eventDetails.event.desc}}
+      </p>
+    </div>
+
+  </div>
+  <div id="map" data-tap-disabled="true"></div>
+</ion-content>
+
+<div class="bar bar-footer bar-assertive">
+  <a href="#/event" class="button button-assertive pull-left">Events</a>
+  <a href="#/login" class="button button-assertive pull-right">sign out</a>
+</div>
+
+
+
+
+
+
