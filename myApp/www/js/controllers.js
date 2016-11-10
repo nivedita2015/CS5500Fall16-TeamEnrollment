@@ -34,6 +34,7 @@ angular.module('starter.controllers', ['ui.router'])
       }
       else{
         $scope.msg="Failure";
+        login.msg = 'Failure';
       }
     }
   })
