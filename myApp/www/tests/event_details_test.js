@@ -43,22 +43,22 @@ describe('EventDetailsController',function(){
   // });
 
   //testing variable values when no button is clicked//
-  describe('Event Details Controller', function() {
-    it('check behaviour on no button click ', function() {
-      var $scope = {};
-      var rootScope = {};
-      var $stateParams = {'id':234};
-      var $cordovaGeolocation = {};
-      var controller = $controller('EventDetailsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$stateParams:$stateParams,$cordovaGeolocation:$cordovaGeolocation });
-      // controller.shareClick();
-      //checking page is not routed out of event page.
-      expect(state.current.name).toBe('eventDetails');
-      //checking shareOnFb variable defaults to false.
-      expect(controller.shareOnFb).toEqual('false');
-      //checking addToCalendat variable defaults to false.
-      expect(controller.addToCalendar).toEqual('false');
-      //checking map loaded successfully
-      expect(controller.mapLoaded).toEqual('true');
-    });
-  });
+  // describe('Event Details Controller', function() {
+  //   it('check behaviour on no button click ', function() {
+  //     var $scope = {};
+  //     var rootScope = {};
+  //     var $stateParams = {'id':234};
+  //     var $cordovaGeolocation = {};
+  //     var controller = $controller('EventDetailsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$stateParams:$stateParams,$cordovaGeolocation:$cordovaGeolocation });
+  //     // controller.shareClick();
+  //     //checking page is not routed out of event page.
+  //     expect(state.current.name).toBe('eventDetails');
+  //     //checking shareOnFb variable defaults to false.
+  //     expect(controller.shareOnFb).toEqual('false');
+  //     //checking addToCalendat variable defaults to false.
+  //     expect(controller.addToCalendar).toEqual('false');
+  //     //checking map loaded successfully
+  //     expect(controller.mapLoaded).toEqual('true');
+  //   });
+  // });
 });
