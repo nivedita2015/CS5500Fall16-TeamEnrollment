@@ -39,7 +39,7 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     // reporters: ['progress','coverage'],
-    reporters: ['dots','json-result']
+    reporters: ['dots','json-result'],
 
 
     // web server port
@@ -66,9 +66,9 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-singleRun: true,
+    singleRun: true,
 
-jsonResultReporter: {
+    jsonResultReporter: {
   outputFile: "karma-result.json",
   isSynchronous: "true"
 },
