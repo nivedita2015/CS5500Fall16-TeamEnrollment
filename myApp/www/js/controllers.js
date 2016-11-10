@@ -44,7 +44,7 @@ angular.module('starter.controllers', ['ui.router'])
 
     event.events=[
       {
-        pic:"/android_asset/www/img/NUlogo.png",
+        pic:"/img/NUlogo.png",
         name:"NU Homecoming",
         group:"Association for Student Welfare",
         id:"123",
@@ -52,7 +52,7 @@ angular.module('starter.controllers', ['ui.router'])
 
       },
       {
-        pic:"/android_asset/www/img/ionic.png",
+        pic:"/img/ionic.png",
         name:"Huskies vs Wildcats",
         group:"Northeastern Sports Association",
         id:"234",
@@ -84,8 +84,8 @@ angular.module('starter.controllers', ['ui.router'])
 
     var events=[
       {
-        pic:"/android_asset/www/img/NUlogo.png",
-        map:"/android_asset/www/img/ionic.png",
+        pic:"/img/NUlogo.png",
+        map:"/img/ionic.png",
         name:"NU Homecoming",
         group:"Association for Student Welfare",
         id:"123",
@@ -95,8 +95,8 @@ angular.module('starter.controllers', ['ui.router'])
         longt:"-71.087834",
       },
       {
-        pic:"/android_asset/www/img/ionic.png",
-        map:"/android_asset/www/img/NUlogo.png",
+        pic:"/img/ionic.png",
+        map:"/img/NUlogo.png",
         name:"Library events",
         group:"Sigma Kappa",
         id:"234",

@@ -11,7 +11,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 15,
+            "time": 23,
             "executedExpectationsCount": 1
         },
         {
@@ -24,7 +24,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 4,
+            "time": 7,
             "executedExpectationsCount": 1
         },
         {
@@ -37,7 +37,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -50,7 +50,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -63,7 +63,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -76,7 +76,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -89,7 +89,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -115,7 +115,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 2,
+            "time": 8,
             "executedExpectationsCount": 1
         },
         {
@@ -128,7 +128,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 6,
+            "time": 4,
             "executedExpectationsCount": 1
         }
     ]
