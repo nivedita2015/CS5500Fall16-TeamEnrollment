@@ -105,15 +105,33 @@ angular.module('starter.controllers', ['ui.router'])
   eventDetails.init=init;
   var id=$stateParams.id;
   console.log("after id"+id);
-  function init() {
-    for(var i in events){
-      if(events[i].id===id){
-        console.log("id matched "+id);
-        eventDetails.event=events[i];
-        console.log(eventDetails.event);
+    function init() {
+      for(var i in events){
+        if(events[i].id===id){
+          console.log("id matched "+id);
+          eventDetails.event=events[i];
+          console.log(eventDetails.event);
+        }
       }
-    }
-  }
+      var options = {timeout: 10000, enableHighAccuracy: true};
+      $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+        var latLng = new google.maps.LatLng(eventDetails.event.lat,eventDetails.event.longt);
+        var mapOptions = {
+          center: latLng,
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        google.maps.event.addListenerOnce($scope.map, 'idle', function(){
+          var marker = new google.maps.Marker({
+            map: $scope.map,
+            animation: google.maps.Animation.DROP,
+            position: latLng
+          });
+        });
+      }, function(error){
+        console.log("Could not get location");
+      });}
   init();
   console.log("inside events details controller");
 
