@@ -24,7 +24,7 @@ angular.module('starter.controllers', ['ui.router'])
         if(users[i].username===emailId&&users[i].password===password){
           // $state.go('event');
           var result=true;
-          $scope.msg="Success";
+          // $scope.msg="Success";
 
         }
       }
