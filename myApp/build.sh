@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo npm rebuild node-sass
 karma start
 python3 json_parser.py
 state="`cat output.txt`"
