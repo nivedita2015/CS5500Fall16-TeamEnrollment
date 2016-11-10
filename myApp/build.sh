@@ -9,5 +9,5 @@ then
         exit
 else
         echo "Tests successful. Proceeding with build"
-        ionic serve &
+        ionic serve
 fi
