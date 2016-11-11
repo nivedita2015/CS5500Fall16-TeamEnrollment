@@ -31,8 +31,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'myApp/www/js/*.js': ['coverage'],
-      'myApp/www/tests/*.js': ['coverage']
+      'www/js/*.js': ['coverage'],
+      'www/tests/*.js': ['coverage']
     },
 
 
