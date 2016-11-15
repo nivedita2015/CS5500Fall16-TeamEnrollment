@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211fb888-ab78-4a5f-aa1e-3d6f74280d2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/tests/preference-1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/tests/preference-1.js" afterPath="$PROJECT_DIR$/myApp/www/tests/preference-1.js" />
     </list>
     <ignored path="CS5500Fall16-TeamEnrollment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,9 +35,11 @@
       <file leaf-file-name="preference-1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/www/tests/preference-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -374,7 +376,7 @@
       <workItem from="1478789926225" duration="32000" />
       <workItem from="1478789974880" duration="19000" />
       <workItem from="1478790083044" duration="15114000" />
-      <workItem from="1479230775753" duration="132000" />
+      <workItem from="1479230775753" duration="564000" />
     </task>
     <servers />
   </component>
@@ -411,7 +413,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69644000" />
+    <option name="totallyTimeSpent" value="70076000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,9 +774,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/www/tests/preference-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
