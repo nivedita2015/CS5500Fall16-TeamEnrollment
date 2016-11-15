@@ -78,9 +78,10 @@ angular.module('starter.controllers', ['ui.router'])
       }
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation) {
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing) {
 
-  var eventDetails=this;
+    var eventDetails=this;
+
 
     var events=[
       {
@@ -107,10 +108,11 @@ angular.module('starter.controllers', ['ui.router'])
       }
 
     ];
-  eventDetails.init=init;
-  var id=$stateParams.id;
-  console.log("after id"+id);
+    eventDetails.init=init;
+    eventDetails.share = share;
 
+    var id=$stateParams.id;
+    console.log("after id"+id);
     function init() {
 
       console.log("inside event details init");
@@ -149,8 +151,24 @@ angular.module('starter.controllers', ['ui.router'])
         console.log("Could not get location");
         eventDetails.mapLoaded = false;
       });}
-  init();
-  console.log("inside events details controller");
+    init();
+    function share(){
+
+      $cordovaSocialSharing
+        .shareViaFacebook('Hello', null, 'http://test.com')
+        .then(function(result) {
+          alert('success');
+        }, function(err) {
+          alert('error');
+          // An error occurred. Show a message to the user
+        });
+
+
+
+    }
+    console.log("inside events details controller");
+
+
 
 })
 

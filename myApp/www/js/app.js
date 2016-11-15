@@ -38,8 +38,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       }
     }
   })
-
-  .state('app.browse', {
+    .state('app.browse', {
       url: '/browse',
       views: {
         'menuContent': {
@@ -56,7 +55,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
         }
       }
     })
-  .state('app.single', {
+    .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
       'menuContent': {
@@ -81,11 +80,6 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       params: {'id':null},
       controller: 'EventDetailsCtrl as eventDetails',
     })
-    // .state('map', {
-    //   url: '/map',
-    //   templateUrl: 'views/map.html',
-    //   controller: 'MapCtrl',
-    // })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
