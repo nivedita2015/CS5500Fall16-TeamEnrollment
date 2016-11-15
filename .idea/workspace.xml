@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="211fb888-ab78-4a5f-aa1e-3d6f74280d2c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/hooks/after_prepare/010_add_platform_class.js" afterPath="$PROJECT_DIR$/myApp/hooks/after_prepare/010_add_platform_class.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/ionic.config.json" afterPath="$PROJECT_DIR$/myApp/ionic.config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/index.html" afterPath="$PROJECT_DIR$/myApp/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/js/app.js" afterPath="$PROJECT_DIR$/myApp/www/js/app.js" />
@@ -395,7 +396,7 @@
       <workItem from="1479234993720" duration="155000" />
       <workItem from="1479235177022" duration="542000" />
       <workItem from="1479235936265" duration="155000" />
-      <workItem from="1479236165788" duration="3388000" />
+      <workItem from="1479236165788" duration="3461000" />
     </task>
     <servers />
   </component>
@@ -432,7 +433,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84466000" />
+    <option name="totallyTimeSpent" value="84539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
