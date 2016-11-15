@@ -181,6 +181,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,7 +256,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,6 +402,7 @@
       <workItem from="1479235936265" duration="155000" />
       <workItem from="1479236165788" duration="3794000" />
       <workItem from="1479240083399" duration="586000" />
+      <workItem from="1479240699041" duration="225000" />
     </task>
     <servers />
   </component>
@@ -438,7 +439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85458000" />
+    <option name="totallyTimeSpent" value="85683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,7 +451,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25972995" sideWeight="0.49118388" order="0" side_tool="false" content_ui="combo" />
