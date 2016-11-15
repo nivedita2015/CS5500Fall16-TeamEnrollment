@@ -2,7 +2,540 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211fb888-ab78-4a5f-aa1e-3d6f74280d2c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/tests/preference-1.js" afterPath="$PROJECT_DIR$/myApp/www/tests/preference-1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/lib/charset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/lib/encoding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/lib/language.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/lib/mediaType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/lib/negotiator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/accepts/node_modules/negotiator/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/expand-brackets/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/expand-brackets/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/expand-brackets/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/expand-brackets/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/extglob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/extglob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/extglob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/extglob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/filename-regex/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/filename-regex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/filename-regex/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-in/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-in/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-in/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-in/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-own/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-own/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-own/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/for-own/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-base/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-base/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-base/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-base/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/glob-parent/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-buffer/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-dotfile/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-dotfile/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-dotfile/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-dotfile/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-equal-shallow/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-equal-shallow/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-equal-shallow/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-equal-shallow/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extendable/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extendable/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extendable/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extendable/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extglob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extglob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extglob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-extglob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-glob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-glob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-glob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-posix-bracket/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-posix-bracket/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-posix-bracket/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-posix-bracket/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-primitive/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-primitive/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-primitive/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/is-primitive/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/kind-of/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/kind-of/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/kind-of/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/kind-of/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/lib/chars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/lib/expand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/lib/glob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/micromatch/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/normalize-path/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/normalize-path/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/normalize-path/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/normalize-path/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/object.omit/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/object.omit/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/object.omit/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/object.omit/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/parse-glob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/parse-glob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/parse-glob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/parse-glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/regex-cache/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/regex-cache/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/regex-cache/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/anymatch/node_modules/regex-cache/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/content-type/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/debug/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/lib/browser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/lib/compat/buffer-concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/lib/compat/callsite-tostring.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/lib/compat/event-listener-count.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/lib/compat/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/depd/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ee-first/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ee-first/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ee-first/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ee-first/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/inherits_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/inherits/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/media-typer/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/media-typer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/media-typer/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/media-typer/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/media-typer/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/db.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-db/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-types/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-types/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-types/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-types/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/mime-types/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/ms/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/on-finished/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/on-finished/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/on-finished/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/on-finished/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/on-finished/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/.jscs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/dist/qs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/lib/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/lib/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/test/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/test/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/test/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/setprototypeof/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/setprototypeof/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/setprototypeof/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/setprototypeof/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/codes.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/statuses/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/unpipe/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/unpipe/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/unpipe/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/unpipe/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/unpipe/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/expand-range/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/expand-range/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/expand-range/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/expand-range/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/fill-range/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/fill-range/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/fill-range/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/fill-range/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-buffer/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-number/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-number/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-number/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/is-number/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isarray/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isobject/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isobject/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isobject/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/isobject/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/kind-of/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/kind-of/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/kind-of/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/kind-of/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/.verb.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/preserve/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/randomatic/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/randomatic/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/randomatic/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/randomatic/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-element/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-element/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-element/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-element/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-string/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-string/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-string/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/braces/node_modules/repeat-string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/float.patch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/core-util-is/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/glob-parent/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/graceful-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/legacy-streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/graceful-fs/polyfills.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/inherits/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/inherits/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/inherits/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/inherits/inherits_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/inherits/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-binary-path/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-binary-path/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-binary-path/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-binary-path/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-extglob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-extglob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-extglob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-extglob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-glob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-glob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-glob/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/is-glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/isarray/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/minimatch/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/minimatch/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/minimatch/minimatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/minimatch/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/asyncworker.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/buffers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/callback.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/converters.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/errors.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/maybe_types.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/methods.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/new.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/node_misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/object_wrappers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/persistent.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/scopes.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/script.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/string_bytes.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/v8_internals.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/doc/v8_misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/include_dirs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_callbacks.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_callbacks_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_callbacks_pre_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_converters.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_converters_43_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_converters_pre_43_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_implementation_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_implementation_pre_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_maybe_43_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_maybe_pre_43_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_new.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_object_wrap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_persistent_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_persistent_pre_12_inl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_string_bytes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_typedarray_contents.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/nan_weak.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/tools/1to2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/tools/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/nan/tools/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/path-is-absolute/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/path-is-absolute/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/path-is-absolute/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/path-is-absolute/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/process-nextick-args/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/doc/stream.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/_stream_duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/_stream_passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/_stream_readable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/_stream_transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/_stream_writable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/lib/internal/streams/BufferList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/readable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readable-stream/writable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/callback-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/grep.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/stream-api-pipe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/examples/stream-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/readdirp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/stream-api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir1/root_dir1_file1.ext1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir1/root_dir1_file2.ext2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir1/root_dir1_file3.ext3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir1/root_dir1_subdir1/root1_dir1_subdir1_file1.ext1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir2/root_dir2_file1.ext1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_dir2/root_dir2_file2.ext2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_file1.ext1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_file2.ext2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/bed/root_file3.ext3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/readdirp-stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/readdirp/test/readdirp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/set-immediate-shim/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/set-immediate-shim/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/set-immediate-shim/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/string_decoder/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/string_decoder/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/string_decoder/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/string_decoder/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/string_decoder/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chokidar/node_modules/util-deprecate/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/README.md" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseAt.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseClone.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseClone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseGet.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseGet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseInvoke.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseInvoke.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsEqual.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsEqual.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsEqualDeep.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsEqualDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsMatch.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseIsMatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseMatchesProperty.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseMatchesProperty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePick.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePickBy.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePickBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePullAt.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_basePullAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseSet.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseUnset.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_baseUnset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_castPath.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_castPath.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_cloneMap.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_cloneMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_cloneSet.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_cloneSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_copySymbols.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_copySymbols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createBind.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createBind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createFlow.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createFlow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createHybrid.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createHybrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createPartial.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createPartial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createRecurry.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createRecurry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createWrap.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_createWrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalArrays.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalArrays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalByTag.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalByTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalObjects.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_equalObjects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_getSymbols.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_getSymbols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_getSymbolsIn.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_getSymbolsIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_hasPath.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_hasPath.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_hasUnicode.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_hasUnicode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_mergeData.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_mergeData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_nodeUtil.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_nodeUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_parent.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_parent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_stringToPath.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_stringToPath.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeSize.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeSize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeToArray.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeToArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeWords.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_unicodeWords.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_updateWrapDetails.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/_updateWrapDetails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/ary.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/ary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/at.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/bind.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/bind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/bindKey.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/bindKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/clone.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneDeep.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneDeepWith.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneDeepWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneWith.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/cloneWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/conforms.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/conforms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/core.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/core.min.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/core.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/curry.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/curry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/curryRight.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/curryRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/deburr.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/deburr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/flip.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/flip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/fp/_mapping.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/fp/_mapping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/invokeMap.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/invokeMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/isEqualWith.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/isEqualWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/isNative.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/isNative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/iteratee.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/iteratee.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/lodash.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/lodash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/lodash.min.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/lodash.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/matches.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/matches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/matchesProperty.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/matchesProperty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/omit.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/omit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/partial.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/partial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/partialRight.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/partialRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/pick.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/pick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/pickBy.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/pickBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/rearg.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/rearg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/result.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/result.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/spread.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/spread.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/toPath.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/toPath.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/wrapperAt.js" afterPath="$PROJECT_DIR$/myApp/node_modules/combine-lists/node_modules/lodash/wrapperAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/karma-chrome-launcher/package.json" afterPath="$PROJECT_DIR$/myApp/node_modules/karma-chrome-launcher/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/karma-jasmine/package.json" afterPath="$PROJECT_DIR$/myApp/node_modules/karma-jasmine/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/karma/package.json" afterPath="$PROJECT_DIR$/myApp/node_modules/karma/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/statuses/HISTORY.md" afterPath="$PROJECT_DIR$/myApp/node_modules/statuses/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/statuses/README.md" afterPath="$PROJECT_DIR$/myApp/node_modules/statuses/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/statuses/index.js" afterPath="$PROJECT_DIR$/myApp/node_modules/statuses/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/node_modules/statuses/package.json" afterPath="$PROJECT_DIR$/myApp/node_modules/statuses/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/package.json" afterPath="$PROJECT_DIR$/myApp/package.json" />
     </list>
     <ignored path="CS5500Fall16-TeamEnrollment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,14 +565,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preference-1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preference-1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/www/tests/preference-1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myApp/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +613,6 @@
         <option value="$PROJECT_DIR$/myApp/www/views/event.html" />
         <option value="$PROJECT_DIR$/myApp/www/css/style.css" />
         <option value="$PROJECT_DIR$/myApp/www/js/app.js" />
-        <option value="$PROJECT_DIR$/myApp/package.json" />
         <option value="$PROJECT_DIR$/myApp/karma.conf.js" />
         <option value="$PROJECT_DIR$/myApp/www/index.html" />
         <option value="$PROJECT_DIR$/myApp/build.sh" />
@@ -78,6 +620,7 @@
         <option value="$PROJECT_DIR$/myApp/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/myApp/www/tests/event_details_test.js" />
         <option value="$PROJECT_DIR$/myApp/www/tests/preference-1.js" />
+        <option value="$PROJECT_DIR$/myApp/package.json" />
       </list>
     </option>
   </component>
@@ -376,7 +919,7 @@
       <workItem from="1478789926225" duration="32000" />
       <workItem from="1478789974880" duration="19000" />
       <workItem from="1478790083044" duration="15114000" />
-      <workItem from="1479230775753" duration="564000" />
+      <workItem from="1479230775753" duration="3045000" />
     </task>
     <servers />
   </component>
@@ -413,7 +956,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70076000" />
+    <option name="totallyTimeSpent" value="72557000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,25 +969,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.209375" sideWeight="0.49118388" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21286735" sideWeight="0.49118388" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35980552" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45016077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3627907" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3601286" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27323273" sideWeight="0.5088161" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43435982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,13 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/coverage/Chrome 54.0.2840 (Mac OS X 10.12.0)/index.html" />
     <entry file="file://$PROJECT_DIR$/myApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -740,6 +1276,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,10 +1312,18 @@
     <entry file="file://$PROJECT_DIR$/myApp/www/tests/preference-1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
