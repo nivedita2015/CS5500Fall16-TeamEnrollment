@@ -1,135 +1,73 @@
 {
-    "errors": [],
-    "results": [
-        {
-            "description": "checks if navigated to event details page ",
-            "id": "spec0",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 23,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks no navigation to event details page since event details id is wrong",
-            "id": "spec1",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 7,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks no navigation to event details page since event details id is wrong",
-            "id": "spec2",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 4,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec3",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 4,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec4",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 4,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec5",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 3,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec6",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 3,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec7",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 3,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec8",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 8,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec9",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 4,
-            "executedExpectationsCount": 1
+    "EventDetailsController": {
+        "Event Details Controller": {
+            "check behaviour on add to calendar button click ": {
+                "log": [
+                    "Error: [ng:areq] Argument 'EventDetails' is not a function, got undefined",
+                    "http://errors.angularjs.org/1.5.8/ng/areq?p0=EventDetails&p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)",
+                    "assertArg@node_modules/angular/angular.js:1892:91",
+                    "assertArgFn@node_modules/angular/angular.js:1902:12",
+                    "$controller@node_modules/angular/angular.js:10330:20",
+                    "node_modules/angular-mocks/angular-mocks.js:2221:21",
+                    "www/tests/event_details_test.js:9:1139",
+                    "loaded@http://localhost:9876/context.js:151:17"
+                ],
+                "time": 17,
+                "status": "FAILED",
+                "noExpectationsWarning": false
+            },
+            "check behaviour on share to facebook button click ": {
+                "log": [
+                    "TypeError: undefined is not a constructor (evaluating 'controller.shareClick()') in www/tests/event_details_test.js (line 9)",
+                    "www/tests/event_details_test.js:9:2010",
+                    "loaded@http://localhost:9876/context.js:151:17"
+                ],
+                "time": 5,
+                "status": "FAILED",
+                "noExpectationsWarning": false
+            },
+            "check behaviour on no button click ": {
+                "log": [
+                    "TypeError: undefined is not a constructor (evaluating '$cordovaGeolocation.getCurrentPosition(options)') in www/js/controllers.js (line 9)",
+                    "init@www/js/controllers.js:9:4718",
+                    "www/js/controllers.js:9:5745",
+                    "[native code]",
+                    "instantiate@node_modules/angular/angular.js:4733:61",
+                    "$controller@node_modules/angular/angular.js:10369:39",
+                    "node_modules/angular-mocks/angular-mocks.js:2221:21",
+                    "www/tests/event_details_test.js:9:2743",
+                    "loaded@http://localhost:9876/context.js:151:17"
+                ],
+                "time": 4,
+                "status": "FAILED",
+                "noExpectationsWarning": false
+            }
         }
-    ]
+    },
+    "EventController": {
+        "Event Controller": {
+            "checks if navigated to event details page ": {
+                "log": [],
+                "time": 6,
+                "status": "PASSED",
+                "noExpectationsWarning": false
+            },
+            "checks no navigation to event details page since event details id is wrong": {
+                "log": [],
+                "time": 4,
+                "status": "PASSED",
+                "noExpectationsWarning": false
+            }
+        }
+    },
+    "LoginCtrl": {
+        "Login Controller": {
+            "checks username and password validation ": {
+                "log": [],
+                "time": 3,
+                "status": "PASSED",
+                "noExpectationsWarning": false
+            }
+        }
+    }
 }
