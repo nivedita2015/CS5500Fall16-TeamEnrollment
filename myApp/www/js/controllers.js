@@ -63,6 +63,7 @@ angular.module('starter.controllers', ['ui.router'])
     console.log("inside events controller");
     var event = this;
     event.eventClick = eventClick;
+    event.preferences = preferences;
 
     function eventClick(id) {
       console.log("inside eventClick");
@@ -76,6 +77,11 @@ angular.module('starter.controllers', ['ui.router'])
       if(result==="Failure"){
         $scope.msg="Failure";
       }
+    }
+
+    function preferences(){
+      console.log("inside preferences");
+      $state.go('preferences');
     }
   })
   .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing) {

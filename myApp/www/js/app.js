@@ -80,6 +80,42 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       params: {'id':null},
       controller: 'EventDetailsCtrl as eventDetails',
     })
+    // .state('preferences',{
+    //   url: '/userPreference',
+    //   templateUrl : 'views/userPreference.html'
+    // })
+    .state('preferences', {
+      url: '/userPreference',
+      // abstract: true,
+      templateUrl: 'views//userPreference.html'
+    })
+    .state('main.settings', {
+      url: '/settings',
+      views: {
+        'settings': {
+          templateUrl: 'views/settings.html',
+          // controller: 'settings'
+        }
+      }
+    })
+    .state('main.favorites', {
+      url: '/favorites',
+      views: {
+        'favorites': {
+          templateUrl: 'views/favorites.html',
+          // controller: 'ChatCtrl'
+        }
+      }
+    })
+    .state('main.events', {
+      url: '/events',
+      views: {
+        'events': {
+          templateUrl: 'views/allEvents.html',
+          // controller: 'BuddiesCtrl'
+        }
+      }
+    })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
