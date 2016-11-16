@@ -19,8 +19,7 @@ describe('FavCtrl', function() {
     it('checks event details page loaded successfully ', function() {
       var scope = {};
       var rootScope = {};
-      var $stateParams = {'id':234};
-      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope,$stateParams: stateParams});
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope});
       controller.eventClick('234');
       expect(state.current.name).toBe('eventDetails');
     });
@@ -31,14 +30,39 @@ describe('FavCtrl', function() {
     it('checks event details page loaded successfully ', function() {
       var scope = {};
       var rootScope = {};
-      var $stateParams = {'id':111};
-      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope,$stateParams: stateParams});
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope});
       controller.eventClick('111');
       expect($scope.msg).toEqual('Failure');
-      expect(state.current.name).toBe('main.favorites');
+      expect(state.current.name).toBe('preferences.favorites');
 
     });
   });
+
+  //Test case : click on settings tab
+  //User should be routed to settings state
+  describe('Favorites Controller', function() {
+    it('checks settings page loaded successfully ', function() {
+      var scope = {};
+      var rootScope = {};
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope});
+      controller.settingsClick();
+      expect(state.current.name).toBe('preferences.settings');
+    });
+  });
+
+  //Test case : click on all events tab
+  //User should be routed to all events state
+  describe('Favorites Controller', function() {
+    it('checks all events page loaded successfully ', function() {
+      var scope = {};
+      var rootScope = {};
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope});
+      controller.allEventsClick();
+      expect(state.current.name).toBe('preferences.events');
+    });
+  });
+
+
 
 });
 

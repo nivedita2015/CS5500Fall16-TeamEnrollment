@@ -89,7 +89,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       // abstract: true,
       templateUrl: 'views//userPreference.html'
     })
-    .state('main.settings', {
+    .state('preferences.settings', {
       url: '/settings',
       views: {
         'settings': {
@@ -98,7 +98,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
         }
       }
     })
-    .state('main.favorites', {
+    .state('preferences.favorites', {
       url: '/favorites',
       views: {
         'favorites': {
@@ -107,7 +107,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
         }
       }
     })
-    .state('main.events', {
+    .state('preferences.events', {
       url: '/events',
       views: {
         'events': {

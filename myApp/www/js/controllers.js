@@ -177,7 +177,7 @@ angular.module('starter.controllers', ['ui.router'])
 
 
 })
-  .controller('FavCtrl', function($state,$rootScope,$scope,$stateParams){
+  .controller('FavCtrl', function($state,$rootScope,$scope){
 
   });
 ;
