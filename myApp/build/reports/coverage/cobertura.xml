@@ -370,7 +370,7 @@
 			<line number="91"  hits="1"  branch="false" />
 		</lines>
 		</class>
-		<class name="preference-1.js"  filename="www/tests/preference-1.js"  line-rate="1"  branch-rate="1" >
+		<class name="preference_test"  filename="www/tests/preference_test"  line-rate="1"  branch-rate="1" >
 		<methods>
 		</methods>
 		<lines>
