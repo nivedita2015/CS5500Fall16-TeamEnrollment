@@ -17,9 +17,10 @@ describe('FavCtrl', function() {
   //Since event is exists in system, event details  page should load.
   describe('Favorites Controller', function() {
     it('checks event details page loaded successfully ', function() {
-      var $scope = {};
+      var scope = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var $stateParams = {'id':234};
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope,$stateParams: stateParams});
       controller.eventClick('234');
       expect(state.current.name).toBe('eventDetails');
     });
@@ -28,10 +29,11 @@ describe('FavCtrl', function() {
   //Since event does not exist in system, event details  page should not load.
   describe('Favorites Controller', function() {
     it('checks event details page loaded successfully ', function() {
-      var $scope = {};
+      var scope = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
-      controller.eventClick('234');
+      var $stateParams = {'id':111};
+      var controller = $controller('FavCtrl', {$state:state,$rootScope:rootScope,$scope: scope,$stateParams: stateParams});
+      controller.eventClick('111');
       expect($scope.msg).toEqual('Failure');
       expect(state.current.name).toBe('main.favorites');
 

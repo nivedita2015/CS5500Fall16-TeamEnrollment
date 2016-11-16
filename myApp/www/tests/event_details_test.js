@@ -1,4 +1,5 @@
 //Unit Test cases for EventDetailsController//
+//recheck tests once bugs fixed. Issues with stateparams//
 
 describe('EventDetailsController',function(){
   beforeEach(module('starter.controllers'));
@@ -19,7 +20,7 @@ describe('EventDetailsController',function(){
     it('check behaviour on add to calendar button click ', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('EventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
+      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
       controller.calendarClick();
       //checking page is not routed out of event page.
       expect(state.current.name).toBe('event');
@@ -33,7 +34,7 @@ describe('EventDetailsController',function(){
     it('check behaviour on share to facebook button click ', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('EventCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
       controller.shareClick();
       //checking page is not routed out of event page.
       expect(state.current.name).toBe('event');
@@ -49,7 +50,7 @@ describe('EventDetailsController',function(){
       var rootScope = {};
       var $stateParams = {'id':234};
       var $cordovaGeolocation = {};
-      var controller = $controller('EventDetailsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$stateParams:$stateParams,$cordovaGeolocation:$cordovaGeolocation });
+      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope,$stateParams:$stateParams,$cordovaGeolocation:$cordovaGeolocation });
       // controller.shareClick();
       //checking page is not routed out of event page.
       expect(state.current.name).toBe('eventDetails');
