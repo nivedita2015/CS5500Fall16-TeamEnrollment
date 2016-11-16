@@ -5,11 +5,16 @@ describe('FavCtrl', function() {
 
   var $controller;
   var state;
+  var $ionicPopup;
+  var $q;
+  // var timeout;
 
-  beforeEach(inject(function(_$controller_,$state){
+  beforeEach(inject(function(_$controller_,$state,_$ionicPopup_,_$q_){
     // The injector unwraps the underscores (_) from around the parameter names when matching
     $controller = _$controller_;
     state = $state;
+    $ionicPopup = _$ionicPopup_;
+    $q = _$q_;
     state.expectTransitionTo('event');
   }));
 
@@ -61,6 +66,32 @@ describe('FavCtrl', function() {
       expect(state.current.name).toBe('preferences.events');
     });
   });
+
+
+  //Testing popup when favourited event is un-favourited.
+  describe('FavCtrl', function() {
+
+    it('should call confirmClicked function if ok is clicked in the confirm popup', function() {
+      var deferred = $q.defer();
+      deferred.resolve(true); //ok is clicked
+      spyOn($ionicPopup, 'confirm').and.callFake(function(){return deferred.promise});
+      scope.openPopup();
+      scope.$digest();
+      expect(scope.confirmClicked).toHaveBeenCalled();
+    });
+
+    it('should not call confirmClicked if cancel is clicked in the confirm popup', function() {
+      var deferred = $q.defer();
+      deferred.resolve(false); //cancel is clicked
+      spyOn($ionicPopup, 'confirm').and.callFake(function(){return deferred.promise});
+      scope.openPopup();
+      scope.$digest();
+      expect(scope.confirmClicked).not.toHaveBeenCalled();
+    });
+  });
+
+
+
 
 
 
