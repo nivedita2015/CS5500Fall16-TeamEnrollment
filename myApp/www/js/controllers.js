@@ -81,7 +81,7 @@ angular.module('starter.controllers', ['ui.router'])
 
     function preferences(){
       console.log("inside preferences");
-      $state.go('preferences');
+      $state.go('preferences.settings');
     }
   })
   .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing) {
@@ -177,6 +177,14 @@ angular.module('starter.controllers', ['ui.router'])
 
 
 })
+  .controller('PreferencesCtrl', function($state,$rootScope,$scope){
+  console.log("inside preferences ctrl");
+
+  })
   .controller('FavCtrl', function($state,$rootScope,$scope){
-  });
+  })
+  .controller('SettingsCtrl', function($state,$rootScope,$scope){
+    console.log("inside settings controller");
+  })
+;
 

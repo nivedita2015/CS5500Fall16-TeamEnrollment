@@ -30,40 +30,40 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       templateUrl: 'templates/menu.html',
       controller: 'AppCtrl'
   })
-    .state('app.search', {
-      url: '/search',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/search.html'
-      }
-    }
-  })
-    .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-    .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  })
+  //   .state('app.search', {
+  //     url: '/search',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/search.html'
+  //     }
+  //   }
+  // })
+  //   .state('app.browse', {
+  //     url: '/browse',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/browse.html'
+  //       }
+  //     }
+  //   })
+  //   .state('app.playlists', {
+  //     url: '/playlists',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/playlists.html',
+  //         controller: 'PlaylistsCtrl'
+  //       }
+  //     }
+  //   })
+  //   .state('app.single', {
+  //   url: '/playlists/:playlistId',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'templates/playlist.html',
+  //       controller: 'PlaylistCtrl'
+  //     }
+  //   }
+  // })
     .state('login', {
       url: '/login',
       templateUrl: 'views/login.html',
@@ -80,21 +80,20 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       params: {'id':null},
       controller: 'EventDetailsCtrl as eventDetails',
     })
-    // .state('preferences',{
-    //   url: '/userPreference',
-    //   templateUrl : 'views/userPreference.html'
-    // })
+
+
     .state('preferences', {
-      url: '/userPreference',
-      // abstract: true,
-      templateUrl: 'views//userPreference.html'
+      url: '/preferences',
+      abstract: true,
+      templateUrl: 'views//userPreference.html',
+      // controller: 'PreferencesCtrl'
     })
     .state('preferences.settings', {
       url: '/settings',
       views: {
         'settings': {
           templateUrl: 'views/settings.html',
-          // controller: 'settings'
+          controller: 'SettingsCtrl'
         }
       }
     })
