@@ -2,7 +2,9 @@
 .top-space{
   padding-top: 100px;
 }
-
+.avoid_header {
+  padding-top: 50px;
+}
 .scroll {
   height: 100%;
 }

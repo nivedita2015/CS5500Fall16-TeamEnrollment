@@ -1,7 +1,40 @@
 <ion-view title="settings">
   <ion-content>
-    <div class="top-space">
-      Test Settings
+    <div class="avoid_header">
+      <div class="item item-divider">
+            Settings
+          </div>
+
+      <ion-toggle ng-model="notification.checked"
+                  ng-change="pushNotificationChange()">
+        Daily Notifications
+      </ion-toggle>
+      <ion-toggle ng-model="bluetooth.checked"
+                  ng-change="pushNotificationChange()">
+        Bluetooth
+      </ion-toggle>
+      <ion-toggle ng-model="location.checked"
+                  ng-change="pushNotificationChange()">
+        Location Service
+      </ion-toggle>
+
+          <!--<div class="item">-->
+            <!--<pre ng-bind="pushNotification | json"></pre>-->
+          <!--</div>-->
+
+          <!--<ion-toggle toggle-class="toggle-assertive"-->
+                      <!--ng-model="emailNotification"-->
+                      <!--ng-true-value="'Subscribed'"-->
+                      <!--ng-false-value="'Unubscribed'">-->
+            <!--Newsletter-->
+          <!--</ion-toggle>-->
+
+          <!--<div class="item">-->
+            <!--<pre ng-bind="emailNotification | json"></pre>-->
+          <!--</div>-->
+
+
+
     </div>
   </ion-content>
 </ion-view>
