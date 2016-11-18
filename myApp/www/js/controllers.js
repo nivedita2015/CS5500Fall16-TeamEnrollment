@@ -185,6 +185,11 @@ angular.module('starter.controllers', ['ui.router'])
   })
   .controller('SettingsCtrl', function($state,$rootScope,$scope){
     console.log("inside settings controller");
+
+    $scope.notification = {checked : true};
+    $scope.bluetooth = {checked : true};
+    $scope.location = {checked : true};
+
     var settings = this;
     this.notificationChange = notificationChange;
     this.bluetoothChange = bluetoothChange;
@@ -193,22 +198,20 @@ angular.module('starter.controllers', ['ui.router'])
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
 
-    function notificationChange(){
-      console.log("notification "+$scope.notification.checked);
-
-    }
-    function bluetoothChange(){
-      console.log("bluetooth "+$scope.bluetooth.checked);
-
-    }
-    function locationChange(){
-      console.log("location "+$scope.location.checked);
-
-    }
-    $scope.notification = {checked : true};
-    $scope.bluetooth = {checked : true};
-    $scope.location = {checked : true};
-
+    // function notificationChange(){
+    //   console.log("notification "+$scope.notification.checked);
+    //
+    // }
+    // function bluetoothChange(){
+    //   console.log("bluetooth "+$scope.bluetooth.checked);
+    //
+    // }
+    // function locationChange(){
+    //   console.log("location "+$scope.location.checked);
+    //
+    // }
+    //
+    //
 
     function favoritesPage(){
       $state.go('preferences.favorites');

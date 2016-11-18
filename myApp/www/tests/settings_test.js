@@ -84,39 +84,6 @@ describe('SettingsCtrl',function(){
 
 });
 
-describe('SettingsCtrl',function(){
-  beforeEach(module('starter.controllers'));
-  beforeEach(module('stateMock'));
-
-  var $controller;
-  var state;
-
-  beforeEach(inject(function(_$controller_,$state){
-    // The injector unwraps the underscores (_) from around the parameter names when matching
-    $controller = _$controller_;
-    state = $state;
-    // state.expectTransitionTo('event');
-
-
-  }));
-
-  //Test case checks notification toggle changes from true to false.
-  describe('SettingsCtrl', function() {
-    it('checks notification toggle changing', function() {
-      var $scope = {};
-      var rootScope = {};
-      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
-      controller.notificationChange();
-      expect($scope.notification.checked).toEqual(false);
-    });
-  });
-
-
-
-
-
-});
-
 
 
 
