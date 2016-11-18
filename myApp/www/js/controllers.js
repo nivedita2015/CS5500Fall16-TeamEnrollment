@@ -185,6 +185,26 @@ angular.module('starter.controllers', ['ui.router'])
   })
   .controller('SettingsCtrl', function($state,$rootScope,$scope){
     console.log("inside settings controller");
+
+
+    $scope.notificationChange = function (){
+      console.log("notification "+$scope.notification.checked);
+
+    }
+    $scope.bluetoothChange = function (){
+      console.log("bluetooth "+$scope.bluetooth.checked);
+
+    }
+    $scope.locationChange = function (){
+      console.log("location "+$scope.location.checked);
+
+    }
+    $scope.notification = {checked : true};
+    $scope.bluetooth = {checked : true};
+    $scope.location = {checked : true};
+
+
+
   })
 ;
 
