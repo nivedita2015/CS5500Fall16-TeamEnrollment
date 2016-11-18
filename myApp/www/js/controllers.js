@@ -191,9 +191,9 @@ angular.module('starter.controllers', ['ui.router'])
     $scope.location = {checked : true};
 
     var settings = this;
-    this.notificationChange = notificationChange;
-    this.bluetoothChange = bluetoothChange;
-    this.locationChange = locationChange;
+    // this.notificationChange = notificationChange;
+    // this.bluetoothChange = bluetoothChange;
+    // this.locationChange = locationChange;
     this.favoritesPage = favoritesPage;
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
