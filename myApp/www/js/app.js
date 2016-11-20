@@ -102,7 +102,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','ui.router
       views: {
         'favorites': {
           templateUrl: 'views/favorites.html',
-          // controller: 'ChatCtrl'
+          controller: 'FavCtrl as event'
         }
       }
     })
