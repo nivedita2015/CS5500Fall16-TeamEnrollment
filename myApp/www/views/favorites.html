@@ -1,2 +1,38 @@
-<h1>favorites</h1>
+
+
+
+<div ng-if="event.makeChange==='no'" class="alert alert-danger top-space-div" role="alert">
+  The Event is removed from your preference
+</div>
+
+<div ng-if="event.makeChange==='yes'" class="alert alert-success top-space-div" role="alert">
+  The Event is added to your preference
+</div>
+
+<div class="list top-space">
+    <span ng-repeat="e in event.events">
+      <span class="item item-thumbnail-left item-icon-right">
+        <img src={{e.pic}}>
+
+        <a ng-if="e.true==='no'"
+           class=" icon glyphicon glyphicon-star-empty pull-left"
+           ng-click="event.alterFavourite(e.id)"
+           data-toggle="tooltip" title={{e.change}}></a>
+
+        <a ng-if="e.true==='yes' "
+           class=" icon glyphicon glyphicon-star pull-left"
+           ng-click="event.alterFavourite(e.id)"
+           data-toggle="tooltip" title={{e.change}}></a>
+        <h2>{{e.group}}</h2>
+      </span>
+    </span>
+
+</div>
+
+
+
+
+
+
+
 
