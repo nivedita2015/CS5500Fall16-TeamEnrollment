@@ -3,27 +3,48 @@
 
 <div class="bar bar-assertive pull-left">
   <h1 class="title">NU Events</h1>
+
+  <div class="buttons pull-right">
+    <button class="button button-icon ion-android-search"
+            ng-click="event.showFilterBar()"></button>
+  </div>
 </div>
 
 <div class="list list-inset" style="padding-top: 30px">
-  <label class="item item-input">
-    <i class="icon ion-search placeholder-icon"></i>
-    <input type="text" placeholder="Search">
-  </label>
+  <!--<label class="item item-input">-->
+    <!--<i class="icon ion-search placeholder-icon"></i>-->
+    <!--<input type="text" placeholder="Search">-->
+  <!--</label>-->
+  <!--<div class="buttons">-->
+    <!--<button class="button button-icon ion-android-search"-->
+            <!--ng-click="event.showFilterBar()"></button>-->
+  <!--</div>-->
 </div>
 
-<div class="list">
+<!--<div class="list">-->
 
-    <span ng-repeat="e in event.events">
-      <a class="item item-thumbnail-left" ng-click="event.eventClick(e.id)">
-        <img src={{e.pic}}>
-        <h2>{{e.name}}</h2>
-        <p>{{e.group}}</p>
-        <p>{{e.dt}}</p>
-      </a>
-    </span>
+    <!--<span ng-repeat="e in event.events">-->
+      <!--<a class="item item-thumbnail-left" ng-click="event.eventClick(e.id)">-->
+        <!--<img src={{e.pic}}>-->
+        <!--<h2>{{e.name}}</h2>-->
+        <!--<p>{{e.group}}</p>-->
+        <!--<p>{{e.dt}}</p>-->
+      <!--</a>-->
+    <!--</span>-->
 
-</div>
+<!--</div>-->
+<ion-content class="padding" style="margin-top: 40px">
+<ion-list>
+  <ion-item collection-repeat="e in event.events" divider-collection-repeat>
+    <a class="item item-thumbnail-left" ng-click="event.eventClick(e.id)">
+      <img src={{e.pic}}>
+      <h2>{{e.name}}</h2>
+      <p>{{e.group}}</p>
+      <p>{{e.dt}}</p>
+    </a>
+  </ion-item>
+</ion-list>
+</ion-content>
 
 <div class="bar bar-footer bar-assertive">
   <a ng-click="event.preferences()" class="button button-assertive pull-left">Preferences</a>

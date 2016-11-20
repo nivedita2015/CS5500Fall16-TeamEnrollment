@@ -38,11 +38,13 @@ angular.module('starter.controllers', ['ui.router'])
       }
     }
   })
-  .controller('EventCtrl',function($state,$rootScope,$scope) {
+  .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar) {
 
-    var event=this;
+    var event=this,
+      events=[],
+     filterBarInstance;
 
-    event.events=[
+    events=[
       {
         pic:"/img/NUlogo.png",
         name:"NU Homecoming",
@@ -60,10 +62,21 @@ angular.module('starter.controllers', ['ui.router'])
 
       }
     ]
+    event.events=events;
     console.log("inside events controller");
-    var event = this;
     event.eventClick = eventClick;
     event.preferences = preferences;
+    event.showFilterBar=showFilterBar;
+
+    function showFilterBar() {
+      filterBarInstance = $ionicFilterBar.show({
+        items: event.events,
+        update: function (filteredItems) {
+          event.events = filteredItems;
+        },
+        filterProperties: 'name'
+      });
+    };
 
     function eventClick(id) {
       console.log("inside eventClick");
