@@ -228,12 +228,12 @@ angular.module('starter.controllers', ['ui.router'])
             console.log("true yes")
             event.makeChange="no";
             event.events[i].true="no";
-            event.events[i].change="The Event will be removed from your preference";
+            event.events[i].change="The Event will be added from your preference";
           }else{
             event.makeChange="yes";
             console.log("true no")
             event.events[i].true="yes";
-            event.events[i].change="The Event will be added to your preference";
+            event.events[i].change="The Event will be removed to your preference";
           }
 
           $state.go('preferences.favorites');
