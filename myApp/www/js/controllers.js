@@ -115,7 +115,7 @@ angular.module('starter.controllers', ['ui.router'])
 
     ];
     eventDetails.init=init;
-    eventDetails.share = share;
+    eventDetails.OtherShare = OtherShare;
 
     var id=$stateParams.id;
     console.log("after id"+id);
@@ -158,24 +158,44 @@ angular.module('starter.controllers', ['ui.router'])
         eventDetails.mapLoaded = false;
       });}
     init();
-    function share(){
+    // function share(){
+    //
+    //   $cordovaSocialSharing
+    //     .shareViaFacebook('Hello', null, 'http://test.com')
+    //     .then(function(result) {
+    //       alert('success');
+    //     }, function(err) {
+    //       alert('error');
+    //       // An error occurred. Show a message to the user
+    //     });
+    //
+    //
+    //
+    // }
 
-      $cordovaSocialSharing
-        .shareViaFacebook('Hello', null, 'http://test.com')
-        .then(function(result) {
-          alert('success');
-        }, function(err) {
-          alert('error');
-          // An error occurred. Show a message to the user
-        });
+    function OtherShare(){
+      // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
 
-
-
+      $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      $scope.share = 'sharing';
     }
+
+    function addToCalendar(){
+      $cordovaCalendar.createEventInteractively({
+        title: 'Test',
+        location: 'Test',
+        notes: 'Test',
+        startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
+        endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
+      }).then(function (result) {
+        // success
+      }, function (err) {
+        // error
+      });
+      $scope.calendar = 'added';
+    }
+
     console.log("inside events details controller");
-
-
-
 })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
   console.log("inside preferences ctrl");
