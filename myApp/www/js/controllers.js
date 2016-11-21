@@ -136,10 +136,6 @@ angular.module('starter.controllers', ['ui.router'])
 
       console.log("inside event details init");
 
-      eventDetails.shareOnFb = false;
-      eventDetails.addToCalendar = false;
-
-
       for(var i in events){
         if(events[i].id===id){
           console.log("id matched "+id);
@@ -189,8 +185,31 @@ angular.module('starter.controllers', ['ui.router'])
     function OtherShare(){
       // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
 
-      $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
-      $scope.share = 'sharing';
+      // $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      // $scope.share = 'true';
+
+
+      // this is the complete list of currently supported params you can pass to the plugin (all optional)
+      var options = {
+        message: 'Try NU Events', // not supported on some apps (Facebook, Instagram)
+        subject: 'the subject', // fi. for email
+        files: ['', ''], // an array of filenames either locally or remotely
+        url: 'https://www.website.com/foo/#bar?a=b',
+        chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title
+      }
+
+      var onSuccess = function(result) {
+        console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+        console.log("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+      }
+
+      var onError = function(msg) {
+        console.log("Sharing failed with message: " + msg);
+      }
+
+      window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+      $scope.share = 'true';
+
     }
 
     function addToCalendar(){
@@ -205,7 +224,7 @@ angular.module('starter.controllers', ['ui.router'])
       }, function (err) {
         // error
       });
-      $scope.calendar = 'added';
+      $scope.calendar = 'true';
     }
 
     console.log("inside events details controller");
