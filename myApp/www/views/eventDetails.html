@@ -21,17 +21,22 @@
     </div>
 
   </div>
+
   <div id="map" data-tap-disabled="true"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <button class="btn btn-primary btn-block" ng-click="eventDetails.OtherShare()">Share</button>
-        </div>
-        <div class="col-xs-6">
-          <button class="btn btn-danger btn-block">Add to Calendar</button>
-        </div>
-      </div>
+
+  <div class="row">
+    <div class="col col-50">
+      <button class="button button-block button-positive" ng-click="eventDetails.OtherShare()">
+        Share
+      </button>
     </div>
+    <div class="col col-50">
+      <button class="button button-block button-assertive" ng-click="eventDetails.addToCalendar()">
+        Add to Calendar
+      </button>
+    </div>
+  </div>
+
 </ion-content>
 
 <div class="bar bar-footer bar-assertive">
