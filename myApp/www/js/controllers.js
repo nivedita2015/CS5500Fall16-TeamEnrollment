@@ -97,7 +97,7 @@ angular.module('starter.controllers', ['ui.router'])
       $state.go('preferences.settings');
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing) {
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar) {
 
     var eventDetails=this;
 
@@ -129,6 +129,10 @@ angular.module('starter.controllers', ['ui.router'])
     ];
     eventDetails.init=init;
     eventDetails.OtherShare = OtherShare;
+<<<<<<< HEAD
+=======
+    eventDetails.addToCalendar = addToCalendar;
+>>>>>>> d31b728e59e48eefaa97edf544f1071ba3501b92
 
     var id=$stateParams.id;
     console.log("after id"+id);
@@ -167,6 +171,7 @@ angular.module('starter.controllers', ['ui.router'])
         eventDetails.mapLoaded = false;
       });}
     init();
+<<<<<<< HEAD
     // function share(){
     //
     //   $cordovaSocialSharing
@@ -227,6 +232,64 @@ angular.module('starter.controllers', ['ui.router'])
       $scope.calendar = 'true';
     }
 
+=======
+
+    function OtherShare(){
+
+      console.log("inside other share");
+
+      // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+
+      $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      // $scope.share = 'true';
+
+
+      // this is the complete list of currently supported params you can pass to the plugin (all optional)
+      // var options = {
+      //   message: 'Try NU Events', // not supported on some apps (Facebook, Instagram)
+      //   subject: 'the subject', // fi. for email
+      //   files: ['', ''], // an array of filenames either locally or remotely
+      //   url: 'https://www.website.com/foo/#bar?a=b',
+      //   chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title
+      // }
+      //
+      // var onSuccess = function(result) {
+      //   console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
+      //   console.log("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
+      // }
+      //
+      // var onError = function(msg) {
+      //   console.log("Sharing failed with message: " + msg);
+      // }
+      //
+      // window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+      $scope.share = 'true';
+
+    }
+
+    function addToCalendar() {
+      alert('inside addtocalendar');
+      console.log("inside addtocalendar");
+
+
+      $ionicPlatform.ready(function() {
+        $cordovaCalendar.createEventInteractively({
+          title: 'Test',
+          location: 'Test',
+          notes: 'Test',
+          startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
+          endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
+        }).then(function (result) {
+          alert("successfully added");
+        }, function (err) {
+          alert("unsuccessful addition");
+        });
+      });
+
+        $scope.calendar = 'true';
+
+    }
+>>>>>>> d31b728e59e48eefaa97edf544f1071ba3501b92
     console.log("inside events details controller");
 })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
