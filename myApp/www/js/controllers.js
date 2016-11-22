@@ -129,10 +129,7 @@ angular.module('starter.controllers', ['ui.router'])
     ];
     eventDetails.init=init;
     eventDetails.OtherShare = OtherShare;
-<<<<<<< HEAD
-=======
     eventDetails.addToCalendar = addToCalendar;
->>>>>>> d31b728e59e48eefaa97edf544f1071ba3501b92
 
     var id=$stateParams.id;
     console.log("after id"+id);
@@ -171,7 +168,7 @@ angular.module('starter.controllers', ['ui.router'])
         eventDetails.mapLoaded = false;
       });}
     init();
-<<<<<<< HEAD
+
     // function share(){
     //
     //   $cordovaSocialSharing
@@ -232,8 +229,6 @@ angular.module('starter.controllers', ['ui.router'])
       $scope.calendar = 'true';
     }
 
-=======
-
     function OtherShare(){
 
       console.log("inside other share");
@@ -289,7 +284,7 @@ angular.module('starter.controllers', ['ui.router'])
         $scope.calendar = 'true';
 
     }
->>>>>>> d31b728e59e48eefaa97edf544f1071ba3501b92
+
     console.log("inside events details controller");
 })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
