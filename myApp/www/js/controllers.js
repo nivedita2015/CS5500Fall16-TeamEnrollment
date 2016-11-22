@@ -97,7 +97,7 @@ angular.module('starter.controllers', ['ui.router'])
       $state.go('preferences.settings');
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing) {
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar) {
 
     var eventDetails=this;
 
@@ -173,9 +173,9 @@ angular.module('starter.controllers', ['ui.router'])
 
       console.log("inside other share");
 
-      window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
 
-      // $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
       // $scope.share = 'true';
 
 
@@ -202,22 +202,28 @@ angular.module('starter.controllers', ['ui.router'])
 
     }
 
-    function addToCalendar(){
+    function addToCalendar() {
+      alert('inside addtocalendar');
       console.log("inside addtocalendar");
-      $cordovaCalendar.createEventInteractively({
-        title: 'Test',
-        location: 'Test',
-        notes: 'Test',
-        startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
-        endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
-      }).then(function (result) {
-        // success
-      }, function (err) {
-        // error
-      });
-      $scope.calendar = 'true';
-    }
 
+
+      $ionicPlatform.ready(function() {
+        $cordovaCalendar.createEventInteractively({
+          title: 'Test',
+          location: 'Test',
+          notes: 'Test',
+          startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
+          endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
+        }).then(function (result) {
+          alert("successfully added");
+        }, function (err) {
+          alert("unsuccessful addition");
+        });
+      });
+
+        $scope.calendar = 'true';
+
+    }
     console.log("inside events details controller");
 })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
