@@ -397,5 +397,12 @@ angular.module('starter.controllers', ['ui.router'])
     }
 
   })
+
+
+  .controller('allEventsCtrl', function($state,$rootScope,$scope){
+
+
+
+  })
 ;
 
