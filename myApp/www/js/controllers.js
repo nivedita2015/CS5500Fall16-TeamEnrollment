@@ -73,6 +73,7 @@ angular.module('starter.controllers', ['ui.router'])
         items: event.events,
         update: function (filteredItems) {
           event.events = filteredItems;
+          scope.array1=filteredItems;
         },
         filterProperties: 'name'
       });

@@ -49,6 +49,25 @@ describe('EventController',function(){
     });
   });
 
+  describe('Event Controller', function(){
+    it('seach event true case', function(){
+      var $scope = {};
+      var rootScope = {};
+      var controller = $controller('EventCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      controller.showFilterBar('NU');
+      var event1=[
+        {
+          pic:"/img/NUlogo.png",
+          name:"NU Homecoming",
+          group:"Association for Student Welfare",
+          id:"123",
+          dt:"11/09/2016"
+
+        }
+      ]
+      expect($scope.array1).toEqual(event1);
+    });
+  });
 
 
 });
