@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2016-11-18T16:51:57" id="0" hostname="Niveditas-MacBook-Pro.local" tests="22" errors="0" failures="12" time="0.109">
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2016-11-24T05:45:23" id="0" hostname="Niveditas-MacBook-Pro.local" tests="17" errors="0" failures="5" time="0.103">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
   </properties>
-  <testcase name="EventDetailsController Event Details Controller check behaviour on add to calendar button click " time="0.016" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
+  <testcase name="EventDetailsController Event Details Controller check behaviour on add to calendar button click " time="0.02" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
     <failure type="">Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&amp;p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)
@@ -18,10 +18,10 @@
 </failure>
     <failure type="">www/tests/event_details_test.js:9:1139
 </failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventDetailsController Event Details Controller check behaviour on share to facebook button click " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
+  <testcase name="EventDetailsController Event Details Controller check behaviour on share to facebook button click " time="0.006" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
     <failure type="">Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&amp;p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)
@@ -34,36 +34,41 @@
 </failure>
     <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
 </failure>
-    <failure type="">www/tests/event_details_test.js:9:1887
+    <failure type="">www/tests/event_details_test.js:9:1883
 </failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventDetailsController Event Details Controller check behaviour on no button click " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
-    <failure type="">Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined
+  <testcase name="EventController Event Controller checks if navigated to event details page " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
+    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider &lt;- $ionicFilterBar &lt;- EventCtrl
 </failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&amp;p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)
+    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in node_modules/angular/angular.js (line 4511)
 </failure>
-    <failure type="">assertArg@node_modules/angular/angular.js:1892:91
+    <failure type="">node_modules/angular/angular.js:4511:86
 </failure>
-    <failure type="">assertArgFn@node_modules/angular/angular.js:1902:12
+    <failure type="">getService@node_modules/angular/angular.js:4664:46
 </failure>
-    <failure type="">$controller@node_modules/angular/angular.js:10330:20
+    <failure type="">node_modules/angular/angular.js:4516:48
+</failure>
+    <failure type="">getService@node_modules/angular/angular.js:4664:46
+</failure>
+    <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
+</failure>
+    <failure type="">instantiate@node_modules/angular/angular.js:4730:31
+</failure>
+    <failure type="">$controller@node_modules/angular/angular.js:10369:39
 </failure>
     <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
 </failure>
-    <failure type="">www/tests/event_details_test.js:9:2746
+    <failure type="">www/tests/event_test.js:9:1191
 </failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventController Event Controller checks if navigated to event details page " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController"/>
-  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController"/>
-  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController"/>
-  <testcase name="FavCtrl Favorites Controller checks event details page loaded successfully " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
+  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
+    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider &lt;- $ionicFilterBar &lt;- EventCtrl
 </failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup (line 4511)
+    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in node_modules/angular/angular.js (line 4511)
 </failure>
     <failure type="">node_modules/angular/angular.js:4511:86
 </failure>
@@ -75,29 +80,21 @@
 </failure>
     <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
 </failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
+    <failure type="">instantiate@node_modules/angular/angular.js:4730:31
 </failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
+    <failure type="">$controller@node_modules/angular/angular.js:10369:39
 </failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
 </failure>
-    <failure type="">inject@node_modules/angular-mocks/angular-mocks.js:3051:28
+    <failure type="">www/tests/event_test.js:9:1873
 </failure>
-    <failure type="">www/tests/fav_test.js:9:513
-</failure>
-    <failure type="">global code@www/tests/fav_test.js:9:47
-</failure>
-    <failure type="">TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in www/tests/fav_test.js (line 9)
-</failure>
-    <failure type="">www/tests/fav_test.js:9:1407
-</failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="FavCtrl Favorites Controller checks event details page loaded successfully " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
+  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
+    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider &lt;- $ionicFilterBar &lt;- EventCtrl
 </failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in node_modules/angular/angular.js (line 4511)
+    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in node_modules/angular/angular.js (line 4511)
 </failure>
     <failure type="">node_modules/angular/angular.js:4511:86
 </failure>
@@ -109,182 +106,38 @@
 </failure>
     <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
 </failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
+    <failure type="">instantiate@node_modules/angular/angular.js:4730:31
 </failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
+    <failure type="">$controller@node_modules/angular/angular.js:10369:39
 </failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
 </failure>
-    <failure type="">TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in www/tests/fav_test.js (line 9)
+    <failure type="">www/tests/event_test.js:9:2545
 </failure>
-    <failure type="">www/tests/fav_test.js:9:2062
-</failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
+    <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="FavCtrl Favorites Controller checks settings page loaded successfully " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
-</failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in node_modules/angular/angular.js (line 4511)
-</failure>
-    <failure type="">node_modules/angular/angular.js:4511:86
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">node_modules/angular/angular.js:4516:48
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
-</failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
-</failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
-</failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
-</failure>
-    <failure type="">TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in www/tests/fav_test.js (line 9)
-</failure>
-    <failure type="">www/tests/fav_test.js:9:2798
-</failure>
-    <failure type="">loaded@http://localhost:9876/context.js:151:17
-</failure>
-  </testcase>
-  <testcase name="FavCtrl Favorites Controller checks all events page loaded successfully " time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
-</failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in node_modules/angular/angular.js (line 4511)
-</failure>
-    <failure type="">node_modules/angular/angular.js:4511:86
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">node_modules/angular/angular.js:4516:48
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
-</failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
-</failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
-</failure>
-    <failure type="">TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in www/tests/fav_test.js (line 9)
-</failure>
-    <failure type="">www/tests/fav_test.js:9:3457
-</failure>
-  </testcase>
-  <testcase name="FavCtrl FavCtrl should call confirmClicked function if ok is clicked in the confirm popup" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
-</failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in node_modules/angular/angular.js (line 4511)
-</failure>
-    <failure type="">node_modules/angular/angular.js:4511:86
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">node_modules/angular/angular.js:4516:48
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
-</failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
-</failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
-</failure>
-    <failure type="">TypeError: undefined is not an object (evaluating '$q.defer') in www/tests/fav_test.js (line 9)
-</failure>
-    <failure type="">www/tests/fav_test.js:9:4014
-</failure>
-  </testcase>
-  <testcase name="FavCtrl FavCtrl should not call confirmClicked if cancel is clicked in the confirm popup" time="0.01" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl">
-    <failure type="">Error: [$injector:unpr] Unknown provider: $ionicPopupProvider &lt;- $ionicPopup
-</failure>
-    <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in node_modules/angular/angular.js (line 4511)
-</failure>
-    <failure type="">node_modules/angular/angular.js:4511:86
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">node_modules/angular/angular.js:4516:48
-</failure>
-    <failure type="">getService@node_modules/angular/angular.js:4664:46
-</failure>
-    <failure type="">injectionArgs@node_modules/angular/angular.js:4688:68
-</failure>
-    <failure type="">invoke@node_modules/angular/angular.js:4710:31
-</failure>
-    <failure type="">workFn@node_modules/angular-mocks/angular-mocks.js:3085:26
-</failure>
-    <failure type="">TypeError: undefined is not an object (evaluating '$q.defer') in www/tests/fav_test.js (line 9)
-</failure>
-    <failure type="">www/tests/fav_test.js:9:8389
-</failure>
-  </testcase>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="FavCtrl Favorites Controller1 checks event is spliced out of favorites successfully " time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="FavCtrl Favorites Controller2 checks event is spliced out of favorites successfully " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.008" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.006" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to favorites Page" time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl">
-    <failure type="">ReferenceError: Can't find variable: notificationChange in www/js/controllers.js (line 9)
-</failure>
-    <failure type="">www/js/controllers.js:9:7414
-</failure>
-    <failure type="">[native code]
-</failure>
-    <failure type="">instantiate@node_modules/angular/angular.js:4733:61
-</failure>
-    <failure type="">$controller@node_modules/angular/angular.js:10369:39
-</failure>
-    <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
-</failure>
-    <failure type="">www/tests/settings_test.js:9:1184
-</failure>
-  </testcase>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to AllEvents Page" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl">
-    <failure type="">ReferenceError: Can't find variable: notificationChange in www/js/controllers.js (line 9)
-</failure>
-    <failure type="">www/js/controllers.js:9:7414
-</failure>
-    <failure type="">[native code]
-</failure>
-    <failure type="">instantiate@node_modules/angular/angular.js:4733:61
-</failure>
-    <failure type="">$controller@node_modules/angular/angular.js:10369:39
-</failure>
-    <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
-</failure>
-    <failure type="">www/tests/settings_test.js:9:3887
-</failure>
-  </testcase>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to Event List Page" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl">
-    <failure type="">ReferenceError: Can't find variable: notificationChange in www/js/controllers.js (line 9)
-</failure>
-    <failure type="">www/js/controllers.js:9:7414
-</failure>
-    <failure type="">[native code]
-</failure>
-    <failure type="">instantiate@node_modules/angular/angular.js:4733:61
-</failure>
-    <failure type="">$controller@node_modules/angular/angular.js:10369:39
-</failure>
-    <failure type="">node_modules/angular-mocks/angular-mocks.js:2221:21
-</failure>
-    <failure type="">www/tests/settings_test.js:9:6580
-</failure>
-  </testcase>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to favorites Page" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to AllEvents Page" time="0.011" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to Event List Page" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
   <system-out>
-    <![CDATA[PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside events controller'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside eventClick'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: eventDetails'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside events controller'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside eventClick'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside events controller'
-,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside eventClick'
+    <![CDATA[PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'favorite controller'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside alterFavourite'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'true yes'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: preferences.favorites'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'favorite controller'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside alterFavourite'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'true yes'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: preferences.favorites'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside login controller'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside signin function'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: event'
@@ -303,8 +156,11 @@
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside login controller'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside signin function'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside settings controller'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: preferences.favorites'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside settings controller'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: preferences.events'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside settings controller'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'Mock transition to: event'
 
 ]]>
   </system-out>

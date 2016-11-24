@@ -311,7 +311,14 @@ angular.module('starter.controllers', ['ui.router'])
         id:"234",
         true:"no",
         change:"The Event will be added to your preference"
-      }
+      },
+      {
+        pic:"/img/ionic.png",
+        group:"Northeastern Sports Association",
+        id:"345",
+        true:"yes",
+        change:"The Event will be removed from your preference"
+      },
     ]
     event.alterFavourite=alterFavourite;
 
@@ -326,6 +333,8 @@ angular.module('starter.controllers', ['ui.router'])
             event.makeChange="no";
             event.events[i].true="no";
             event.events[i].change="The Event will be added from your preference";
+            event.events.splice(i,1);
+            $scope.msg="false";
           }else{
             event.makeChange="yes";
             console.log("true no")
