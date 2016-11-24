@@ -20,7 +20,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 20,
+            "time": 24,
             "executedExpectationsCount": 1
         },
         {
@@ -42,7 +42,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 6,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -59,7 +59,7 @@
                 "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?747d3e27697d9392b64d4f7eccc3378ad77f9bb2:9:1191",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1191",
                 "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
@@ -68,7 +68,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 4,
+            "time": 6,
             "executedExpectationsCount": 1
         },
         {
@@ -85,7 +85,7 @@
                 "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?747d3e27697d9392b64d4f7eccc3378ad77f9bb2:9:1873",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1873",
                 "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
@@ -94,7 +94,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -111,7 +111,7 @@
                 "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?747d3e27697d9392b64d4f7eccc3378ad77f9bb2:9:2545",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:2545",
                 "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
@@ -133,7 +133,7 @@
                 "FavCtrl",
                 "Favorites Controller1"
             ],
-            "time": 7,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -146,33 +146,33 @@
                 "FavCtrl",
                 "Favorites Controller2"
             ],
-            "time": 5,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks username and password validation ",
+            "description": "checks event is spliced out of favorites successfully ",
             "id": "spec7",
             "log": [],
             "skipped": false,
             "success": true,
             "suite": [
-                "LoginCtrl",
-                "Login Controller"
+                "FavCtrl",
+                "Favorites Controller3"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks username and password validation ",
+            "description": "checks event is spliced out of favorites successfully ",
             "id": "spec8",
             "log": [],
             "skipped": false,
             "success": true,
             "suite": [
-                "LoginCtrl",
-                "Login Controller"
+                "FavCtrl",
+                "Favorites Controller4"
             ],
-            "time": 5,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -211,7 +211,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 8,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -224,7 +224,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -237,37 +237,37 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 6,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks redirection to favorites Page",
+            "description": "checks username and password validation ",
             "id": "spec14",
             "log": [],
             "skipped": false,
             "success": true,
             "suite": [
-                "SettingsCtrl",
-                "SettingsCtrl"
+                "LoginCtrl",
+                "Login Controller"
             ],
             "time": 4,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks redirection to AllEvents Page",
+            "description": "checks username and password validation ",
             "id": "spec15",
             "log": [],
             "skipped": false,
             "success": true,
             "suite": [
-                "SettingsCtrl",
-                "SettingsCtrl"
+                "LoginCtrl",
+                "Login Controller"
             ],
-            "time": 11,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks redirection to Event List Page",
+            "description": "checks redirection to favorites Page",
             "id": "spec16",
             "log": [],
             "skipped": false,
@@ -276,7 +276,33 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 4,
+            "time": 3,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks redirection to AllEvents Page",
+            "id": "spec17",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "SettingsCtrl",
+                "SettingsCtrl"
+            ],
+            "time": 5,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks redirection to Event List Page",
+            "id": "spec18",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "SettingsCtrl",
+                "SettingsCtrl"
+            ],
+            "time": 7,
             "executedExpectationsCount": 1
         }
     ]

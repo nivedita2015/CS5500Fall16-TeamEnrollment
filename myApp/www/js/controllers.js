@@ -73,10 +73,11 @@ angular.module('starter.controllers', ['ui.router'])
         items: event.events,
         update: function (filteredItems) {
           event.events = filteredItems;
-          scope.array1=filteredItems;
+          $scope.array1=filteredItems;
         },
         filterProperties: 'name'
       });
+      console.log($ionicFilterBar);
     };
 
     function eventClick(id) {
@@ -335,15 +336,16 @@ angular.module('starter.controllers', ['ui.router'])
             event.events[i].true="no";
             event.events[i].change="The Event will be added from your preference";
             event.events.splice(i,1);
-            $scope.msg="false";
+            $scope.msg1="true";
           }else{
             event.makeChange="yes";
             console.log("true no")
             event.events[i].true="yes";
             event.events[i].change="The Event will be removed to your preference";
+            $scope.msg1="false";
           }
 
-          $state.go('preferences.favorites');
+          // $state.go('preferences.favorites');
         }
       }
       if(result==="Failure"){
