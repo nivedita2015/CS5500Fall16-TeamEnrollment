@@ -205,7 +205,7 @@ angular.module('starter.controllers', ['ui.router'])
       }, function (err) {
         // error
       });
-      $scope.calendar = 'true';
+      $scope.addCal = true;
     }
   })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
