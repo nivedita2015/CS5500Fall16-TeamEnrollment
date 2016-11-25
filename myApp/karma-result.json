@@ -2,17 +2,69 @@
     "errors": [],
     "results": [
         {
-            "description": "check behaviour on add to calendar button click ",
+            "description": "checks event is spliced out of favorites successfully ",
             "id": "spec0",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "allEventsCtrl",
+                "allevents Controller1"
+            ],
+            "time": 23,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec1",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "allEventsCtrl",
+                "allevents Controller2"
+            ],
+            "time": 6,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec2",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "allEventsCtrl",
+                "allevents Controller3"
+            ],
+            "time": 5,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec3",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "allEventsCtrl",
+                "allevents Controller4"
+            ],
+            "time": 6,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "check behaviour on add to calendar button click ",
+            "id": "spec4",
             "log": [
                 "Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined",
-                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
-                "assertArg@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
-                "assertArgFn@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/event_details_test.js?1c10834475f3427898df6e93744fa1cc691c1dbc:9:1139",
-                "loaded@http://localhost:9876/context.js:151:17"
+                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
+                "assertArg@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
+                "assertArgFn@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
+                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
+                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9877/base/www/tests/event_details_test.js?82ab5031b5ee4923dd6a63409a25f167936f9a89:9:1139",
+                "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -20,43 +72,21 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 16,
+            "time": 7,
             "executedExpectationsCount": 1
         },
         {
             "description": "check behaviour on share to facebook button click ",
-            "id": "spec1",
+            "id": "spec5",
             "log": [
                 "Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined",
-                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
-                "assertArg@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
-                "assertArgFn@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/event_details_test.js?1c10834475f3427898df6e93744fa1cc691c1dbc:9:1887",
-                "loaded@http://localhost:9876/context.js:151:17"
-            ],
-            "skipped": false,
-            "success": false,
-            "suite": [
-                "EventDetailsController",
-                "Event Details Controller"
-            ],
-            "time": 4,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "check behaviour on no button click ",
-            "id": "spec2",
-            "log": [
-                "Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined",
-                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
-                "assertArg@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
-                "assertArgFn@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/event_details_test.js?1c10834475f3427898df6e93744fa1cc691c1dbc:9:2746",
-                "loaded@http://localhost:9876/context.js:151:17"
+                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
+                "assertArg@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
+                "assertArgFn@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
+                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
+                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9877/base/www/tests/event_details_test.js?82ab5031b5ee4923dd6a63409a25f167936f9a89:9:1883",
+                "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -69,211 +99,130 @@
         },
         {
             "description": "checks if navigated to event details page ",
-            "id": "spec3",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 5,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks no navigation to event details page since event details id is wrong",
-            "id": "spec4",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 3,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks no navigation to event details page since event details id is wrong",
-            "id": "spec5",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "EventController",
-                "Event Controller"
-            ],
-            "time": 3,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks event details page loaded successfully ",
             "id": "spec6",
             "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "loaded@http://localhost:9876/context.js:151:17",
-                "inject@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3051:28",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:513",
-                "global code@http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:47",
-                "TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:1407",
-                "loaded@http://localhost:9876/context.js:151:17"
+                "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1191",
+                "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
             "suite": [
-                "FavCtrl",
-                "Favorites Controller"
+                "EventController",
+                "Event Controller"
             ],
-            "time": 3,
-            "executedExpectationsCount": 2
+            "time": 4,
+            "executedExpectationsCount": 1
         },
         {
-            "description": "checks event details page loaded successfully ",
+            "description": "checks no navigation to event details page since event details id is wrong",
             "id": "spec7",
             "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "loaded@http://localhost:9876/context.js:151:17",
-                "TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:2062",
-                "loaded@http://localhost:9876/context.js:151:17"
+                "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1873",
+                "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
             "suite": [
-                "FavCtrl",
-                "Favorites Controller"
+                "EventController",
+                "Event Controller"
             ],
             "time": 2,
-            "executedExpectationsCount": 2
+            "executedExpectationsCount": 1
         },
         {
-            "description": "checks settings page loaded successfully ",
+            "description": "checks no navigation to event details page since event details id is wrong",
             "id": "spec8",
             "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "loaded@http://localhost:9876/context.js:151:17",
-                "TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:2798",
-                "loaded@http://localhost:9876/context.js:151:17"
+                "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:2545",
+                "loaded@http://localhost:9877/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
             "suite": [
-                "FavCtrl",
-                "Favorites Controller"
-            ],
-            "time": 2,
-            "executedExpectationsCount": 2
-        },
-        {
-            "description": "checks all events page loaded successfully ",
-            "id": "spec9",
-            "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "TypeError: undefined is not a constructor (evaluating '$controller('FavCtrl',{$state:state,$rootScope:rootScope,$scope:scope})') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:3457"
-            ],
-            "skipped": false,
-            "success": false,
-            "suite": [
-                "FavCtrl",
-                "Favorites Controller"
-            ],
-            "time": 7,
-            "executedExpectationsCount": 2
-        },
-        {
-            "description": "should call confirmClicked function if ok is clicked in the confirm popup",
-            "id": "spec10",
-            "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "TypeError: undefined is not an object (evaluating '$q.defer') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:4014"
-            ],
-            "skipped": false,
-            "success": false,
-            "suite": [
-                "FavCtrl",
-                "FavCtrl"
+                "EventController",
+                "Event Controller"
             ],
             "time": 3,
-            "executedExpectationsCount": 2
+            "executedExpectationsCount": 1
         },
         {
-            "description": "should not call confirmClicked if cancel is clicked in the confirm popup",
-            "id": "spec11",
-            "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPopupProvider <- $ionicPopup",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPopupProvider%20%3C-%20%24ionicPopup in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
-                "TypeError: undefined is not an object (evaluating '$q.defer') in http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da (line 9)",
-                "http://localhost:9876/base/www/tests/fav_test.js?860ec3aecc403ccf327a6841edf277e2e207d4da:9:8389"
-            ],
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec9",
+            "log": [],
             "skipped": false,
-            "success": false,
+            "success": true,
             "suite": [
                 "FavCtrl",
-                "FavCtrl"
+                "Favorites Controller1"
             ],
             "time": 10,
-            "executedExpectationsCount": 2
+            "executedExpectationsCount": 1
         },
         {
-            "description": "checks username and password validation ",
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec10",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "FavCtrl",
+                "Favorites Controller2"
+            ],
+            "time": 8,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks event is spliced out of favorites successfully ",
+            "id": "spec11",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "FavCtrl",
+                "Favorites Controller3"
+            ],
+            "time": 4,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks event is spliced out of favorites successfully ",
             "id": "spec12",
             "log": [],
             "skipped": false,
             "success": true,
             "suite": [
-                "LoginCtrl",
-                "Login Controller"
+                "FavCtrl",
+                "Favorites Controller4"
             ],
             "time": 4,
             "executedExpectationsCount": 1
@@ -288,7 +237,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 5,
+            "time": 7,
             "executedExpectationsCount": 1
         },
         {
@@ -301,7 +250,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 5,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -314,7 +263,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -327,7 +276,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 4,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -340,7 +289,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -353,44 +302,41 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 6,
+            "time": 10,
+            "executedExpectationsCount": 1
+        },
+        {
+            "description": "checks username and password validation ",
+            "id": "spec19",
+            "log": [],
+            "skipped": false,
+            "success": true,
+            "suite": [
+                "LoginCtrl",
+                "Login Controller"
+            ],
+            "time": 25,
             "executedExpectationsCount": 1
         },
         {
             "description": "checks redirection to favorites Page",
-            "id": "spec19",
-            "log": [
-                "ReferenceError: Can't find variable: notificationChange in http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c (line 9)",
-                "http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c:9:7414",
-                "[native code]",
-                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4733:61",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:1184"
-            ],
+            "id": "spec20",
+            "log": [],
             "skipped": false,
-            "success": false,
+            "success": true,
             "suite": [
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 7,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
             "description": "checks redirection to AllEvents Page",
-            "id": "spec20",
-            "log": [
-                "ReferenceError: Can't find variable: notificationChange in http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c (line 9)",
-                "http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c:9:7414",
-                "[native code]",
-                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4733:61",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:3887"
-            ],
+            "id": "spec21",
+            "log": [],
             "skipped": false,
-            "success": false,
+            "success": true,
             "suite": [
                 "SettingsCtrl",
                 "SettingsCtrl"
@@ -400,23 +346,15 @@
         },
         {
             "description": "checks redirection to Event List Page",
-            "id": "spec21",
-            "log": [
-                "ReferenceError: Can't find variable: notificationChange in http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c (line 9)",
-                "http://localhost:9876/base/www/js/controllers.js?79caa16b15c894bdaf71ff4114db614e1623b30c:9:7414",
-                "[native code]",
-                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4733:61",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:6580"
-            ],
+            "id": "spec22",
+            "log": [],
             "skipped": false,
-            "success": false,
+            "success": true,
             "suite": [
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 5,
+            "time": 3,
             "executedExpectationsCount": 1
         }
     ]

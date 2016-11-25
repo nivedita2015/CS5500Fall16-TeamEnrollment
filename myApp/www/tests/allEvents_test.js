@@ -1,5 +1,5 @@
 
-describe('FavCtrl', function() {
+describe('allEventsCtrl', function() {
   beforeEach(module('starter.controllers'));
   beforeEach(module('stateMock'));
 
@@ -15,12 +15,12 @@ describe('FavCtrl', function() {
   }));
 
 
-  describe('Favorites Controller1', function() {
+  describe('allevents Controller1', function() {
     it('checks event is spliced out of favorites successfully ', function() {
       var $scope = {};
       var $state = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
+      var controller = $controller('allEventsCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
       controller.alterFavourite('123');
       // expect(state.current.name).toBe('preferences.favorites');
       expect($scope.msg1).toEqual('true');
@@ -28,36 +28,36 @@ describe('FavCtrl', function() {
   });
 
 
-  describe('Favorites Controller2', function() {
+  describe('allevents Controller2', function() {
     it('checks event is spliced out of favorites successfully ', function() {
       var $scope = {};
       var $state = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
+      var controller = $controller('allEventsCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
       controller.alterFavourite('345');
       // expect(state.current.name).toBe('preferences.favorites');
       expect($scope.msg1).toEqual('true');
     });
   });
 
-  describe('Favorites Controller3', function() {
+  describe('allevents Controller3', function() {
     it('checks event is spliced out of favorites successfully ', function() {
       var $scope = {};
       var $state = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
+      var controller = $controller('allEventsCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
       controller.alterFavourite('234');
       // expect(state.current.name).toBe('preferences.favorites');
       expect($scope.msg1).toEqual('false');
     });
   });
 
-  describe('Favorites Controller4', function() {
+  describe('allevents Controller4', function() {
     it('checks event is spliced out of favorites successfully ', function() {
       var $scope = {};
       var $state = {};
       var rootScope = {};
-      var controller = $controller('FavCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
+      var controller = $controller('allEventsCtrl', {$state:$state,rootScope:rootScope,$scope: $scope});
       controller.alterFavourite('789');
       // expect(state.current.name).toBe('preferences.favorites');
       expect($scope.msg).toEqual('Failure');

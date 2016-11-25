@@ -11,13 +11,13 @@
 
 <div class="list top-space">
     <span ng-repeat="e in event.events">
-      <span class="item item-thumbnail-left item-icon-right">
+      <span ng-if="e.true==='yes'" class="item item-thumbnail-left item-icon-right">
         <img src={{e.pic}}>
 
-        <a ng-if="e.true==='no'"
-           class=" icon glyphicon glyphicon-star-empty pull-left"
-           ng-click="event.alterFavourite(e.id)"
-           data-toggle="tooltip" title={{e.change}}></a>
+        <!--<a ng-if="e.true==='no'"-->
+           <!--class=" icon glyphicon glyphicon-star-empty pull-left"-->
+           <!--ng-click="event.alterFavourite(e.id)"-->
+           <!--data-toggle="tooltip" title={{e.change}}></a>-->
 
         <a ng-if="e.true==='yes' "
            class=" icon glyphicon glyphicon-star pull-left"

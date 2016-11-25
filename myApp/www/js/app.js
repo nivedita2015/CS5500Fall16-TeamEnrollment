@@ -106,12 +106,14 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova','ui.router
         }
       }
     })
+
+
     .state('preferences.events', {
       url: '/events',
       views: {
         'events': {
           templateUrl: 'views/allEvents.html',
-          // controller: 'BuddiesCtrl'
+          controller: 'allEventsCtrl as event'
         }
       }
     })
