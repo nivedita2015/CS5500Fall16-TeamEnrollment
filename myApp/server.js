@@ -29,10 +29,10 @@ var userSchema = mongoose.Schema({
 var Users = module.exports = mongoose.model('Users', userSchema);
 
 
-// app.get('/',function(req,res){
-//   // alert('hurray')
-//   res.send('Welcome to the Enrollment project!');
-// })
+app.get('/',function(req,res){
+  // alert('hurray')
+  res.send('Welcome to the Enrollment project!');
+})
 
 // APIs for user login ----------------------------------------------
 app.get('/users', function(req,res){
@@ -76,6 +76,6 @@ app.post('/users', function(req,res){
 // End of APIs for user login ----------------------------------------------
 
 // listen (start app with node server.js) ======================================
-app.listen(8080);
-console.log('App listening on port 8080');
+app.listen(8100);
+console.log('App listening on port 8100');
 
