@@ -4,15 +4,25 @@
 describe('EventDetailsController',function(){
   beforeEach(module('starter.controllers'));
   beforeEach(module('stateMock'));
+  beforeEach(module("ngCordova"));
+  beforeEach(module("ionic"));
 
   var $controller;
   var state;
+  var ionicPlatform;
+  var cordovaGeolocation;
+  var cordovaSocialSharing;
+  var cordovaCalendar;
 
-  beforeEach(inject(function(_$controller_,$state){
+  beforeEach(inject(function(_$controller_,$state,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform){
     // The injector unwraps the underscores (_) from around the parameter names when matching
     $controller = _$controller_;
     state = $state;
-    // state.expectTransitionTo('eventDetails');
+    ionicPlatform = $ionicPlatform;
+    cordovaGeolocation = $cordovaGeolocation;
+    cordovaSocialSharing = $cordovaSocialSharing;
+    cordovaCalendar = $cordovaCalendar;
+
   }));
 
   //testing behaviour on add to calendar button click//
@@ -20,12 +30,10 @@ describe('EventDetailsController',function(){
     it('check behaviour on add to calendar button click ', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
-      controller.calendarClick();
-      //checking page is not routed out of event page.
-      expect(state.current.name).toBe('event');
-      //checking addToCalendar variable set to true
-      expect(controller.calendar).toEqual('added');
+      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope, $stateParams: $stateParams,$cordovaGeolocation: cordovaGeolocation,$cordovaSocialSharing:cordovaSocialSharing,$cordovaCalendar:cordovaCalendar,$ionicPlatform:ionicPlatform });
+      controller.addToCalendar();
+      //checking addCal variable set to true
+      expect(controller.addCal).toEqual(true);
     });
   });
 
@@ -34,12 +42,11 @@ describe('EventDetailsController',function(){
     it('check behaviour on share to facebook button click ', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope });
-      controller.shareClick();
-      //checking page is not routed out of event page.
-      expect(state.current.name).toBe('event');
+      var $stateParams = {};
+      var controller = $controller('eventDetails', {$state:state,rootScope:rootScope,$scope: $scope, $stateParams: $stateParams,$cordovaGeolocation: cordovaGeolocation,$cordovaSocialSharing:cordovaSocialSharing,$cordovaCalendar:cordovaCalendar,$ionicPlatform:ionicPlatform });
+      controller.OtherShare();
       //checking shareOnFb variable set to true.
-      expect(controller.share).toEqual('true');
+      expect(controller.share).toEqual(true);
     });
   });
 });

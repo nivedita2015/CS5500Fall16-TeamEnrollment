@@ -99,11 +99,8 @@ angular.module('starter.controllers', ['ui.router'])
       $state.go('preferences.settings');
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar) {
-
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform) {
     var eventDetails=this;
-
-
     var events=[
       {
         pic:"/img/NUlogo.png",
@@ -134,11 +131,9 @@ angular.module('starter.controllers', ['ui.router'])
     eventDetails.addToCalendar = addToCalendar;
 
     var id=$stateParams.id;
-    console.log("after id"+id);
+    // console.log("after id"+id);
     function init() {
-
       console.log("inside event details init");
-
       for(var i in events){
         if(events[i].id===id){
           console.log("id matched "+id);
@@ -171,49 +166,31 @@ angular.module('starter.controllers', ['ui.router'])
       });}
     init();
 
-    // function share(){
-    //
-    //   $cordovaSocialSharing
-    //     .shareViaFacebook('Hello', null, 'http://test.com')
-    //     .then(function(result) {
-    //       alert('success');
-    //     }, function(err) {
-    //       alert('error');
-    //       // An error occurred. Show a message to the user
-    //     });
-    //
-    //
-    //
-    // }
-
     function OtherShare(){
-      // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+      $ionicPlatform.ready(function(){
+        // alert('inside ionic platform ready');
+        try{
+          if(window.cordova){
+            $cordovaSocialSharing
+              .shareViaFacebook('Hello', null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker')
+              .then(function(result) {
+                // Success!
+                alert('success');
+                $scope.share = true;
+              }, function(err) {
+                // An error occurred. Show a message to the user
+                alert('failure'+err);
+              });
+          }
+          else{
+            alert('not cordova');
+          }
+        }
+        catch(err){
+          alert(err.message);
+        }
 
-      // $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
-      // $scope.share = 'true';
-
-
-      // this is the complete list of currently supported params you can pass to the plugin (all optional)
-      var options = {
-        message: 'Try NU Events', // not supported on some apps (Facebook, Instagram)
-        subject: 'the subject', // fi. for email
-        files: ['', ''], // an array of filenames either locally or remotely
-        url: 'https://www.website.com/foo/#bar?a=b',
-        chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title
-      }
-
-      var onSuccess = function(result) {
-        console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-        console.log("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
-      }
-
-      var onError = function(msg) {
-        console.log("Sharing failed with message: " + msg);
-      }
-
-      window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
-      $scope.share = 'true';
-
+      });
     }
 
     function addToCalendar(){
@@ -228,67 +205,9 @@ angular.module('starter.controllers', ['ui.router'])
       }, function (err) {
         // error
       });
-      $scope.calendar = 'true';
+      $scope.addCal = true;
     }
-
-    function OtherShare(){
-
-      console.log("inside other share");
-
-      // window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
-
-      $cordovaSocialSharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
-      // $scope.share = 'true';
-
-
-      // this is the complete list of currently supported params you can pass to the plugin (all optional)
-      // var options = {
-      //   message: 'Try NU Events', // not supported on some apps (Facebook, Instagram)
-      //   subject: 'the subject', // fi. for email
-      //   files: ['', ''], // an array of filenames either locally or remotely
-      //   url: 'https://www.website.com/foo/#bar?a=b',
-      //   chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title
-      // }
-      //
-      // var onSuccess = function(result) {
-      //   console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true
-      //   console.log("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false)
-      // }
-      //
-      // var onError = function(msg) {
-      //   console.log("Sharing failed with message: " + msg);
-      // }
-      //
-      // window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
-      $scope.share = 'true';
-
-    }
-
-    function addToCalendar() {
-      alert('inside addtocalendar');
-      console.log("inside addtocalendar");
-
-
-      $ionicPlatform.ready(function() {
-        $cordovaCalendar.createEventInteractively({
-          title: 'Test',
-          location: 'Test',
-          notes: 'Test',
-          startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
-          endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
-        }).then(function (result) {
-          alert("successfully added");
-        }, function (err) {
-          alert("unsuccessful addition");
-        });
-      });
-
-        $scope.calendar = 'true';
-
-    }
-
-    console.log("inside events details controller");
-})
+  })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
   console.log("inside preferences ctrl");
 
