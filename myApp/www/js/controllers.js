@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ui.router'])
 
-  .controller('LoginCtrl', function($state,$rootScope,$scope) {
+  .controller('LoginCtrl', function($state,$rootScope,$scope,LoginService) {
 
     //adding $scope.title for Jasmine testing purposes//
     $scope.title = 'testing';
@@ -17,26 +17,43 @@ angular.module('starter.controllers', ['ui.router'])
 
 
     function signin(emailId,password) {
-      console.log("inside signin function");
-
-      for(var i in users){
-        // console.log(i);
-        if(users[i].username===emailId&&users[i].password===password){
-          // $state.go('event');
-          var result=true;
-          // $scope.msg="Success";
-
-        }
-      }
-
-      if(result){
+      LoginService.login({username:emailId,password:password}).then(function(msg) {
         $state.go('event');
-      }
-      else{
-        $scope.msg="Failure";
-        login.msg = 'Failure';
-      }
+      }, function(errMsg) {
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login failed!',
+          template: errMsg
+        });
+      });
     }
+
+
+    // function signin(emailId,password) {
+    //   console.log("inside signin function");
+    //   $http.get('localhost:8080/');
+    //
+    //   // for(var i in users){
+    //   //   // console.log(i);
+    //   //   if(users[i].username===emailId&&users[i].password===password){
+    //   //     // $state.go('event');
+    //   //     var result=true;
+    //   //     // $scope.msg="Success";
+    //   //
+    //   //   }
+    //   // }
+    //   //
+    //   // if(result){
+    //   //   $state.go('event');
+    //   // }
+    //   // else{
+    //   //   $scope.msg="Failure";
+    //   //   login.msg = 'Failure';
+    //   // }
+    // }
+
+
+
+
   })
   .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar) {
 
@@ -316,8 +333,6 @@ angular.module('starter.controllers', ['ui.router'])
     }
 
   })
-
-
   .controller('allEventsCtrl', function($state,$rootScope,$scope){
 
 

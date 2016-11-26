@@ -30,7 +30,8 @@ var Users = module.exports = mongoose.model('Users', userSchema);
 
 
 app.get('/',function(req,res){
-    res.send('Welcome to the Enrollment project!');
+  // alert('hurray')
+  res.send('Welcome to the Enrollment project!');
 })
 
 // APIs for user login ----------------------------------------------
@@ -53,7 +54,7 @@ app.get('/users', function(req,res){
             return;
         }
         res.json('False');
-                
+
     });
 });
 
