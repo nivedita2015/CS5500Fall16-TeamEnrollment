@@ -14,9 +14,9 @@ angular.module('starter')
     //   });
     // };
 
-    var login = function(user) {
+    var login = function(emailId,password) {
       return $q(function(resolve, reject) {
-        $http.post(API_ENDPOINT.url + '/users', user).then(function(result) {
+        $http.get(API_ENDPOINT.url + '/users', {username:emailId,password:password}).then(function(result) {
           if (result.data.success) {
             alert('login hurray');
             resolve(result.data.msg);

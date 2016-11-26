@@ -3,21 +3,30 @@ angular.module('starter.controllers', ['ui.router'])
   .controller('LoginCtrl', function($state,$rootScope,$scope,LoginService) {
 
     //adding $scope.title for Jasmine testing purposes//
-    $scope.title = 'testing';
+    // $scope.title = 'testing';
 
-    var users=[
-      {username: "alice@husky.neu.edu",    password: "alice",    },
-      {username: "bob@northeastern.neu.edu",      password: "bob",      },
-      {username: "charley@neu.edu",   password: "charley",   },
-      {username: "jannunzi", password: "jannunzi"}
-    ]
+    // var users=[
+    //   {username: "alice@husky.neu.edu",    password: "alice",    },
+    //   {username: "bob@northeastern.neu.edu",      password: "bob",      },
+    //   {username: "charley@neu.edu",   password: "charley",   },
+    //   {username: "jannunzi", password: "jannunzi"}
+    // ]
     console.log("inside login controller");
     var login = this;
     login.signin = signin;
 
 
+    function init(){
+      getLoginPage();
+    }
+
+    function getLoginPage(){
+
+    }
+
+
     function signin(emailId,password) {
-      LoginService.login({username:emailId,password:password}).then(function(msg) {
+      LoginService.login(emailId,password).then(function(msg) {
         $state.go('event');
       }, function(errMsg) {
         var alertPopup = $ionicPopup.alert({

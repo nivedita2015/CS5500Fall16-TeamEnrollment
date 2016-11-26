@@ -29,10 +29,10 @@ var userSchema = mongoose.Schema({
 var Users = module.exports = mongoose.model('Users', userSchema);
 
 
-app.get('/',function(req,res){
-  // alert('hurray')
-  res.send('Welcome to the Enrollment project!');
-})
+// app.get('/',function(req,res){
+//   // alert('hurray')
+//   res.send('Welcome to the Enrollment project!');
+// })
 
 // APIs for user login ----------------------------------------------
 app.get('/users', function(req,res){

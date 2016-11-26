@@ -4,8 +4,8 @@
   "defaultBrowser": "chrome",
   "proxies": [
     {
-      "path": "/api",
-      "proxyUrl": "http://127.0.0.1:8080/api"
+      "path": "/",
+      "proxyUrl": "http://52.207.253.108:8080"
     }
   ]
 }
