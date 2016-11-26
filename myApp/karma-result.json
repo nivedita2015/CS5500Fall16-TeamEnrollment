@@ -11,7 +11,7 @@
                 "allEventsCtrl",
                 "allevents Controller1"
             ],
-            "time": 23,
+            "time": 29,
             "executedExpectationsCount": 1
         },
         {
@@ -24,7 +24,7 @@
                 "allEventsCtrl",
                 "allevents Controller2"
             ],
-            "time": 6,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -37,7 +37,7 @@
                 "allEventsCtrl",
                 "allevents Controller3"
             ],
-            "time": 5,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -50,7 +50,7 @@
                 "allEventsCtrl",
                 "allevents Controller4"
             ],
-            "time": 6,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -72,7 +72,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 7,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -94,7 +94,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -120,7 +120,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -146,7 +146,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -185,7 +185,7 @@
                 "FavCtrl",
                 "Favorites Controller1"
             ],
-            "time": 10,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -198,7 +198,7 @@
                 "FavCtrl",
                 "Favorites Controller2"
             ],
-            "time": 8,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -211,7 +211,7 @@
                 "FavCtrl",
                 "Favorites Controller3"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -224,7 +224,7 @@
                 "FavCtrl",
                 "Favorites Controller4"
             ],
-            "time": 4,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -237,7 +237,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 7,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -250,7 +250,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -263,7 +263,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -276,7 +276,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -289,7 +289,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -302,7 +302,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 10,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -315,7 +315,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 25,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -328,7 +328,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 3,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -341,7 +341,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -354,7 +354,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         }
     ]
