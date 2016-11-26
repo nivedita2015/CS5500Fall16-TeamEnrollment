@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2016-11-24T07:36:17" id="0" hostname="Niveditas-MacBook-Pro.local" tests="23" errors="0" failures="5" time="0.148">
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2016-11-26T20:31:47" id="0" hostname="Niveditas-MacBook-Pro.local" tests="23" errors="0" failures="5" time="0.107">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
   </properties>
-  <testcase name="allEventsCtrl allevents Controller1 checks event is spliced out of favorites successfully " time="0.023" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
-  <testcase name="allEventsCtrl allevents Controller2 checks event is spliced out of favorites successfully " time="0.006" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
-  <testcase name="allEventsCtrl allevents Controller3 checks event is spliced out of favorites successfully " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
-  <testcase name="allEventsCtrl allevents Controller4 checks event is spliced out of favorites successfully " time="0.006" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
-  <testcase name="EventDetailsController Event Details Controller check behaviour on add to calendar button click " time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
+  <testcase name="allEventsCtrl allevents Controller1 checks event is spliced out of favorites successfully " time="0.029" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
+  <testcase name="allEventsCtrl allevents Controller2 checks event is spliced out of favorites successfully " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
+  <testcase name="allEventsCtrl allevents Controller3 checks event is spliced out of favorites successfully " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
+  <testcase name="allEventsCtrl allevents Controller4 checks event is spliced out of favorites successfully " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).allEventsCtrl"/>
+  <testcase name="EventDetailsController Event Details Controller check behaviour on add to calendar button click " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
     <failure type="">Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&amp;p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)
@@ -25,7 +25,7 @@
     <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventDetailsController Event Details Controller check behaviour on share to facebook button click " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
+  <testcase name="EventDetailsController Event Details Controller check behaviour on share to facebook button click " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventDetailsController">
     <failure type="">Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&amp;p1=not%20a%20function%2C%20got%20undefined in node_modules/angular/angular.js (line 1892)
@@ -43,7 +43,7 @@
     <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventController Event Controller checks if navigated to event details page " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
+  <testcase name="EventController Event Controller checks if navigated to event details page " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
     <failure type="">Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider &lt;- $ionicFilterBar &lt;- EventCtrl
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in node_modules/angular/angular.js (line 4511)
@@ -69,7 +69,7 @@
     <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
+  <testcase name="EventController Event Controller checks no navigation to event details page since event details id is wrong" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).EventController">
     <failure type="">Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider &lt;- $ionicFilterBar &lt;- EventCtrl
 </failure>
     <failure type="">http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in node_modules/angular/angular.js (line 4511)
@@ -121,20 +121,20 @@
     <failure type="">loaded@http://localhost:9877/context.js:151:17
 </failure>
   </testcase>
-  <testcase name="FavCtrl Favorites Controller1 checks event is spliced out of favorites successfully " time="0.01" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
-  <testcase name="FavCtrl Favorites Controller2 checks event is spliced out of favorites successfully " time="0.008" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
-  <testcase name="FavCtrl Favorites Controller3 checks event is spliced out of favorites successfully " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
-  <testcase name="FavCtrl Favorites Controller4 checks event is spliced out of favorites successfully " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.007" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="FavCtrl Favorites Controller1 checks event is spliced out of favorites successfully " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="FavCtrl Favorites Controller2 checks event is spliced out of favorites successfully " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="FavCtrl Favorites Controller3 checks event is spliced out of favorites successfully " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="FavCtrl Favorites Controller4 checks event is spliced out of favorites successfully " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).FavCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
   <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.01" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.025" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to favorites Page" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to AllEvents Page" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
-  <testcase name="SettingsCtrl SettingsCtrl checks redirection to Event List Page" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="LoginCtrl Login Controller checks username and password validation " time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).LoginCtrl"/>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to favorites Page" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to AllEvents Page" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
+  <testcase name="SettingsCtrl SettingsCtrl checks redirection to Event List Page" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).SettingsCtrl"/>
   <system-out>
     <![CDATA[PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'all Events controller'
 ,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'inside alterFavourite'

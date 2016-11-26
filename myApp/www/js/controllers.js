@@ -334,7 +334,57 @@ angular.module('starter.controllers', ['ui.router'])
 
   })
   .controller('allEventsCtrl', function($state,$rootScope,$scope){
+    var event=this;
+      event.events=[ 
+      { 
+        pic:"/img/NUlogo.png", 
+        group:"Association for Student Welfare", 
+        id:"123",     true:"yes", 
+        change:"The Event will be removed from your preference"   }, 
 
+        { 
+          pic:"/img/ionic.png", 
+          group:"Northeastern Sports Association", 
+          id:"234",     true:"no", 
+          change:"The Event will be added to your preference"   },
+
+           { 
+             pic:"/img/ionic.png", 
+             group:"Northeastern Sports Association", 
+             id:"345",     true:"yes", 
+             change:"The Event will be removed from your preference"   }, 
+      ]
+
+     event.alterFavourite=alterFavourite;  
+
+    function alterFavourite(id) { 
+      console.log("inside alterFavourite"); 
+      var result="Failure"; 
+      for(var i in event.events){ 
+        if(event.events[i].id===id){ 
+          result="Success"; 
+          if(event.events[i].true==="yes"){ 
+            console.log("true yes") 
+            event.makeChange="no"; 
+            event.events[i].true="no"; 
+            event.events[i].change="The Event will be added from your preference"; 
+            $scope.msg1="true";       }
+
+            else{ 
+            event.makeChange="yes"; 
+            console.log("true no") 
+            event.events[i].true="yes"; 
+            event.events[i].change="The Event will be removed to your preference"; 
+            $scope.msg1="false"; 
+          }  
+            // $state.go('preferences.favorites'); 
+          } 
+      } 
+          if(result==="Failure")
+          {     $scope.msg="Failure"; 
+          } }
+            
+          console.log("all Events controller")
 
 
   })
