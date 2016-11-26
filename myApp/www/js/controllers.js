@@ -22,8 +22,11 @@ angular.module('starter.controllers', ['ui.router'])
 
     function getLoginPage(){
 
+      // $state.go('/login');
+
     }
 
+    init();
 
     function signin(emailId,password) {
       LoginService.login(emailId,password).then(function(msg) {
