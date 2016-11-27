@@ -1,83 +1,84 @@
-// server.js
+var chai = require('chai');
+var chaiHttp = require('chai-http');
+var should = chai.should();
+var assert = chai.assert;
+var mongoose = require("mongoose");
+var server =  "http://localhost:8080"
+chai.use(chaiHttp);
 
-// call the packages we need
-var express    = require('express');        // call express
-var app        = express();                 // define our app using express
-var mongoose   = require('mongoose');
-var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-app.use(require('body-parser').json());
+// before(function(done) {
+//     // In our tests we use the test db
+//     mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')         
+//     done();
+//   });
 
+// after(function(done) {
+//   mongoose.disconnect();
+//   done();
+// });
 
+describe('Login Tests', function() {
+  it('Correct combination should return the userID /users GET', function(done) {
+    chai.request(server)
+      .get('/users?username=alice@husky.neu.edu&password=alice')
+      .end(function(err, res){
+    console.log(res.body);
+        res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.have.equal('5835e41872302c8dd48ba5f0');
+        done();
+      });
+  });
 
-mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  // we're connected!
+  it('Incorrect combination should return False /users GET', function(done) {
+    chai.request(server)
+      .get('/users?username=alice@husky.neu.edu&password=test')
+      .end(function(err, res){
+    console.log(res.body);
+        res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.have.equal('False');
+        done();
+      });
+  });
+
+  it('A non-existent username should return False /users GET', function(done) {
+    chai.request(server)
+      .get('/users?username=mimani.s@husky.neu.edu&password=test')
+      .end(function(err, res){
+    console.log(res.body);
+        res.should.have.status(200);
+        res.should.be.string;
+        res.body.should.have.equal('False');
+        done();
+      });
+  });
 });
 
-var userSchema = mongoose.Schema({
-    username : String,
-    password: String
-});
 
+ describe('Events Tests', function() {
+   it('Should return list of events subscribed by a user /users/events GET', function(done) {
+     chai.request(server)
+       .get('/users/events?id=5835e41872302c8dd48ba5f0')
+       .end(function(err, res){
+           console.log(res.body);
+         res.should.be.array;
+         res.should.have.status(200);
+         assert.lengthOf(res.body,2,'result should have length 2');
+         done();
+       });
+   });
 
-
-
-var Users = module.exports = mongoose.model('Users', userSchema);
-
-// app.get('/',function(req,res){
-//   // alert('hurray')
-//   res.send('Welcome to the Enrollment project!');
-// })
-
-// APIs for user login ----------------------------------------------
-app.get('/users', function(req,res){
-    var uname = req.query.username;
-    var pwd = req.query.password;
-    Users.findOne({'username': uname},function(err,usrs){
-        if (usrs==null) {
-            res.json('False')
-            return;
-        };
-
-        if(err){
-            res.json('False');
-            return;
-        }
-        if(usrs.password == pwd){
-
-            res.json(usrs.id);
-            return;
-        }
-        res.json('False');
-
-    });
-});
-
-// This API is not being used currently. Hence, there are no test cases for this.
-
-app.post('/users', function(req,res){
-    var user = new Users();
-    user.username = req.body.username;
-    user.password = req.body.password;
-    console.log(user.username);
-    user.save(function(err,user){
-        if(err){
-            throw err;
-        }
-        res.send('User added!')
-    });
-});
-
-// End of APIs for user login ----------------------------------------------
-
-
-
-// listen (start app with node server.js) ======================================
-app.listen(8080);
-console.log('App listening on port 8080');
+   it('Should return [] is user has not subscribed to any event /users/events GET', function(done) {
+     chai.request(server)
+       .get('/users/events?id=5835e41872302c8dd48ba5f1')
+       .end(function(err, res){
+        console.log(res.body);
+         res.should.be.array;
+         assert.lengthOf(res.body,0,'result should have length 0');
+         res.should.have.status(200);
+         done();
+       });
+   });
+ });
 
