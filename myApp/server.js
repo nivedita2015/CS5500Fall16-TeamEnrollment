@@ -26,8 +26,8 @@ var userSchema = mongoose.Schema({
 
 
 
-var Users = module.exports = mongoose.model('Users', userSchema);
 
+var Users = module.exports = mongoose.model('Users', userSchema);
 
 // app.get('/',function(req,res){
 //   // alert('hurray')
@@ -74,6 +74,8 @@ app.post('/users', function(req,res){
 });
 
 // End of APIs for user login ----------------------------------------------
+
+
 
 // listen (start app with node server.js) ======================================
 app.listen(8080);

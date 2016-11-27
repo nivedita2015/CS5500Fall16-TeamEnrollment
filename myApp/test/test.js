@@ -1,6 +1,7 @@
 var chai = require('chai');
 var chaiHttp = require('chai-http');
 var should = chai.should();
+var assert = chai.assert;
 var mongoose = require("mongoose");
 var server =  "http://localhost:8080"
 chai.use(chaiHttp);
@@ -60,10 +61,10 @@ describe('Login Tests', function() {
      chai.request(server)
        .get('/users/events?id=5835e41872302c8dd48ba5f0')
        .end(function(err, res){
-	 console.log(res.body);
+	       console.log(res.body);
          res.should.be.array;
          res.should.have.status(200);
-         assert.lengthOf(res.body,0,'result should have length 0');
+         assert.lengthOf(res.body,2,'result should have length 2');
          done();
        });
    });
@@ -72,11 +73,10 @@ describe('Login Tests', function() {
      chai.request(server)
        .get('/users/events?id=5835e41872302c8dd48ba5f1')
        .end(function(err, res){
-         console.log(res.body);
+        console.log(res.body);
          res.should.be.array;
          assert.lengthOf(res.body,0,'result should have length 0');
          res.should.have.status(200);
-        
          done();
        });
    });
