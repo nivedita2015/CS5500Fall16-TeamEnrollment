@@ -10,7 +10,12 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(require('body-parser').json());
 
-
+app.all("/*", function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+    return next();
+});
 
 mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')
 var db = mongoose.connection;
