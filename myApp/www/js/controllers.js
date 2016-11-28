@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ui.router'])
 
-  .controller('LoginCtrl', function($state,$rootScope,$scope,LoginService) {
+  .controller('LoginCtrl', function($state,$rootScope,$scope, $ionicPopup, LoginService) {
 
     //adding $scope.title for Jasmine testing purposes//
     // $scope.title = 'testing';
@@ -33,11 +33,11 @@ angular.module('starter.controllers', ['ui.router'])
         $state.go('event');
       }, function(errMsg) {
         console.log("sanam");
-        // var alertPopup = $ionicPopup.alert({
-        //   title: 'Login failed!',
-        //   template: errMsg
-        // });
-        $state.go('event');
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login failed!',
+          template: errMsg
+        });
+        // $state.go('event');
       });
     }
 

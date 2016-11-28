@@ -65,7 +65,6 @@ app.get('/users', function(req,res){
              return;
          }
          if(usrs.password == pwd){
- 
              res.json(usrs.id);
              return;
          }

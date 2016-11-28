@@ -17,7 +17,8 @@ angular.module('starter')
     var login = function(emailId,password) {
       return $q(function(resolve, reject) {
         $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password).then(function(result) {
-          if (result.data.success) {
+          console.log(result.data);
+          if (result.data != 'False') {
             alert('login hurray');
             resolve(result.data.msg);
           } else {
