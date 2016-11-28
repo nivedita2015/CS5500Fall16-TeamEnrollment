@@ -19,7 +19,9 @@ angular.module('starter')
         $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password).then(function(result) {
           console.log(result.data);
           if (result.data != 'False') {
-            alert('login hurray');
+            $http.get(API_ENDPOINT.url+'/users/events?id='+result.data).then(function(events) {
+          console.log(events.data);
+        });
             resolve(result.data.msg);
           } else {
             reject(result.data.msg);

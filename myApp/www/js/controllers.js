@@ -32,7 +32,6 @@ angular.module('starter.controllers', ['ui.router'])
       LoginService.login(emailId,password).then(function(msg) {
         $state.go('event');
       }, function(errMsg) {
-        console.log("sanam");
         var alertPopup = $ionicPopup.alert({
           title: 'Login failed!',
           template: errMsg
