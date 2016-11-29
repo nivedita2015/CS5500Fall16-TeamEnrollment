@@ -16,9 +16,12 @@ angular.module('starter')
 
     var login = function(emailId,password) {
       return $q(function(resolve, reject) {
-        $http.get(ApiEndpoint.url+'/users', {username:emailId,password:password}).then(function(result) {
-          if (result.data.success) {
-            alert('login hurray');
+        $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password).then(function(result) {
+          console.log(result.data);
+          if (result.data != 'False') {
+            $http.get(API_ENDPOINT.url+'/users/events?id='+result.data).then(function(events) {
+          console.log(events.data);
+        });
             resolve(result.data.msg);
           } else {
             reject(result.data.msg);

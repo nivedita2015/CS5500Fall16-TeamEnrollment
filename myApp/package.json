@@ -39,7 +39,10 @@
     "shelljs": "^0.7.5",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "connect": "*",
+    "serve-static" : "*"
+
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
