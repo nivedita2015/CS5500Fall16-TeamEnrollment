@@ -59,18 +59,17 @@ app.get('/users', function(req,res){
              res.json('False')
              return;
          };
- 
+
          if(err){
              res.json('False');
              return;
          }
          if(usrs.password == pwd){
- 
              res.json(usrs.id);
              return;
          }
          res.json('False');
-                 
+
      });
  });
 
