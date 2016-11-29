@@ -1,11 +1,5 @@
 {
   "name": "myApp",
   "app_id": "",
-  "defaultBrowser": "chrome",
-  "proxies": [
-    {
-      "path": "/",
-      "proxyUrl": "http://52.207.253.108"
-    }
-  ]
+  "defaultBrowser": "chrome"
 }
