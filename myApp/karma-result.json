@@ -11,7 +11,7 @@
                 "allEventsCtrl",
                 "allevents Controller1"
             ],
-            "time": 29,
+            "time": 27,
             "executedExpectationsCount": 1
         },
         {
@@ -24,7 +24,7 @@
                 "allEventsCtrl",
                 "allevents Controller2"
             ],
-            "time": 5,
+            "time": 7,
             "executedExpectationsCount": 1
         },
         {
@@ -37,7 +37,7 @@
                 "allEventsCtrl",
                 "allevents Controller3"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -50,21 +50,22 @@
                 "allEventsCtrl",
                 "allevents Controller4"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
             "description": "check behaviour on add to calendar button click ",
             "id": "spec4",
             "log": [
-                "Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined",
-                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
-                "assertArg@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
-                "assertArgFn@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
-                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
-                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_details_test.js?82ab5031b5ee4923dd6a63409a25f167936f9a89:9:1139",
-                "loaded@http://localhost:9877/context.js:151:17"
+                "forEach@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:321:24",
+                "loadModules@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4601:12",
+                "createInjector@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4523:30",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3074:60",
+                "loaded@http://localhost:9876/context.js:151:17",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4641:53",
+                "ReferenceError: Can't find variable: $stateParams in http://localhost:9876/base/www/tests/event_details_test.js?0797431611dbd382497268ec7a31ffb02315b297 (line 9)",
+                "http://localhost:9876/base/www/tests/event_details_test.js?0797431611dbd382497268ec7a31ffb02315b297:9:1982",
+                "loaded@http://localhost:9876/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -73,20 +74,21 @@
                 "Event Details Controller"
             ],
             "time": 5,
-            "executedExpectationsCount": 1
+            "executedExpectationsCount": 2
         },
         {
             "description": "check behaviour on share to facebook button click ",
             "id": "spec5",
             "log": [
-                "Error: [ng:areq] Argument 'eventDetails' is not a function, got undefined",
-                "http://errors.angularjs.org/1.5.8/ng/areq?p0=eventDetails&p1=not%20a%20function%2C%20got%20undefined in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 1892)",
-                "assertArg@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1892:91",
-                "assertArgFn@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:1902:12",
-                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10330:20",
-                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_details_test.js?82ab5031b5ee4923dd6a63409a25f167936f9a89:9:1883",
-                "loaded@http://localhost:9877/context.js:151:17"
+                "forEach@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:321:24",
+                "loadModules@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4601:12",
+                "createInjector@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4523:30",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3074:60",
+                "loaded@http://localhost:9876/context.js:151:17",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4641:53",
+                "TypeError: undefined is not a constructor (evaluating '$controller') in http://localhost:9876/base/www/tests/event_details_test.js?0797431611dbd382497268ec7a31ffb02315b297 (line 9)",
+                "http://localhost:9876/base/www/tests/event_details_test.js?0797431611dbd382497268ec7a31ffb02315b297:9:2781",
+                "loaded@http://localhost:9876/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -94,25 +96,25 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 3,
-            "executedExpectationsCount": 1
+            "time": 4,
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks if navigated to event details page ",
             "id": "spec6",
             "log": [
                 "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
-                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1191",
-                "loaded@http://localhost:9877/context.js:151:17"
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9876/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1191",
+                "loaded@http://localhost:9876/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -120,7 +122,7 @@
                 "EventController",
                 "Event Controller"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -128,17 +130,17 @@
             "id": "spec7",
             "log": [
                 "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
-                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1873",
-                "loaded@http://localhost:9877/context.js:151:17"
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9876/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:1873",
+                "loaded@http://localhost:9876/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -154,17 +156,17 @@
             "id": "spec8",
             "log": [
                 "Error: [$injector:unpr] Unknown provider: $ionicFilterBarProvider <- $ionicFilterBar <- EventCtrl",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "instantiate@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
-                "$controller@http://localhost:9877/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9877/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9877/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:2545",
-                "loaded@http://localhost:9877/context.js:151:17"
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicFilterBarProvider%20%3C-%20%24ionicFilterBar%20%3C-%20EventCtrl in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
+                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9876/base/www/tests/event_test.js?43f23ccd557fe028bbffd87674791a6f80e1fe6a:9:2545",
+                "loaded@http://localhost:9876/context.js:151:17"
             ],
             "skipped": false,
             "success": false,
@@ -185,7 +187,7 @@
                 "FavCtrl",
                 "Favorites Controller1"
             ],
-            "time": 4,
+            "time": 9,
             "executedExpectationsCount": 1
         },
         {
@@ -211,7 +213,7 @@
                 "FavCtrl",
                 "Favorites Controller3"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -224,99 +226,186 @@
                 "FavCtrl",
                 "Favorites Controller4"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
-            "description": "checks username and password validation ",
+            "description": "checks username and password validation 1",
             "id": "spec13",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "inject@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3051:28",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:1076",
+                "global code@http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:47",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:state,rootScope:rootScope,$scope:$scope,service:mockService})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:1983"
             ],
-            "time": 5,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec14",
-            "log": [],
             "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 2,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec15",
-            "log": [],
-            "skipped": false,
-            "success": true,
-            "suite": [
-                "LoginCtrl",
-                "Login Controller"
-            ],
-            "time": 2,
-            "executedExpectationsCount": 1
-        },
-        {
-            "description": "checks username and password validation ",
-            "id": "spec16",
-            "log": [],
-            "skipped": false,
-            "success": true,
+            "success": false,
             "suite": [
                 "LoginCtrl",
                 "Login Controller"
             ],
             "time": 3,
-            "executedExpectationsCount": 1
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks username and password validation ",
-            "id": "spec17",
-            "log": [],
+            "id": "spec14",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:2661"
+            ],
             "skipped": false,
-            "success": true,
+            "success": false,
             "suite": [
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 2,
-            "executedExpectationsCount": 1
+            "time": 3,
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks username and password validation ",
-            "id": "spec18",
-            "log": [],
+            "id": "spec15",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:3327"
+            ],
             "skipped": false,
-            "success": true,
+            "success": false,
             "suite": [
                 "LoginCtrl",
                 "Login Controller"
             ],
             "time": 5,
-            "executedExpectationsCount": 1
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks username and password validation ",
-            "id": "spec19",
-            "log": [],
+            "id": "spec16",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:$state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:4041"
+            ],
             "skipped": false,
-            "success": true,
+            "success": false,
             "suite": [
                 "LoginCtrl",
                 "Login Controller"
             ],
             "time": 4,
-            "executedExpectationsCount": 1
+            "executedExpectationsCount": 2
+        },
+        {
+            "description": "checks username and password validation ",
+            "id": "spec17",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:$state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:4738"
+            ],
+            "skipped": false,
+            "success": false,
+            "suite": [
+                "LoginCtrl",
+                "Login Controller"
+            ],
+            "time": 3,
+            "executedExpectationsCount": 2
+        },
+        {
+            "description": "checks username and password validation ",
+            "id": "spec18",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:$state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:5443"
+            ],
+            "skipped": false,
+            "success": false,
+            "suite": [
+                "LoginCtrl",
+                "Login Controller"
+            ],
+            "time": 6,
+            "executedExpectationsCount": 2
+        },
+        {
+            "description": "checks username and password validation ",
+            "id": "spec19",
+            "log": [
+                "Error: [$injector:unpr] Unknown provider: serviceProvider <- service",
+                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=serviceProvider%20%3C-%20service in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
+                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
+                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
+                "invoke@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4710:31",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3085:26",
+                "TypeError: undefined is not a constructor (evaluating '$controller('LoginCtrl',{$state:$state,rootScope:rootScope,$scope:$scope})') in http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d (line 9)",
+                "http://localhost:9876/base/www/tests/login_test.js?88f436a0058b00a60817e54d9492c081aadc151d:9:6133"
+            ],
+            "skipped": false,
+            "success": false,
+            "suite": [
+                "LoginCtrl",
+                "Login Controller"
+            ],
+            "time": 5,
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks redirection to favorites Page",
@@ -328,7 +417,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 5,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -354,7 +443,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 4,
+            "time": 3,
             "executedExpectationsCount": 1
         }
     ]
