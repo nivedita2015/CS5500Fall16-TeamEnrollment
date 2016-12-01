@@ -15,7 +15,7 @@
     "replace": "^0.3.0"
   },
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "start": "node server"
   },
   "devDependencies": {
     "angular": "^1.5.8",
@@ -41,7 +41,9 @@
     "chai-http": "^2.0.1",
     "mocha": "^2.4.5",
     "connect": "*",
-    "serve-static" : "*"
+    "serve-static" : "*",
+    "path": "*",
+    "http": "*"
 
   },
   "cordovaPlugins": [
