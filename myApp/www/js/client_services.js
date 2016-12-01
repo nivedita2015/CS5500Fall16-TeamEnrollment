@@ -1,4 +1,4 @@
-angular.module('starter')
+angular.module('starter.services',['starter.constant'])
 
   .service('LoginService', function($q, $http, API_ENDPOINT) {
 
