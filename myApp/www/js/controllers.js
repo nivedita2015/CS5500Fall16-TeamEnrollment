@@ -17,85 +17,73 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     init();
 
-    // function signin(emailId,password) {
-    //   LoginService.login(emailId,password).then(function(msg) {
-    //     $state.go('event');
-    //   }, function(errMsg) {
-    //
-    //     alert('Log in failed. Try again.');
-
-    //
-    //    // login.msg = 'Sign in failed. Try again.'
-    //
-
-    //
-    //    // login.msg = 'Sign in failed. Try again.'
-    //
-
-    //     // var alertPopup = $ionicPopup.alert({
-    //     //   title: 'Login failed!',
-    //     //   template: errMsg
-    //     // });
-    //   });
-    // }
-
-
     function signin(emailId,password){
       LoginService.login(emailId,password)
-        .then(function(data){
-          console.log(data);
-          $rootScope.user = data.data;
-          $state.go('event');
+        .then(function(res){
+          console.log(res);
+          if(res.data != 'False'){
+            $rootScope.user = res.data;
+            $state.go('event');
+            login.msg = null;
+          }
+          else{
+            login.msg = 'true'
+          }
+
         })
     }
   })
-  .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar) {
+  .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar,EventService) {
+    console.log("inside event controller");
+    var event = this;
+    event.getEvents = getEvents;
+    var filterBarInstance;
 
-    console.log("the user is "+$rootScope.user);
+
+    function init(){
+      getEvents( $rootScope.user);
+    }
+
+    function getEvents(userId){
+      EventService.getEvents(userId)
+        .then(function(res){
+          console.log(res);
+          if(res.data.length != 0){
+            $scope.events = res.data;
+          }
+          else{
+            $scope.events = [];
+          }
+        })
+    }
+
+    init();
 
 
 
 
 
-    var event=this,
-      events=[],
-     filterBarInstance;
 
-    events=[
-      {
-        pic:"/img/NUlogo.png",
-        name:"NU Homecoming",
-        group:"Association for Student Welfare",
-        id:"123",
-        dt:"11/09/2016"
 
-      },
-      {
-        pic:"/img/ionic.png",
-        name:"Huskies vs Wildcats",
-        group:"Northeastern Sports Association",
-        id:"234",
-        dt:"12/07/2016"
 
-      }
-    ]
-    event.events=events;
-    console.log("inside events controller");
     event.eventClick = eventClick;
     event.preferences = preferences;
     event.showFilterBar=showFilterBar;
 
     function showFilterBar() {
       filterBarInstance = $ionicFilterBar.show({
-        items: event.events,
+        items: $scope.events,
         update: function (filteredItems) {
-          event.events = filteredItems;
+          $scope.events = filteredItems;
           $scope.array1=filteredItems;
         },
         filterProperties: 'name'
       });
       console.log($ionicFilterBar);
     };
+
+
+    //not changed below this//
 
     function eventClick(id) {
       console.log("inside eventClick");

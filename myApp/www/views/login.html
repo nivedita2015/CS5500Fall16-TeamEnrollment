@@ -48,8 +48,8 @@
   <form novalidate>
     <div class="list list-inset top-space-pad">
 
-      <div ng-show="login.msg" class="alert alert-success" role="alert">
-        <h1>Username or Password Incorrect</h1>
+      <div ng-show="login.msg" class="alert alert-warning" role="alert" style="padding:2px;text-align: center">
+        <h4>Username/Password Incorrect</h4>
       </div>
 
       <label class="item item-input">
@@ -61,10 +61,6 @@
       <a ng-click="login.signin(emailId,password)" class="button button-block button-assertive">
       Sign In
       </a>
-      <!--<input type="submit" ng-click="login.signin()">-->
-      <!--<button ng-click="login.googleLogin()" class="button button-block button-assertive" type="submit">-->
-        <!--Login-->
-      <!--</button>-->
     </div>
   </form>
 
