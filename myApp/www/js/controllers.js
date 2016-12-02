@@ -319,6 +319,8 @@ angular.module('starter.controllers', ['ui.router'])
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
 
+
+
     // function notificationChange(){
     //   console.log("notification "+$scope.notification.checked);
     //
