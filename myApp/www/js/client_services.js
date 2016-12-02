@@ -1,36 +1,40 @@
 angular.module('starter.services',['starter.constant'])
 
-  .service('LoginService', function($q, $http, API_ENDPOINT) {
+  .factory('LoginService', function($q, $http, API_ENDPOINT) {
 
-    // var register = function(user) {
+    // var login = function(emailId,password) {
     //   return $q(function(resolve, reject) {
-    //     $http.post(API_ENDPOINT.url + '/signup', user).then(function(result) {
-    //       if (result.data.success) {
-    //         resolve(result.data.msg);
+    //     $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password).then(function(result) {
+    //       console.log(result.data);
+    //       if (result.data != 'False') {
+    //         $http.get(API_ENDPOINT.url+'/users/events?id='+result.data).then(function(events) {
+    //       console.log("The response is "+events.data);
+    //     });
+    //         resolve(result.data);
     //       } else {
-    //         reject(result.data.msg);
+    //         reject(result.data);
     //       }
     //     });
     //   });
     // };
 
-    var login = function(emailId,password) {
-      return $q(function(resolve, reject) {
-        $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password).then(function(result) {
-          console.log(result.data);
-          if (result.data != 'False') {
-            $http.get(API_ENDPOINT.url+'/users/events?id='+result.data).then(function(events) {
-          console.log(events.data);
-        });
-            resolve(result.data.msg);
-          } else {
-            reject(result.data.msg);
-          }
-        });
-      });
+    var LoginService = {};
+
+    LoginService.login = function(emailId,password){
+      return $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password);
     };
 
-    return {
-      login: login
-    };
-  });
+    return LoginService;
+  })
+  .factory('EventService', function($q, $http, API_ENDPOINT) {
+
+    var EventService = {};
+
+    EventService.getEvents = function(userId){
+      return http.get(API_ENDPOINT.url+'/users/events?id='+userId);
+    }
+
+    return EventService;
+
+});
+
