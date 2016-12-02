@@ -2,7 +2,9 @@
 sudo npm install
 sudo npm rebuild node-sass
 sudo kill -9 $(ps aux | grep ionic_server | awk '{print $2}')
+istanbul cover node_modules/mocha/bin/_mocha  test/test.js
 karma start
+sudo mv ./covereage/cobertura-coverage.xml ./build/reports/coverage/
 python3 json_parser.py
 state="`cat output.txt`"
 if [ "$state" == "failed" ]

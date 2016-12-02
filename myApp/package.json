@@ -43,7 +43,8 @@
     "connect": "*",
     "serve-static" : "*",
     "path": "*",
-    "http": "*"
+    "http": "*",
+    "istanbul": "*"
 
   },
   "cordovaPlugins": [
