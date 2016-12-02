@@ -12,7 +12,15 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
     "mongoose": "^4.4.15",
-    "replace": "^0.3.0"
+    "replace": "^0.3.0",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "*",
+    "connect": "*",
+    "serve-static" : "*",
+    "path": "*",
+    "http": "*",
+    "istanbul": "*"
   },
   "scripts": {
     "start": "node server"
@@ -36,15 +44,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-structured-json-reporter": "*",
     "npm": "^3.10.9",
-    "shelljs": "^0.7.5",
-    "chai": "^3.5.0",
-    "chai-http": "^2.0.1",
-    "mocha": "^2.4.5",
-    "connect": "*",
-    "serve-static" : "*",
-    "path": "*",
-    "http": "*",
-    "istanbul": "*"
+    "shelljs": "^0.7.5"
 
   },
   "cordovaPlugins": [
