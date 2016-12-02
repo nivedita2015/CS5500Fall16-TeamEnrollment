@@ -3,19 +3,9 @@ var chaiHttp = require('chai-http');
 var should = chai.should();
 var assert = chai.assert;
 var mongoose = require("mongoose");
-var server =  "http://localhost:8080"
+var server =  require('../server');
 chai.use(chaiHttp);
 
-// before(function(done) {
-//     // In our tests we use the test db
-//     mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')         
-//     done();
-//   });
-
-// after(function(done) {
-//   mongoose.disconnect();
-//   done();
-// });
 
 describe('Login Tests', function() {
   it('Correct combination should return the userID /users GET', function(done) {

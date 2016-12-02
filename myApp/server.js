@@ -5,6 +5,8 @@ var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var mongoose   = require('mongoose');
 var bodyParser = require('body-parser');
+var path = require('path');
+var http = require('http');
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -16,6 +18,8 @@ app.all("/*", function (req, res, next) {
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
     return next();
 });
+
+app.use(express.static(path.join(__dirname, '../client/public')));
 
 mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')
 var db = mongoose.connection;
@@ -125,6 +129,13 @@ app.get('/users/events', function(req,res){
 });
 
 
+
+var server   = http.createServer(app);
+server.listen(8080, function() {
+  console.log("Node server running on http://localhost:1337");
+});
+
+module.exports = app;
 // listen (start app with node server.js) ======================================
-app.listen(8080);
-console.log('App listening on port 8080');
+// app.listen(8080);
+// console.log('App listening on port 8080');

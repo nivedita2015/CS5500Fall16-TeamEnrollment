@@ -15,11 +15,13 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'www/lib/ionic/js/ionic.js',
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-ui-router/release/angular-ui-router.js',
       'www/js/*.js',
-      'www/tests/*.js'
+      'www/tests/*.js',
+      'www/tests/stateMock.js'
     ],
 
 
@@ -41,7 +43,7 @@ module.exports = function(config) {
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     // reporters: ['progress','coverage'],
     reporters: ['dots','json-result', 'junit', 'coverage'],
-    
+
     coverageReporter: {
       // specify a common output directory
       dir: 'build/reports/coverage',
@@ -66,7 +68,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
@@ -77,7 +79,7 @@ module.exports = function(config) {
   outputFile: "karma-result.json",
   isSynchronous: "true"
 },
-    
+
        junitReporter: {
   outputFile: 'test-results.xml'
 },

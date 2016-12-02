@@ -1,16 +1,8 @@
-angular.module('starter.controllers', ['ui.router'])
+angular.module('starter.controllers', ['starter.services','starter.constant','ui.router'])
 
-  .controller('LoginCtrl', function($state,$rootScope,$scope,$ionicPopup,LoginService) {
+  .controller('LoginCtrl', function($state,$rootScope,$scope,LoginService) {
 
-    //adding $scope.title for Jasmine testing purposes//
-    // $scope.title = 'testing';
-
-    // var users=[
-    //   {username: "alice@husky.neu.edu",    password: "alice",    },
-    //   {username: "bob@northeastern.neu.edu",      password: "bob",      },
-    //   {username: "charley@neu.edu",   password: "charley",   },
-    //   {username: "jannunzi", password: "jannunzi"}
-    // ]
+    $rootScope.user = null;
     console.log("inside login controller");
     var login = this;
     login.signin = signin;
@@ -21,54 +13,43 @@ angular.module('starter.controllers', ['ui.router'])
     }
 
     function getLoginPage(){
-
-      // $state.go('/login');
-
     }
 
     init();
 
-    function signin(emailId,password) {
-      LoginService.login(emailId,password).then(function(msg) {
-        $state.go('event');
-      }, function(errMsg) {
-        console.log("sanam");
-        var alertPopup = $ionicPopup.alert({
-          title: 'Login failed!',
-          template: errMsg
-        });
-      });
-    }
-
-
     // function signin(emailId,password) {
-    //   console.log("inside signin function");
-    //   $http.get('localhost:8080/');
+    //   LoginService.login(emailId,password).then(function(msg) {
+    //     $state.go('event');
+    //   }, function(errMsg) {
     //
-    //   // for(var i in users){
-    //   //   // console.log(i);
-    //   //   if(users[i].username===emailId&&users[i].password===password){
-    //   //     // $state.go('event');
-    //   //     var result=true;
-    //   //     // $scope.msg="Success";
-    //   //
-    //   //   }
-    //   // }
-    //   //
-    //   // if(result){
-    //   //   $state.go('event');
-    //   // }
-    //   // else{
-    //   //   $scope.msg="Failure";
-    //   //   login.msg = 'Failure';
-    //   // }
+    //     alert('Log in failed. Try again.');
+    //
+    //    // login.msg = 'Sign in failed. Try again.'
+    //
+    //     // var alertPopup = $ionicPopup.alert({
+    //     //   title: 'Login failed!',
+    //     //   template: errMsg
+    //     // });
+    //   });
     // }
 
 
-
-
+    function signin(emailId,password){
+      LoginService.login(emailId,password)
+        .then(function(data){
+          console.log(data);
+          $rootScope.user = data.data;
+          $state.go('event');
+        })
+    }
   })
   .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar) {
+
+    console.log("the user is "+$rootScope.user);
+
+
+
+
 
     var event=this,
       events=[],
