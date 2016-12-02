@@ -77,24 +77,22 @@ app.get('/users', function(req,res){
      });
  });
 
-app.post('/users', function(req,res){
-    var user = new Users();
-    user.username = req.body.username;
-    user.password = req.body.password;
-    console.log(user.username);
-    user.save(function(err,user){
-        if(err){
-            throw err;
-        }
-        res.send('User added!')
-    });
-});
+// app.post('/users', function(req,res){
+//     var user = new Users();
+//     user.username = req.body.username;
+//     user.password = req.body.password;
+//     console.log(user.username);
+//     user.save(function(err,user){
+//         if(err){
+//             throw err;
+//         }
+//         res.send('User added!')
+//     });
+// });
 
 // End of APIs for user login ----------------------------------------------
 
 // APIs for Events ---------------------------------------------------------
-
-
 
 app.get('/allEvents', function(req,res){
     Events.find(function(err,usrs){
@@ -129,13 +127,10 @@ app.get('/users/events', function(req,res){
 });
 
 
-
+// listen (start app with node server.js) ======================================
 var server   = http.createServer(app);
 server.listen(8080, function() {
-  console.log("Node server running on http://localhost:1337");
+  console.log("Node server running on port 8080");
 });
 
 module.exports = app;
-// listen (start app with node server.js) ======================================
-// app.listen(8080);
-// console.log('App listening on port 8080');
