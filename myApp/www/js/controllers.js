@@ -23,15 +23,15 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     //   }, function(errMsg) {
     //
     //     alert('Log in failed. Try again.');
-<<<<<<< HEAD
+
     //
     //    // login.msg = 'Sign in failed. Try again.'
     //
-=======
+
     //
     //    // login.msg = 'Sign in failed. Try again.'
     //
->>>>>>> 53aac8ee1078a626216c14e182bb3322d3c8d2ab
+
     //     // var alertPopup = $ionicPopup.alert({
     //     //   title: 'Login failed!',
     //     //   template: errMsg
