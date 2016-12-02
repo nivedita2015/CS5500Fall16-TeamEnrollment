@@ -51,7 +51,6 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
 
 
-
     var event=this,
       events=[],
      filterBarInstance;

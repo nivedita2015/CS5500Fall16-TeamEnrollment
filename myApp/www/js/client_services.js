@@ -32,9 +32,20 @@ angular.module('starter.services',['starter.constant'])
 
     EventService.getEvents = function(userId){
       return http.get(API_ENDPOINT.url+'/users/events?id='+userId);
-    }
+    };
 
     return EventService;
 
-});
+})
+  .factory('EventDetailsService', function($q,$http,API_ENDPOINT){
+
+    var EventDetailsService = {};
+
+    EventDetailsService.getEventDetails = function(eventId){
+      return http.get(API_ENDPOINT.url+''+eventId);
+    };
+
+
+    return EventDetailsService;
+  });
 
