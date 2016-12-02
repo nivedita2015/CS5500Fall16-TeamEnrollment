@@ -306,6 +306,14 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
 
+    cordova.plugins.diagnostic.registerBluetoothStateChangeHandler(function(state){
+      // "unknown", "resetting", "unsupported", "unauthorized", "powered_off", "powered_on"
+      if (state == "powered_on") {
+        $scope.bluetoothIsEnabled = true;
+      } else {
+        $scope.bluetoothIsEnabled = false;
+      }
+    });
 
 
     // function notificationChange(){
