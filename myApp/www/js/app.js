@@ -19,8 +19,32 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    window.addEventListener('BluetoothStatus.enabled', function() {
+      console.log('Bluetooth has been enabled');
+      var alertPopup = $ionicPopup.alert({
+        title: 'Bluetooth enabled!',
+        template: errMsg
+      });
+    });
+
+    window.addEventListener('BluetoothStatus.disabled', function() {
+      console.log('Bluetooth has been disabled');
+      var alertPopup = $ionicPopup.alert({
+        title: 'Bluetooth disabled!',
+        template: errMsg
+      });
+    });
+
+    // cordova.plugins.BluetoothStatus.promptForBT();
+    cordova.plugins.BluetoothStatus.enableBT();
+
   });
 })
+
+
+
+
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
