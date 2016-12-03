@@ -89,28 +89,19 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     //not changed below this//
 
     function eventClick(id){
-      EventService.getEventDetails(id)
-        .then(function(res){
-          if(res != 'False'){
-            $rootScope.currentEvent = id;
-            $state.go('eventDetails',{'id':id});
-          }
-        })
-    }
+      console.log(id);
 
-    // function eventClick(id) {
-    //   console.log("inside eventClick");
-    //   var result="Failure";
-    //   for(var i in event.events){
-    //     if(event.events[i].id===id){
-    //       result="Success";
-    //       $state.go('eventDetails',{'id':id});
-    //     }
-    //   }
-    //   if(result==="Failure"){
-    //     $scope.msg="Failure";
-    //   }
-    // }
+      $rootScope.eId = id;
+      console.log("printing eid"+$rootScope.eId);
+      $state.go('eventDetails',{'id':id});
+      // EventService.getEventDetails(id)
+      //   .then(function(res){
+      //     if(res != 'False'){
+      //       $rootScope.currentEvent = id;
+      //       $state.go('eventDetails',{'id':id});
+      //     }
+      //   })
+    }
 
     function preferences(){
       console.log("inside preferences");
@@ -118,6 +109,8 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform) {
+    console.log("inside event details controller"+$rootScope.eId);
+
     var eventDetails=this;
     var events=[
       {
