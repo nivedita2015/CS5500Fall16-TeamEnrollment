@@ -77,13 +77,14 @@ app.get('/users', function(req,res){
 
 // APIs for Events ---------------------------------------------------------
 
+// return all events
 app.get('/allEvents', function(req,res){
     Events.find(function(err,usrs){
         res.json(usrs)
     });
 });
 
-
+// return specific details of user subscribed events
 app.get('/users/events', function(req,res){
     var id = mongoose.Types.ObjectId(req.query.id);
     var array =  [];
@@ -107,6 +108,7 @@ app.get('/users/events', function(req,res){
     });
 });
 
+// return all details of a given event
 app.get('/events', function(req,res){
     var id = mongoose.Types.ObjectId(req.query.id);
     Events.findOne({'_id' : id}, function(err, events){
