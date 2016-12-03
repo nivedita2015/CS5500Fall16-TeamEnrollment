@@ -17,7 +17,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     init();
 
-<<<<<<< HEAD
+
     // function signin(emailId,password) {
     //   LoginService.login(emailId,password).then(function(msg) {
     //     $state.go('event');
@@ -41,8 +41,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     // }
 
 
-=======
->>>>>>> bb8a004f862d6c011b8aea914a3adfe4403a12e7
+
     function signin(emailId,password){
       // alert('inside signin');
       LoginService.login(emailId,password).then(function(res){
