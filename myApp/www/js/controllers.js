@@ -22,7 +22,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       LoginService.login(emailId,password).then(function(res){
           // alert('inside login service return');
           console.log(res);
-          if(res.data == 'False'){
+          if(res == 'False'){
             // alert('Wrong Username/Password. Try again!');
             login.msg = 'true'
           }
@@ -88,19 +88,29 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     //not changed below this//
 
-    function eventClick(id) {
-      console.log("inside eventClick");
-      var result="Failure";
-      for(var i in event.events){
-        if(event.events[i].id===id){
-          result="Success";
-          $state.go('eventDetails',{'id':id});
-        }
-      }
-      if(result==="Failure"){
-        $scope.msg="Failure";
-      }
+    function eventClick(id){
+      EventService.getEventDetails(id)
+        .then(function(res){
+          if(res != 'False'){
+            $rootScope.currentEvent = id;
+            $state.go('eventDetails',{'id':id});
+          }
+        })
     }
+
+    // function eventClick(id) {
+    //   console.log("inside eventClick");
+    //   var result="Failure";
+    //   for(var i in event.events){
+    //     if(event.events[i].id===id){
+    //       result="Success";
+    //       $state.go('eventDetails',{'id':id});
+    //     }
+    //   }
+    //   if(result==="Failure"){
+    //     $scope.msg="Failure";
+    //   }
+    // }
 
     function preferences(){
       console.log("inside preferences");
