@@ -69,6 +69,21 @@ describe('Login Tests', function() {
          res.should.be.array;
          res.should.have.status(200);
          assert.lengthOf(res.body,2,'result should have length 2');
+         res.body[0].should.have.property("_id");
+         res.body[0]._id.should.have.equal("5842349d5faf958754a87c9a");
+         res.body[0].should.have.property("_id");
+         res.body[0].should.have.property("Name");
+         res.body[0].should.have.property("Date");
+         res.body[0].should.have.property("Time");
+         res.body[0].should.have.property("Campus");
+         res.body[0].should.have.property("Location");
+         res.body[1].should.have.property("_id");
+         res.body[1]._id.should.have.equal("584234af5faf958754a87c9b");
+         res.body[1].should.have.property("Name");
+         res.body[1].should.have.property("Date");
+         res.body[1].should.have.property("Time");
+         res.body[1].should.have.property("Campus");
+         res.body[1].should.have.property("Location");
          done();
        });
    });
@@ -105,6 +120,7 @@ describe('Login Tests', function() {
          res.body[0].should.have.property("Description");
          res.body[0].should.have.property("Latitude");
          res.body[0].should.have.property("Longitude");
+         res.body[0].should.have.property("Location");
          res.body[1].should.have.property("_id");
          res.body[1]._id.should.have.equal("584234af5faf958754a87c9b");
          res.body[1].should.have.property("Name");
@@ -115,13 +131,15 @@ describe('Login Tests', function() {
          res.body[1].should.have.property("Description");
          res.body[1].should.have.property("Latitude");
          res.body[1].should.have.property("Longitude");
+         res.body[1].should.have.property("Location");
          done();
        });
    });
 
+
   it('Should return the event details for a given event /events/id GET', function(done) {
      chai.request(server)
-       .get('/events/id?id=5842349d5faf958754a87c9a')
+       .get('/events?id=5842349d5faf958754a87c9a')
        .end(function(err, res){
         console.log(res.body);
          res.body.should.have.property("Name");
