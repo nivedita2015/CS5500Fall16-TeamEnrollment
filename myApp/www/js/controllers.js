@@ -186,8 +186,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     function OtherShare(){
       $ionicPlatform.ready(function(){
-        // alert('inside ionic platform ready');
+        console.log('inside ionic platform ready');
         try{
+          console.log('inside try');
           if(window.cordova){
             $cordovaSocialSharing
               .shareViaFacebook('Hello', null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker')
