@@ -1,6 +1,15 @@
 angular.module('starter.services',['starter.constant'])
 
-  .factory('LoginService', function($q, $http, API_ENDPOINT) {
+  // .factory('LoginService', function($q,$http,API_ENDPOINT){
+  //
+  //   var LoginService = {};
+  //
+  //   LoginService.login = function(emailId,password){
+  //     return http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password);
+  //   };
+  //
+  //
+  // })
 
     // var login = function(emailId,password) {
     //   return $q(function(resolve, reject) {
@@ -16,26 +25,35 @@ angular.module('starter.services',['starter.constant'])
     //       }
     //     });
     //   });
-    // };
+    // }
 
-    var LoginService = {};
+    // function LoginService($http,API_ENDPOINT){
+    //   var loginApi = {
+    //     login:login
+    //   };
+    //   return loginApi;
+    //
+    //   function login(emailId,password){
+    //     alert('inside login service call');
+    //     return $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password);
+    //   }
+    // }
 
-    LoginService.login = function(emailId,password){
-      return $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password);
-    };
-
-    return LoginService;
-  })
   .factory('EventService', function($q, $http, API_ENDPOINT) {
 
-    var EventService = {};
-
-    EventService.getEvents = function(userId){
-      return http.get(API_ENDPOINT.url+'/users/events?id='+userId);
-    };
-
-    return EventService;
-
+    return {
+      getEvents:function(userId){
+        // alert('inside event service call');
+        var deferred = $q.defer();
+        $http.get(API_ENDPOINT.url+'/users/events?id='+userId)
+          .success(function(response){
+            deferred.resolve(response)
+          }).error(function(){
+          deferred.reject();
+        });
+        return deferred.promise;
+      }
+    }
 })
   .factory('EventDetailsService', function($q,$http,API_ENDPOINT){
 
@@ -47,5 +65,22 @@ angular.module('starter.services',['starter.constant'])
 
 
     return EventDetailsService;
+  })
+  .factory('LoginService',function($q,$http,API_ENDPOINT){
+    return{
+      login:function(emailId,password){
+        // alert('inside login service call');
+        var deferred = $q.defer();
+        $http.get(API_ENDPOINT.url+'/users?username='+emailId+'&password='+password)
+          .success(function(response){
+            // alert(response);
+            deferred.resolve(response)
+          }).error(function(){
+          // alert('fail');
+          deferred.reject();
+        });
+        return deferred.promise;
+      }
+    }
   });
 

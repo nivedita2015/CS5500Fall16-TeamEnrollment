@@ -18,38 +18,44 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     init();
 
     function signin(emailId,password){
-      LoginService.login(emailId,password)
-        .then(function(res){
+      // alert('inside signin');
+      LoginService.login(emailId,password).then(function(res){
+          // alert('inside login service return');
           console.log(res);
-          if(res.data != 'False'){
-            $rootScope.user = res.data;
+          if(res.data == 'False'){
+            // alert('Wrong Username/Password. Try again!');
+            login.msg = 'true'
+          }
+          else{
+            // alert('inside correct user');
+            // login.msg = 'true'
+            $rootScope.user = res;
             $state.go('event');
             login.msg = null;
           }
-          else{
-            login.msg = 'true'
-          }
 
-        })
+        },function(err){
+        console.log("error");
+      })
     }
   })
   .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar,EventService) {
-    console.log("inside event controller");
+    console.log("inside event controller"+$rootScope.user);
     var event = this;
     event.getEvents = getEvents;
     var filterBarInstance;
 
 
     function init(){
-      getEvents( $rootScope.user);
+      getEvents($rootScope.user);
     }
 
     function getEvents(userId){
       EventService.getEvents(userId)
         .then(function(res){
           console.log(res);
-          if(res.data.length != 0){
-            $scope.events = res.data;
+          if(res.length != 0){
+            $scope.events = res;
           }
           else{
             $scope.events = [];
@@ -58,13 +64,6 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
 
     init();
-
-
-
-
-
-
-
 
     event.eventClick = eventClick;
     event.preferences = preferences;
