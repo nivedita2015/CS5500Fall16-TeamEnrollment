@@ -92,27 +92,49 @@ describe('Login Tests', function() {
        .end(function(err, res){
         console.log(res.body);
          res.should.be.array;
-         assert.lengthOf(res.body,3,'result should have length 0');
+         assert.lengthOf(res.body,2,'result should have length 0');
          res.should.have.status(200);
          res.body[0].should.have.property("_id");
+         res.body[0]._id.should.have.equal("5842349d5faf958754a87c9a");
+         res.body[0].should.have.property("_id");
+         res.body[0].should.have.property("Name");
+         res.body[0].should.have.property("Group");
+         res.body[0].should.have.property("Date");
+         res.body[0].should.have.property("Time");
+         res.body[0].should.have.property("Campus");
+         res.body[0].should.have.property("Description");
+         res.body[0].should.have.property("Latitude");
+         res.body[0].should.have.property("Longitude");
+         res.body[1].should.have.property("_id");
+         res.body[1]._id.should.have.equal("584234af5faf958754a87c9b");
+         res.body[1].should.have.property("Name");
+         res.body[1].should.have.property("Group");
+         res.body[1].should.have.property("Date");
+         res.body[1].should.have.property("Time");
+         res.body[1].should.have.property("Campus");
+         res.body[1].should.have.property("Description");
+         res.body[1].should.have.property("Latitude");
+         res.body[1].should.have.property("Longitude");
          done();
        });
    });
 
-  // it('Should return the event details for a given event /events/id GET', function(done) {
-  //    chai.request(server)
-  //      .get('/events/id?id=5835e33a72302c8dd48ba5ee')
-  //      .end(function(err, res){
-  //       console.log(res.body);
-  //        res.should.be.json;
-  //        res.body.should.have.property("Name");
-  //        res.body.should.have.property("Group");
-  //        res.body.should.have.property("Date");
-  //        res.body.should.have.property("Time");
-  //        res.body.should.have.property("Campus");
-  //        res.should.have.status(200);
-  //        done();
-  //      });
-  //  });
+  it('Should return the event details for a given event /events/id GET', function(done) {
+     chai.request(server)
+       .get('/events/id?id=5842349d5faf958754a87c9a')
+       .end(function(err, res){
+        console.log(res.body);
+         res.body.should.have.property("Name");
+         res.body.should.have.property("Group");
+         res.body.should.have.property("Date");
+         res.body.should.have.property("Time");
+         res.body.should.have.property("Campus");
+         res.body.should.have.property("Description");
+         res.body.should.have.property("Latitude");
+         res.body.should.have.property("Longitude");
+         res.should.have.status(200);
+         done();
+       });
+   });
  });
 
