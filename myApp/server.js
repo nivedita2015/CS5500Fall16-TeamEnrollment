@@ -21,7 +21,7 @@ app.all("/*", function (req, res, next) {
 
 app.use(express.static(path.join(__dirname, '../client/public')));
 
-mongoose.connect('mongodb://ec2-52-207-253-108.compute-1.amazonaws.com:27017/Enrollment')
+mongoose.connect('mongodb://ec2-35-164-23-154.us-west-2.compute.amazonaws.com:27017/Enrollment')
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -64,10 +64,6 @@ app.get('/users', function(req,res){
              return;
          };
 
-         if(err){
-             res.json('False');
-             return;
-         }
          if(usrs.password == pwd){
              res.json(usrs.id);
              return;
@@ -77,65 +73,55 @@ app.get('/users', function(req,res){
      });
  });
 
-app.post('/users', function(req,res){
-    var user = new Users();
-    user.username = req.body.username;
-    user.password = req.body.password;
-    console.log(user.username);
-    user.save(function(err,user){
-        if(err){
-            throw err;
-        }
-        res.send('User added!')
-    });
-});
-
 // End of APIs for user login ----------------------------------------------
 
 // APIs for Events ---------------------------------------------------------
 
-
-
+// return all events
 app.get('/allEvents', function(req,res){
     Events.find(function(err,usrs){
-        if(err){
-            throw err;
-        }
         res.json(usrs)
     });
 });
 
-
+// return specific details of user subscribed events
 app.get('/users/events', function(req,res){
     var id = mongoose.Types.ObjectId(req.query.id);
     var array =  [];
     Subscribed.findOne({'_id':id},function(err,userEvents){
-        if(err){
-            throw err;
-        }
+        console.log(userEvents);
         if(userEvents == null){
+          console.log("got nothing");
           res.send(array);
           return;
         }
     array = userEvents.Events;
+    console.log("got events");
+    console.log(array);
     for (var i = 0; i < array.length; i++) {
         array[i] = mongoose.Types.ObjectId(array[i]);
     };
-    Events.find({'_id' : { $in : array}}, function(err, events){
+    Events.find({'_id' : { $in : array}},{"Name": 1,"Date":1,"Time":1,"Location":1, "Campus":1}, function(err, events){
         res.send(events);
     });
 
     });
 });
 
+// return all details of a given event
+app.get('/events', function(req,res){
+    var id = mongoose.Types.ObjectId(req.query.id);
+    Events.findOne({'_id' : id}, function(err, events){
+          res.json(events);
+          return;
+    });
+});
 
 
+// listen (start app with node server.js) ======================================
 var server   = http.createServer(app);
 server.listen(8080, function() {
-  console.log("Node server running on http://localhost:1337");
+  console.log("Node server running on port 8080");
 });
 
 module.exports = app;
-// listen (start app with node server.js) ======================================
-// app.listen(8080);
-// console.log('App listening on port 8080');

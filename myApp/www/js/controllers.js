@@ -17,6 +17,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     init();
 
+<<<<<<< HEAD
     // function signin(emailId,password) {
     //   LoginService.login(emailId,password).then(function(msg) {
     //     $state.go('event');
@@ -40,56 +41,69 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     // }
 
 
+=======
+>>>>>>> bb8a004f862d6c011b8aea914a3adfe4403a12e7
     function signin(emailId,password){
-      LoginService.login(emailId,password)
-        .then(function(data){
-          console.log(data);
-          $rootScope.user = data.data;
-          $state.go('event');
-        })
+      // alert('inside signin');
+      LoginService.login(emailId,password).then(function(res){
+          // alert('inside login service return');
+          console.log(res);
+          if(res == 'False'){
+            // alert('Wrong Username/Password. Try again!');
+            login.msg = 'true'
+          }
+          else{
+            // alert('inside correct user');
+            // login.msg = 'true'
+            $rootScope.user = res;
+            $state.go('event');
+            login.msg = null;
+          }
+
+        },function(err){
+        console.log("error");
+      })
     }
   })
-  .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar) {
+  .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar,EventService) {
+    console.log("inside event controller"+$rootScope.user);
+    var event = this;
+    event.getEvents = getEvents;
+    var filterBarInstance;
+    var a=['../img/ionic.png','../img/NUlogo.png'];
 
-    console.log("the user is "+$rootScope.user);
 
+    function init(){
+      getEvents($rootScope.user);
+    }
 
+    function getEvents(userId){
+      EventService.getEvents(userId)
+        .then(function(res){
+          console.log(res);
+          if(res.length != 0){
+            for(i=0;i<res.length;i++){
+              res[i].pic = a[i];
+            }
+            $scope.events = res;
+          }
+          else{
+            $scope.events = [];
+          }
+        })
+    }
 
+    init();
 
-
-    var event=this,
-      events=[],
-     filterBarInstance;
-
-    events=[
-      {
-        pic:"/img/NUlogo.png",
-        name:"NU Homecoming",
-        group:"Association for Student Welfare",
-        id:"123",
-        dt:"11/09/2016"
-
-      },
-      {
-        pic:"/img/ionic.png",
-        name:"Huskies vs Wildcats",
-        group:"Northeastern Sports Association",
-        id:"234",
-        dt:"12/07/2016"
-
-      }
-    ]
-    event.events=events;
-    console.log("inside events controller");
     event.eventClick = eventClick;
     event.preferences = preferences;
     event.showFilterBar=showFilterBar;
 
     function showFilterBar() {
       filterBarInstance = $ionicFilterBar.show({
-        items: event.events,
+        items: $scope.events,
         update: function (filteredItems) {
-          event.events = filteredItems;
+          $scope.events = filteredItems;
           $scope.array1=filteredItems;
         },
         filterProperties: 'name'
@@ -97,18 +111,22 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       console.log($ionicFilterBar);
     };
 
-    function eventClick(id) {
-      console.log("inside eventClick");
-      var result="Failure";
-      for(var i in event.events){
-        if(event.events[i].id===id){
-          result="Success";
-          $state.go('eventDetails',{'id':id});
-        }
-      }
-      if(result==="Failure"){
-        $scope.msg="Failure";
-      }
+
+    //not changed below this//
+
+    function eventClick(id){
+      console.log(id);
+
+      $rootScope.eId = id;
+      console.log("printing eid"+$rootScope.eId);
+      $state.go('eventDetails',{'id':id});
+      // EventService.getEventDetails(id)
+      //   .then(function(res){
+      //     if(res != 'False'){
+      //       $rootScope.currentEvent = id;
+      //       $state.go('eventDetails',{'id':id});
+      //     }
+      //   })
     }
 
     function preferences(){
@@ -117,6 +135,8 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform) {
+    console.log("inside event details controller"+$rootScope.eId);
+
     var eventDetails=this;
     var events=[
       {
@@ -185,8 +205,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     function OtherShare(){
       $ionicPlatform.ready(function(){
-        // alert('inside ionic platform ready');
+        console.log('inside ionic platform ready');
         try{
+          console.log('inside try');
           if(window.cordova){
             $cordovaSocialSharing
               .shareViaFacebook('Hello', null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker')

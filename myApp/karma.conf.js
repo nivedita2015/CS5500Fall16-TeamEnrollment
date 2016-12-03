@@ -42,7 +42,8 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     // reporters: ['progress','coverage'],
-    reporters: ['dots','json-result', 'junit', 'coverage'],
+    // reporters: ['dots','json-result', 'junit', 'coverage'],
+    reporters: ['dots','json-result', 'coverage'],
 
     coverageReporter: {
       // specify a common output directory
@@ -68,7 +69,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
@@ -80,9 +81,9 @@ module.exports = function(config) {
   isSynchronous: "true"
 },
 
-       junitReporter: {
-  outputFile: 'test-results.xml'
-},
+//        junitReporter: {
+//   outputFile: 'test-results.xml'
+// },
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
