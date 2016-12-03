@@ -44,6 +44,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     var event = this;
     event.getEvents = getEvents;
     var filterBarInstance;
+    var a=['../img/ionic.png','../img/NUlogo.png'];
 
 
     function init(){
@@ -55,6 +56,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         .then(function(res){
           console.log(res);
           if(res.length != 0){
+            for(i=0;i<res.length;i++){
+              res[i].pic = a[i];
+            }
             $scope.events = res;
           }
           else{
