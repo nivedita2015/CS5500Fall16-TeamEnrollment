@@ -10,6 +10,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     function init(){
       getLoginPage();
+      login.msg = null;
     }
 
     function getLoginPage(){
@@ -17,33 +18,8 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     init();
 
-
-    // function signin(emailId,password) {
-    //   LoginService.login(emailId,password).then(function(msg) {
-    //     $state.go('event');
-    //   }, function(errMsg) {
-    //
-    //     alert('Log in failed. Try again.');
-
-    //
-    //    // login.msg = 'Sign in failed. Try again.'
-    //
-
-    //
-    //    // login.msg = 'Sign in failed. Try again.'
-    //
-
-        // var alertPopup = $ionicPopup.alert({
-        //   title: 'Login failed!',
-        //   template: errMsg
-        // });
-    //   });
-    // }
-
-
-
     function signin(emailId,password){
-      // alert('inside signin');
+      console.log('inside signin');
       LoginService.login(emailId,password).then(function(res){
           // alert('inside login service return');
           console.log(res);
@@ -61,6 +37,8 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
         },function(err){
         console.log("error");
+        // login.error = 'error';
+
       })
     }
   })
@@ -77,6 +55,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     function init(){
       getEvents($rootScope.user);
     }
+
     function getEvents(userId){
       EventService.getEvents(userId)
         .then(function(res){
@@ -112,7 +91,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
 
     function preferences(){
-      console.log("inside preferences");
+      // alert("inside preferences");
       $state.go('preferences.settings');
     }
   })
@@ -172,16 +151,13 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         try{
           // console.log('inside try');
           if(window.cordova){
-            alert("inside cordova");
+            // alert("inside cordova");
             $cordovaSocialSharing
-              .shareViaFacebookWithPasteMessageHint('Hello', null, 'http://www.google.com')
+              .share('Check out this cool event Im attending!','Event in NU Events', null, 'http://www.NUEvents.com/event?id=1234')
               .then(function(result) {
-                // Success!
-                alert('success');
                 $scope.share = true;
               }, function(err) {
-                // An error occurred. Show a message to the user
-                alert('failure'+err);
+                alert('failure! '+err);
               });
           }
           else{
@@ -200,7 +176,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         title: $scope.event.Name,
         location: '',
         notes: $scope.event.Description,
-        startDate: new Date($scope.event.Date),
+        startDate: new Date(2015,1,6,12,12,12,12),
         endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
       }).then(function (result) {
         // success
@@ -211,10 +187,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
-  console.log("inside preferences ctrl");
-
-
-
+  alert("inside preferences ctrl");
   })
   .controller('FavCtrl', function($state,$rootScope,$scope){
 
@@ -278,7 +251,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
   })
   .controller('SettingsCtrl', function($state,$rootScope,$scope){
-    console.log("inside settings controller");
+    alert("inside settings controller");
     $scope.notification = {checked : true};
     $scope.bluetooth = {checked : true};
     $scope.location = {checked : true};

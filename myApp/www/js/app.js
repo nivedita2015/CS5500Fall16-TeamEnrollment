@@ -104,13 +104,11 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       params: {'id':null},
       controller: 'EventDetailsCtrl as eventDetails',
     })
-
-
     .state('preferences', {
       url: '/preferences',
-      abstract: true,
+      // abstract: true,
       templateUrl: 'views//userPreference.html',
-      // controller: 'PreferencesCtrl'
+      controller: 'PreferencesCtrl'
     })
     .state('preferences.settings', {
       url: '/settings',
