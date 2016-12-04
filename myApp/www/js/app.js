@@ -107,7 +107,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
     .state('preferences', {
       url: '/preferences',
       // abstract: true,
-      templateUrl: 'views//userPreference.html',
+      templateUrl: 'views/userPreference.html',
       controller: 'PreferencesCtrl'
     })
     .state('preferences.settings', {
@@ -115,7 +115,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       views: {
         'settings': {
           templateUrl: 'views/settings.html',
-          controller: 'SettingsCtrl'
+          controller: 'SettingsCtrl as settings'
         }
       }
     })
