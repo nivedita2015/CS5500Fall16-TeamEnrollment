@@ -40,17 +40,18 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('EventCtrl',function($state,$rootScope,$scope,$ionicFilterBar,EventService) {
-    console.log("inside event controller"+$rootScope.user);
+    // console.log("inside event controller"+$rootScope.user);
     var event = this;
     event.getEvents = getEvents;
+    event.eventClick = eventClick;
+    event.preferences = preferences;
+    event.showFilterBar=showFilterBar;
     var filterBarInstance;
     var a=['../img/ionic.png','../img/NUlogo.png'];
-
 
     function init(){
       getEvents($rootScope.user);
     }
-
     function getEvents(userId){
       EventService.getEvents(userId)
         .then(function(res){
@@ -66,12 +67,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
           }
         })
     }
-
     init();
-
-    event.eventClick = eventClick;
-    event.preferences = preferences;
-    event.showFilterBar=showFilterBar;
 
     function showFilterBar() {
       filterBarInstance = $ionicFilterBar.show({
@@ -85,22 +81,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       console.log($ionicFilterBar);
     };
 
-
-    //not changed below this//
-
     function eventClick(id){
-      console.log(id);
-
       $rootScope.eId = id;
-      console.log("printing eid"+$rootScope.eId);
       $state.go('eventDetails',{'id':id});
-      // EventService.getEventDetails(id)
-      //   .then(function(res){
-      //     if(res != 'False'){
-      //       $rootScope.currentEvent = id;
-      //       $state.go('eventDetails',{'id':id});
-      //     }
-      //   })
     }
 
     function preferences(){
@@ -108,54 +91,20 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       $state.go('preferences.settings');
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform) {
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform,EventDetailsService) {
     console.log("inside event details controller"+$rootScope.eId);
 
     var eventDetails=this;
-    var events=[
-      {
-        pic:"/img/NUlogo.png",
-        map:"/img/ionic.png",
-        name:"NU Homecoming",
-        group:"Association for Student Welfare",
-        id:"123",
-        dt:"11/09/2016",
-        desc:"This should be the description of the event. The details are unique to the event",
-        lat:"42.338452",
-        longt:"-71.087834",
-      },
-      {
-        pic:"/img/ionic.png",
-        map:"/img/NUlogo.png",
-        name:"Library events",
-        group:"Sigma Kappa",
-        id:"234",
-        dt:"12/17/2016",
-        desc:"This should be the description of the event. The details are unique to the event",
-        lat:"42.338628",
-        longt:"-71.092285",
-      }
-
-    ];
+    event.getEventDetails = getEventDetails;
     eventDetails.init=init;
     eventDetails.OtherShare = OtherShare;
     eventDetails.addToCalendar = addToCalendar;
 
-    var id=$stateParams.id;
-    // console.log("after id"+id);
-    function init() {
-      console.log("inside event details init");
-      for(var i in events){
-        if(events[i].id===id){
-          console.log("id matched "+id);
-          eventDetails.event=events[i];
-          console.log(eventDetails.event);
-        }
-      }
+    function init(){
+      getEventDetails($rootScope.eId);
       var options = {timeout: 10000, enableHighAccuracy: true};
-
       $cordovaGeolocation.getCurrentPosition(options).then(function(position){
-        var latLng = new google.maps.LatLng(eventDetails.event.lat,eventDetails.event.longt);
+        var latLng = new google.maps.LatLng($scope.event.Latitude,$scope.event.Longitude);
         var mapOptions = {
           center: latLng,
           zoom: 17,
@@ -174,17 +123,33 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       }, function(error){
         console.log("Could not get location");
         eventDetails.mapLoaded = false;
-      });}
+      });
+    }
+
+    function getEventDetails(eid){
+      EventDetailsService.getEventDetails(eid)
+        .then(function(res){
+          console.log(res);
+          if(res != 'False'){
+            $scope.event = res;
+          }
+          else{
+            $scope.event = [];
+          }
+        })
+    }
+
     init();
 
     function OtherShare(){
       $ionicPlatform.ready(function(){
-        console.log('inside ionic platform ready');
+        // console.log('inside ionic platform ready');
         try{
-          console.log('inside try');
+          // console.log('inside try');
           if(window.cordova){
+            alert("inside cordova");
             $cordovaSocialSharing
-              .shareViaFacebook('Hello', null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker')
+              .shareViaFacebookWithPasteMessageHint('Hello', null, 'http://www.google.com')
               .then(function(result) {
                 // Success!
                 alert('success');
@@ -207,10 +172,10 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     function addToCalendar(){
       $cordovaCalendar.createEventInteractively({
-        title: 'Test',
-        location: 'Test',
-        notes: 'Test',
-        startDate: new Date(2015, 0, 6, 18, 30, 0, 0, 0),
+        title: $scope.event.Name,
+        location: '',
+        notes: $scope.event.Description,
+        startDate: new Date($scope.event.Date),
         endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
       }).then(function (result) {
         // success

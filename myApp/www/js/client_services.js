@@ -36,7 +36,7 @@ angular.module('starter.services',['starter.constant'])
     return{
       getEventDetails:function(id){
         var deferred = $q.defer();
-        $http.get(API_ENDPOINT.url+'/users/events/eventDetails?id='+id)
+        $http.get(API_ENDPOINT.url+'/events/?id='+id)
         .success(function(response){
           deferred.resolve(response)
         }).error(function(){

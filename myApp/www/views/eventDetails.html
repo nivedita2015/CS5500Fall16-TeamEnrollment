@@ -7,16 +7,17 @@
   <div class="list card" style="padding-top:40px">
 
     <div class="item item-avatar">
-      <img src={{eventDetails.event.pic}}>
-      <h2>{{eventDetails.event.name}}</h2>
-      <p>{{eventDetails.event.group}}</p>
-      <p>{{eventDetails.event.dt}}</p>
+      <img src={{event.pic}}>
+      <h2>{{event.Name}}</h2>
+      <p>{{event.Group}}</p>
+      <p>{{event.Date}}</p>
+      <p>{{event.Time}}</p>
     </div>
 
 
     <div class="item item-body">
       <p>
-        {{eventDetails.event.desc}}
+        {{event.Description}}
       </p>
     </div>
 
@@ -28,7 +29,7 @@
           <button class="btn btn-primary btn-block" ng-click="eventDetails.OtherShare()">Share</button>
         </div>
         <div class="col-xs-6">
-          <button class="btn btn-danger btn-block">Add to Calendar</button>
+          <button class="btn btn-danger btn-block" ng-click="eventDetails.addToCalendar()">Add to Calendar</button>
         </div>
       </div>
     </div>
