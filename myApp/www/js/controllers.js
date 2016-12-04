@@ -277,7 +277,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     console.log("favorite controller")
 
   })
-  .controller('SettingsCtrl', function($state,$rootScope,$scope,$ionicPlatform,ngCordova){
+  .controller('SettingsCtrl', function($state,$rootScope,$scope){
     console.log("inside settings controller");
     $scope.notification = {checked : true};
     $scope.bluetooth = {checked : true};
@@ -292,24 +292,24 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     this.eventPage = eventPage;
 
 
-    $ionicPlatform.ready(function() {
-
-      cordova.plugins.BluetoothStatus.enableBT();
-
-
-      ngCordova.plugins.locationManager.isBluetoothEnabled()
-        .then(function(isEnabled) {
-          if (isEnabled) {
-            console.log("Bluetooth is enabled: " + isEnabled);
-            $scope.bluetoothIsEnabled = isEnabled;
-          } else {
-            console.log("Bluetooth is disabled: " + isEnabled);
-            $scope.bluetoothIsEnabled = isEnabled;
-          }
-        })
-        .fail(console.error)
-        .done();
-    });
+    // $ionicPlatform.ready(function() {
+    //
+    //   cordova.plugins.BluetoothStatus.enableBT();
+    //
+    //
+    //   ngCordova.plugins.locationManager.isBluetoothEnabled()
+    //     .then(function(isEnabled) {
+    //       if (isEnabled) {
+    //         console.log("Bluetooth is enabled: " + isEnabled);
+    //         $scope.bluetoothIsEnabled = isEnabled;
+    //       } else {
+    //         console.log("Bluetooth is disabled: " + isEnabled);
+    //         $scope.bluetoothIsEnabled = isEnabled;
+    //       }
+    //     })
+    //     .fail(console.error)
+    //     .done();
+    // });
 
 
 
