@@ -250,11 +250,11 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     console.log("favorite controller")
 
   })
-  .controller('SettingsCtrl', function($state,$rootScope,$scope){
+  .controller('SettingsCtrl', function($state,$rootScope,$scope,$ionicPlatform,$cordovaBluetoothSerial) {
     alert("inside settings controller");
-    $scope.notification = {checked : true};
-    $scope.bluetooth = {checked : true};
-    $scope.location = {checked : true};
+    $scope.notification = {checked: true};
+    $scope.bluetooth = {checked: true};
+    $scope.location = {checked: true};
 
     var settings = this;
     // this.notificationChange = notificationChange;
@@ -263,20 +263,55 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     this.favoritesPage = favoritesPage;
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
+    settings.notify = notify;
 
+    function notify(event) {
+      alert("inside notify");
+    $ionicPlatform.ready(function () {
+      // console.log('inside ionic platform ready');
+
+
+      try {
+        // console.log('inside try');
+        if (window.cordova) {
+          $cordovaBluetoothSerial.isEnabled()
+            .then(function (success) {
+              alert("Bluetooth is enabled");
+              // console.log("Bluetooth is enabled: " + isEnabled);
+              $scope.bluetoothIsEnabled = isEnabled;
+
+            }, function (err) {
+              alert("Bluetooth is disabled");
+              // console.log("Bluetooth is disabled: " + isEnabled);
+              $scope.bluetoothIsEnabled = isEnabled;
+            })
+        }
+        else {
+          alert('not cordova');
+        }
+      }
+      catch (err) {
+        alert(err.message);
+      }
+
+
+    });
+  }
 
     // $ionicPlatform.ready(function() {
     //
     //   cordova.plugins.BluetoothStatus.enableBT();
     //
     //
-    //   ngCordova.plugins.locationManager.isBluetoothEnabled()
+    //   cordova.plugins.locationManager.isBluetoothEnabled()
     //     .then(function(isEnabled) {
     //       if (isEnabled) {
-    //         console.log("Bluetooth is enabled: " + isEnabled);
+    //         alert("Bluetooth is enabled");
+    //         // console.log("Bluetooth is enabled: " + isEnabled);
     //         $scope.bluetoothIsEnabled = isEnabled;
     //       } else {
-    //         console.log("Bluetooth is disabled: " + isEnabled);
+    //         alert("Bluetooth is disabled");
+    //         // console.log("Bluetooth is disabled: " + isEnabled);
     //         $scope.bluetoothIsEnabled = isEnabled;
     //       }
     //     })

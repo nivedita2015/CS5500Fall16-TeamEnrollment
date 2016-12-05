@@ -115,7 +115,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       views: {
         'settings': {
           templateUrl: 'views/settings.html',
-          controller: 'SettingsCtrl'
+          controller: 'SettingsCtrl as settings'
         }
       }
     })

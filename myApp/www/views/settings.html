@@ -4,14 +4,14 @@
       <div class="item item-divider">
         Settings
       </div>
-      <div ng-if="settings.bluetoothIsEnabled=true">
-        <h1>bluetooth on</h1>
-      </div>
+      <!--<div ng-if="settings.bluetoothIsEnabled=true">-->
+        <!--<h1>bluetooth on</h1>-->
+      <!--</div>-->
 
       <ion-toggle ng-model="notification.checked">
         Daily Notifications
       </ion-toggle>
-      <ion-toggle ng-model="bluetooth.checked">
+      <ion-toggle ng-model="bluetooth.checked" ng-click="settings.notify(bluetooth.checked)">
         Bluetooth
       </ion-toggle>
       <ion-toggle ng-model="location.checked">
