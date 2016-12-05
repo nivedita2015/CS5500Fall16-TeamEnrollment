@@ -39,6 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
      cordova.plugins.BluetoothStatus.promptForBT();
     // cordova.plugins.BluetoothStatus.enableBT();
 
+
   });
 })
 .config(function($stateProvider, $urlRouterProvider) {
