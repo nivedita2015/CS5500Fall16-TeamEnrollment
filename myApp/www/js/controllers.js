@@ -187,7 +187,6 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('PreferencesCtrl', function($state,$rootScope,$scope){
-  alert("inside preferences ctrl");
   })
   .controller('FavCtrl', function($state,$rootScope,$scope){
 
@@ -251,51 +250,86 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
   })
   .controller('SettingsCtrl', function($state,$rootScope,$scope,$ionicPlatform,$cordovaBluetoothSerial) {
-    alert("inside settings controller");
-    $scope.notification = {checked: true};
-    $scope.bluetooth = {checked: true};
-    $scope.location = {checked: true};
+    // $scope.notification = {checked: true};
+    // $scope.bluetooth = {checked: true};
+    // $scope.location = {checked: true};
 
     var settings = this;
-    // this.notificationChange = notificationChange;
-    // this.bluetoothChange = bluetoothChange;
-    // this.locationChange = locationChange;
     this.favoritesPage = favoritesPage;
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
     settings.notify = notify;
+    settings.init=init;
+
+    function init() {
+      $scope.notification = {checked: true};
+      $scope.location = {checked: true};
+
+      $cordovaBluetoothSerial.isEnabled()
+        .then(function (success) {
+            $scope.bluetooth = {checked: true};
+        }, function (err) {
+          $scope.bluetooth = {checked: false};
+        })
+    }
+    init();
 
     function notify(event) {
-      alert("inside notify");
-    $ionicPlatform.ready(function () {
-      // console.log('inside ionic platform ready');
+
+      if(event==="false"){
+        $ionicPlatform.ready(function () {
+          // console.log('inside ionic platform ready');
 
 
-      try {
-        // console.log('inside try');
-        if (window.cordova) {
-          $cordovaBluetoothSerial.isEnabled()
-            .then(function (success) {
-              alert("Bluetooth is enabled");
-              // console.log("Bluetooth is enabled: " + isEnabled);
-              $scope.bluetoothIsEnabled = isEnabled;
+          try {
+            // console.log('inside try');
+            if (window.cordova) {
+              $cordovaBluetoothSerial.showBluetoothSettings()
+                .then(function (success) {
+                  $state.go('preferences.settings');
+                }, function (err) {
+                  alert("Bluetooth is disabled");
+                })
+            }
+            else {
+              alert('not cordova');
+            }
+          }
+          catch (err) {
+            alert(err.message);
+          }
 
-            }, function (err) {
-              alert("Bluetooth is disabled");
-              // console.log("Bluetooth is disabled: " + isEnabled);
-              $scope.bluetoothIsEnabled = isEnabled;
-            })
-        }
-        else {
-          alert('not cordova');
-        }
+
+        });
       }
-      catch (err) {
-        alert(err.message);
+
+      else{
+        $ionicPlatform.ready(function () {
+          // console.log('inside ionic platform ready');
+
+
+          try {
+            // console.log('inside try');
+            if (window.cordova) {
+              $cordovaBluetoothSerial.showBluetoothSettings()
+                .then(function (success) {
+                  $state.go('preferences.settings');
+                }, function (err) {
+                  $state.go('preferences.settings');
+                })
+            }
+            else {
+              alert('not cordova');
+            }
+          }
+          catch (err) {
+            alert(err.message);
+          }
+
+
+        });
       }
 
-
-    });
   }
 
     // $ionicPlatform.ready(function() {
