@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','starter.services','starter.constant','ngCordova','ui.router','jett.ionic.filter.bar'])
+angular.module('starter', ['ionic', 'starter.controllers','starter.services','starter.constant','ngCordova','ui.router','jett.ionic.filter.bar','ngCordovaBeacon'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -41,11 +41,6 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
 
   });
 })
-
-
-
-
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('app', {
@@ -54,44 +49,15 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       templateUrl: 'templates/menu.html',
       controller: 'AppCtrl'
   })
-  //   .state('app.search', {
-  //     url: '/search',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/search.html'
-  //     }
-  //   }
-  // })
-  //   .state('app.browse', {
-  //     url: '/browse',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/browse.html'
-  //       }
-  //     }
-  //   })
-  //   .state('app.playlists', {
-  //     url: '/playlists',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/playlists.html',
-  //         controller: 'PlaylistsCtrl'
-  //       }
-  //     }
-  //   })
-  //   .state('app.single', {
-  //   url: '/playlists/:playlistId',
-  //   views: {
-  //     'menuContent': {
-  //       templateUrl: 'templates/playlist.html',
-  //       controller: 'PlaylistCtrl'
-  //     }
-  //   }
-  // })
     .state('login', {
       url: '/login',
       templateUrl: 'views/login.html',
       controller: 'LoginCtrl as login'
+    })
+    .state('beacon', {
+      url: '/beacon',
+      templateUrl: 'views/beacon.html',
+      controller: 'BeaconCtrl'
     })
     .state('event', {
       url: '/event',
@@ -137,6 +103,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
         }
       }
     })
+
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');

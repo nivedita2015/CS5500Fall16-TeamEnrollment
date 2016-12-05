@@ -6,6 +6,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     console.log("inside login controller");
     var login = this;
     login.signin = signin;
+    login.beacon = beacon;
 
 
     function init(){
@@ -17,6 +18,11 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
 
     init();
+
+    function beacon(){
+      alert("going to beacon");
+      $state.go('beacon');
+    }
 
     function signin(emailId,password){
       console.log('inside signin');
@@ -402,6 +408,29 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
           console.log("all Events controller")
 
 
+  })
+  .controller("BeaconCtrl", function($scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
+
+    alert("loadded controller");
+
+    $scope.beacons = {};
+
+    $ionicPlatform.ready(function() {
+
+      $cordovaBeacon.requestWhenInUseAuthorization();
+
+      $rootScope.$on("$cordovaBeacon:didRangeBeaconsInRegion", function(event, pluginResult) {
+        var uniqueBeaconKey;
+        for(var i = 0; i < pluginResult.beacons.length; i++) {
+          uniqueBeaconKey = pluginResult.beacons[i].uuid + ":" + pluginResult.beacons[i].major + ":" + pluginResult.beacons[i].minor;
+          $scope.beacons[uniqueBeaconKey] = pluginResult.beacons[i];
+        }
+        $scope.$apply();
+      });
+
+      $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "b9407f30-f5f8-466e-aff9-25556b57fe6d"));
+
+    })
   })
 ;
 
