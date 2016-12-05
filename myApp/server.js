@@ -37,9 +37,15 @@ var userSchema = mongoose.Schema({
 var eventSchema = mongoose.Schema({
     Name : String,
     Group : String,
-    Dte : Date,
+    _Date : String,
     Time : String,
-    Campus : String
+    Campus : String,
+    Month: Number,
+    Day: Number,
+    Year: Number,
+    Hour: Number,
+    Min: Number,
+    Period: String
 });
 
 var subscribedEventSchema = mongoose.Schema({
@@ -89,19 +95,27 @@ app.get('/users/events', function(req,res){
     var id = mongoose.Types.ObjectId(req.query.id);
     var array =  [];
     Subscribed.findOne({'_id':id},function(err,userEvents){
-        console.log(userEvents);
         if(userEvents == null){
-          console.log("got nothing");
           res.send(array);
           return;
         }
     array = userEvents.Events;
-    console.log("got events");
-    console.log(array);
+
     for (var i = 0; i < array.length; i++) {
         array[i] = mongoose.Types.ObjectId(array[i]);
     };
-    Events.find({'_id' : { $in : array}},{"Name": 1,"Date":1,"Time":1,"Location":1, "Campus":1}, function(err, events){
+    Events.find({'_id' : { $in : array}},{"Name": 1,"_Date":1,"Time":1,"Location":1, "Campus":1}, function(err, events){
+        for (var i = 0; i < events.length; i++) {
+            var dte = events[i]._Date.split("/");
+            events[i].Month = parseInt(dte[0]);
+            events[i].Day = parseInt(dte[1]);
+            events[i].Year = parseInt(dte[2]);
+            var time = events[i].Time.split(":");
+            events[i].Hour = parseInt(time[0]);
+            var temp = time[1].split(" ");
+            events[i].Min = parseInt(temp[0]);
+            events[i].Period = temp[1];
+        }
         res.send(events);
     });
 

@@ -1,0 +1,41 @@
+
+<div class="bar bar-assertive pull-left">
+  <h1 class="title">Enrollment</h1>
+</div>
+
+<!--Sub Header-->
+<div class="bar bar-subheader">
+  <h2 class="title red">Beacon</h2>
+</div>
+
+<ion-content ng-controller="BeaconCtrl">
+  <div class="list">
+    <div class="item" ng-repeat="(key, value) in beacons">
+      <div class="row">
+        <div class="col truncate">
+          {{value.uuid}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          major: {{value.major}}
+        </div>
+        <div class="col">
+          minor: {{value.minor}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {{value.proximity}}
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<!--footer-->
+<div class="bar bar-footer bar-assertive">
+  <div class="title"></div>
+</div>
+
+<!--</html>-->
