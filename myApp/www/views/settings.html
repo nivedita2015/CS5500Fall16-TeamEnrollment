@@ -1,6 +1,7 @@
 <ion-view title="settings">
   <ion-content>
-    <div class="avoid_header">
+    <!--<div class="avoid_header">-->
+      <div>
       <div class="item item-divider">
         Settings
       </div>
@@ -12,9 +13,10 @@
         Daily Notifications
       </ion-toggle>
       <ion-toggle ng-model="bluetooth.checked" ng-click="settings.notify(bluetooth.checked)">
+        <!--<ion-toggle ng-model="bluetooth.checked" ng-click="settings.notifyBluetooth()">-->
         Bluetooth
       </ion-toggle>
-      <ion-toggle ng-model="location.checked">
+      <ion-toggle ng-model="location.checked" ng-click="settings.notifyLocation()">
         Location Service
       </ion-toggle>
 

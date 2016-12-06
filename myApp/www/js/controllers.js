@@ -259,17 +259,36 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     // $scope.notification = {checked: true};
     // $scope.bluetooth = {checked: true};
     // $scope.location = {checked: true};
-
     var settings = this;
     this.favoritesPage = favoritesPage;
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
     settings.notify = notify;
     settings.init=init;
+    settings.notifyLocation=notifyLocation;
+    // settings.notifyBluetooth=notifyBluetooth;
+
+
 
     function init() {
       $scope.notification = {checked: true};
-      $scope.location = {checked: true};
+      // $scope.location = {checked: true};
+
+      cordova.plugins.diagnostic.isLocationEnabled(function(available){
+        if(available){
+          alert("location on")
+          $scope.location = {checked: true};
+        }
+        else {
+          alert("location off")
+          $scope.location = {checked: false};
+        }
+
+      }, function(error){
+        alert("location off")
+        $scope.location = {checked: false};
+      });
+
 
       $cordovaBluetoothSerial.isEnabled()
         .then(function (success) {
@@ -279,6 +298,16 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         })
     }
     init();
+
+    function notifyLocation() {
+      cordova.plugins.diagnostic.switchToLocationSettings()
+        .then(function (success) {
+          alert("true")
+        }, function (err) {
+          alert("false")
+        })
+    }
+
 
     function notify(event) {
 
