@@ -20,24 +20,25 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
       StatusBar.styleDefault();
     }
 
-    window.addEventListener('BluetoothStatus.enabled', function() {
-      console.log('Bluetooth has been enabled');
-      var alertPopup = $ionicPopup.alert({
-        title: 'Bluetooth enabled!',
-        template: errMsg
-      });
-    });
-
-    window.addEventListener('BluetoothStatus.disabled', function() {
-      console.log('Bluetooth has been disabled');
-      var alertPopup = $ionicPopup.alert({
-        title: 'Bluetooth disabled!',
-        template: errMsg
-      });
-    });
+    // window.addEventListener('BluetoothStatus.enabled', function() {
+    //   console.log('Bluetooth has been enabled');
+    //   var alertPopup = $ionicPopup.alert({
+    //     title: 'Bluetooth enabled!',
+    //     template: errMsg
+    //   });
+    // });
+    //
+    // window.addEventListener('BluetoothStatus.disabled', function() {
+    //   console.log('Bluetooth has been disabled');
+    //   var alertPopup = $ionicPopup.alert({
+    //     title: 'Bluetooth disabled!',
+    //     template: errMsg
+    //   });
+    // });
 
      cordova.plugins.BluetoothStatus.promptForBT();
-    // cordova.plugins.BluetoothStatus.enableBT();
+    // // cordova.plugins.BluetoothStatus.enableBT();
+    // cordova.plugins.locationManager.requestAlwaysAuthorization()
 
 
   });
@@ -101,6 +102,16 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','st
         'events': {
           templateUrl: 'views/allEvents.html',
           controller: 'allEventsCtrl as event'
+        }
+      }
+    })
+
+    .state('preferences.nevents', {
+      url: '/nevents',
+      views: {
+        'nevents': {
+          templateUrl: 'views/beacon.html',
+          controller: 'BeaconCtrl as beacon'
         }
       }
     })

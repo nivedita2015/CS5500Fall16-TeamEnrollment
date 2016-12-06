@@ -22,3 +22,13 @@
 .top-space-pad{
   padding-top: 100px;
 }
+
+.aboveSpace{
+  margin-top: 70px;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -200,21 +200,21 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     event.events=[
       {
-        pic:"/img/NUlogo.png",
+        pic:"/android_asset/www/img/NUlogo.png",
         group:"Association for Student Welfare",
         id:"123",
         true:"yes",
         change:"The Event will be removed from your preference"
       },
       {
-        pic:"/img/ionic.png",
+        pic:"/android_asset/www/img/ionic.png",
         group:"Northeastern Sports Association",
         id:"234",
         true:"no",
         change:"The Event will be added to your preference"
       },
       {
-        pic:"/img/ionic.png",
+        pic:"/android_asset/www/img/ionic.png",
         group:"Northeastern Sports Association",
         id:"345",
         true:"yes",
@@ -263,6 +263,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     this.favoritesPage = favoritesPage;
     this.allEventsPage = allEventsPage;
     this.eventPage = eventPage;
+    this.neventPage = neventPage;
     settings.notify = notify;
     settings.init=init;
     settings.notifyLocation=notifyLocation;
@@ -415,25 +416,28 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     function eventPage(){
       $state.go('event');
     }
+    function neventPage() {
+      $state.go('preferences.nevents');
+    }
 
   })
   .controller('allEventsCtrl', function($state,$rootScope,$scope){
     var event=this;
       event.events=[ 
       { 
-        pic:"/img/NUlogo.png", 
+        pic:"/android_asset/www/img/NUlogo.png", 
         group:"Association for Student Welfare", 
         id:"123",     true:"yes", 
         change:"The Event will be removed from your preference"   }, 
 
         { 
-          pic:"/img/ionic.png", 
+          pic:"/android_asset/www/img/ionic.png", 
           group:"Northeastern Sports Association", 
           id:"234",     true:"no", 
           change:"The Event will be added to your preference"   },
 
            { 
-             pic:"/img/ionic.png", 
+             pic:"/android_asset/www/img/ionic.png", 
              group:"Northeastern Sports Association", 
              id:"345",     true:"yes", 
              change:"The Event will be removed from your preference"   }, 
@@ -485,16 +489,30 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       $rootScope.$on("$cordovaBeacon:didRangeBeaconsInRegion", function(event, pluginResult) {
         // alert("inside rootscope on")
         var uniqueBeaconKey;
+
         // alert("plugin result is "+pluginResult.beacons.length);
         for(var i = 0; i < pluginResult.beacons.length; i++) {
           uniqueBeaconKey = pluginResult.beacons[i].uuid + ":" + pluginResult.beacons[i].major + ":" + pluginResult.beacons[i].minor;
           // alert(pluginResult.beacons[i].uuid);
           $scope.beacons[uniqueBeaconKey] = pluginResult.beacons[i];
+
         }
         $scope.$apply();
-      });
 
-      $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "D46375F6-6558-F8C1-F944-CF3E8A620C1A"));
+      });
+      var value=["56502A70-62A9-51F9-2784-CB8CCDF83551",
+                 "D46375F6-6558-F8C1-F944-CF3E8A620C1A",
+                 "954CAF6C-3762-CFA8-E122-D492CF67C4FB"
+                  ];
+      for(var i in value){
+        $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote"+i,value[i]));
+      }
+
+      // $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "56502A70-62A9-51F9-2784-CB8CCDF83551"));
+      // $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "954CAF6C-3762-CFA8-E122-D492CF67C4FB"));
+      // $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "D46375F6-6558-F8C1-F944-CF3E8A620C1A"));
+
+
 
     })
   })
