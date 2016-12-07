@@ -8,29 +8,30 @@
   <!--<h2 class="title red">Beacon</h2>-->
 <!--</div>-->
 <ion-content ng-controller="BeaconCtrl" class="aboveSpace">
-  <div class="list">
-    <div class="item" ng-repeat="(key, value) in beacons">
-      <div class="row">
-        <div class="col truncate">
-          {{value.uuid}}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          major: {{value.major}}
-        </div>
-        <div class="col">
-          minor: {{value.minor}}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          {{value.proximity}}
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col" ng-if="value.proximity==='ProximityImmediate'">
+    <div class="item" ng-repeat="(key, value) in beacons">
+      <div class="list">
+      <!--<div class="row">-->
+        <!--<div class="col truncate">-->
+          <!--{{value.uuid}}-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col">-->
+          <!--major: {{value.major}}-->
+        <!--</div>-->
+        <!--<div class="col">-->
+          <!--minor: {{value.minor}}-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col">-->
+          <!--{{value.proximity}}-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <div class="row" ng-if="value.proximity==='ProximityImmediate'">
+        <div class="col">
           <ion-item ng-if="value.uuid===event1.bid"
                     divider-collection-repeat>
             <a class="item item-thumbnail-left">
