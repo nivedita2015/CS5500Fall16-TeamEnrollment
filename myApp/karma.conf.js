@@ -21,7 +21,9 @@ module.exports = function(config) {
       'node_modules/angular-ui-router/release/angular-ui-router.js',
       'www/js/*.js',
       'www/tests/*.js',
-      'www/tests/stateMock.js'
+      'www/tests/stateMock.js',
+      'www/lib/ngCordova/dist/ng-cordova.js',
+      'www/lib/ngCordovaMocks/dist/ngCordovaMocks.js'
     ],
 
 
@@ -70,7 +72,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['PhantomJS'],
-
+    // browsers: ['Chrome'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

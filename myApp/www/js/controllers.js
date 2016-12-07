@@ -10,11 +10,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
 
     function init(){
-      getLoginPage();
       login.msg = null;
-    }
-
-    function getLoginPage(){
     }
 
     init();
@@ -101,19 +97,21 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       $state.go('preferences.settings');
     }
   })
-  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$stateParams,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,$ionicPlatform,EventDetailsService) {
-    console.log("inside event details controller"+$rootScope.eId);
+  .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,EventDetailsService) {
+    console.log("inside event details controller");
 
     var eventDetails=this;
-    event.getEventDetails = getEventDetails;
+    eventDetails.getEventDetails = getEventDetails;
     eventDetails.init=init;
     eventDetails.OtherShare = OtherShare;
     eventDetails.addToCalendar = addToCalendar;
 
     function init(){
       getEventDetails($rootScope.eId);
+
       var options = {timeout: 10000, enableHighAccuracy: true};
       $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+        alert("inside getCurrentPosition");
         var latLng = new google.maps.LatLng($scope.event.Latitude,$scope.event.Longitude);
         var mapOptions = {
           center: latLng,
@@ -128,10 +126,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
             position: latLng
           });
         });
-
         eventDetails.mapLoaded = true;
-      }, function(error){
-        console.log("Could not get location");
+      }, function(err){
+        alert("Could not get location "+err);
         eventDetails.mapLoaded = false;
       });
     }
@@ -152,38 +149,21 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     init();
 
     function OtherShare(){
-      $ionicPlatform.ready(function(){
-        // console.log('inside ionic platform ready');
-        try{
-          // console.log('inside try');
-          if(window.cordova){
-            // alert("inside cordova");
-            $cordovaSocialSharing
-              .share('Check out this cool event Im attending!','Event in NU Events', null, 'http://www.NUEvents.com/event?id=1234')
-              .then(function(result) {
-                $scope.share = true;
-              }, function(err) {
-                alert('failure! '+err);
-              });
-          }
-          else{
-            alert('not cordova');
-          }
-        }
-        catch(err){
-          alert(err.message);
-        }
-
-      });
+      $cordovaSocialSharing
+        .share('Check out this cool event Im attending!','Event in NU Events', null, 'http://www.NUEvents.com/event?id=1234')
+        .then(function(result) {
+          $scope.share = true;
+        }, function(err) {
+        });
     }
 
     function addToCalendar(){
       $cordovaCalendar.createEventInteractively({
         title: $scope.event.Name,
-        location: '',
+        location: $scope.event.Location,
         notes: $scope.event.Description,
-        startDate: new Date(2015,1,6,12,12,12,12),
-        endDate: new Date(2015, 1, 6, 12, 0, 0, 0, 0)
+        startDate: new Date($scope.event.Year,$scope.event.Month,$scope.event.Day,$scope.event.Hour,$scope.event.Min,0,0,0),
+        endDate: new Date($scope.event.Year,$scope.event.Month,$scope.event.Day,$scope.event.Hour+4,$scope.event.Min,0,0,0),
       }).then(function (result) {
         // success
       }, function (err) {

@@ -16,7 +16,7 @@ describe('LoginCtrl', function() {
     state = $state;
     LoginService = _LoginService_;
     q = $q;
-    state.expectTransitionTo('event');
+    state.expectTransitionTo('beacon');
   }));
 
   //Test case username=alice@husky.neu.edu and password=alice.
@@ -58,6 +58,27 @@ describe('LoginCtrl', function() {
       });
       controller.signin('alice@husky.neu.edu', 'abc');
       expect(LoginService.login).toHaveBeenCalledWith('alice@husky.neu.edu', 'abc');
+    });
+  });
+
+  //Testing function beacon which re-routes to state beacon//
+  describe('Login Controller', function () {
+    it('checks re-route to page beacon ', function () {
+
+      spyOn(LoginService, 'login').and.callFake(function () {
+        var deferred = q.defer();
+        return deferred.promise;
+      });
+      var $scope = {};
+      var rootScope = {};
+      var controller = $controller('LoginCtrl', {
+        $state: state,
+        rootScope: rootScope,
+        $scope: $scope,
+        LoginService: LoginService
+      });
+      controller.beacon();
+      expect(state.current.name).toBe('beacon');
     });
   });
 
