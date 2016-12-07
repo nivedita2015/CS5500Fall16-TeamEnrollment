@@ -52,7 +52,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     event.preferences = preferences;
     event.showFilterBar=showFilterBar;
     var filterBarInstance;
-    var a=['../img/ionic.png','../img/NUlogo.png'];
+    var a=['/android_asset/www/img/ionic.png','/android_asset/www/img/NUlogo.png'];
 
     function init(){
       getEvents($rootScope.user);
@@ -111,8 +111,8 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
       var options = {timeout: 10000, enableHighAccuracy: true};
       $cordovaGeolocation.getCurrentPosition(options).then(function(position){
-        alert("inside getCurrentPosition");
         var latLng = new google.maps.LatLng($scope.event.Latitude,$scope.event.Longitude);
+        alert($scope.event.Latitude+""+$scope.event.Longitude);
         var mapOptions = {
           center: latLng,
           zoom: 17,
