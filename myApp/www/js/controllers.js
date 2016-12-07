@@ -461,6 +461,49 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     // alert("loaded controller");
 
     $scope.beacons = {};
+     $scope.event1= {
+        pic:"/android_asset/www/img/NUlogo.png",
+        group:"Association for Student Welfare",
+        time:"11:00 AM", 
+        place:"Boston" ,
+        bid: "56502a70-62a9-51f9-2784-cb8ccdf83551"};
+
+    $scope.event2= {
+      pic:"/android_asset/www/img/ionic.png",
+      group:"Northeastern Sports Association",
+      time:"5:00 PM",
+      place:"CAMBRIDGE" ,
+      bid: "d46375f6-6558-f8c1-f944-cf3e8a620c1a"};
+
+    $scope.event3= {
+      pic:"/android_asset/www/img/basketball.png",
+      group:"BasketBall Basics",
+      time:"7:00 AM",
+      place:"Boston" ,
+      bid: "954caf6c-3762-cfa8-e122-d492cf67c4fb"};
+
+    var events=[
+      {
+        pic:"/android_asset/www/img/NUlogo.png",
+        group:"Association for Student Welfare",
+        id:"123",     true:"yes",
+        change:"The Event will be removed from your preference" ,
+        bid: "56502A70-62A9-51F9-2784-CB8CCDF83551"},
+
+      {
+        pic:"/android_asset/www/img/ionic.png",
+        group:"Northeastern Sports Association",
+        id:"234",     true:"no",
+        change:"The Event will be added to your preference" ,
+        bid: "D46375F6-6558-F8C1-F944-CF3E8A620C1A"},
+
+      {
+        pic:"/android_asset/www/img/ionic.png",
+        group:"Northeastern Sports Association",
+        id:"345",     true:"yes",
+        change:"The Event will be removed from your preference",
+        bid: "954CAF6C-3762-CFA8-E122-D492CF67C4FB"   },
+    ];
 
     $ionicPlatform.ready(function() {
 
@@ -474,6 +517,11 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         for(var i = 0; i < pluginResult.beacons.length; i++) {
           uniqueBeaconKey = pluginResult.beacons[i].uuid + ":" + pluginResult.beacons[i].major + ":" + pluginResult.beacons[i].minor;
           // alert(pluginResult.beacons[i].uuid);
+          // for(j in events){
+          //   if(events[j].bid===pluginResult.beacons[i].uuid){
+          //     pluginResult.beacons[i].event=events[j];
+          //   }
+          // }
           $scope.beacons[uniqueBeaconKey] = pluginResult.beacons[i];
 
         }

@@ -30,8 +30,34 @@
       </div>
 
       <div class="row">
-        <div class="col truncate" ng-if="value.proximity===ProximityNear">
-          {{value.uuid}}
+        <div class="col" ng-if="value.proximity==='ProximityImmediate'">
+          <ion-item ng-if="value.uuid===event1.bid"
+                    divider-collection-repeat>
+            <a class="item item-thumbnail-left">
+              <img src={{event1.pic}}>
+              <h2>{{event1.group}}</h2>
+              <h2>{{event1.time}}</h2>
+              <h2>{{event1.place}}</h2>
+            </a>
+          </ion-item>
+          <ion-item ng-if="value.uuid===event2.bid"
+                    divider-collection-repeat>
+            <a class="item item-thumbnail-left">
+              <img src={{event2.pic}}>
+              <h2>{{event2.group}}</h2>
+              <h2>{{event2.time}}</h2>
+              <h2>{{event2.place}}</h2>
+            </a>
+          </ion-item>
+          <ion-item ng-if="value.uuid===event3.bid"
+                    divider-collection-repeat>
+            <a class="item item-thumbnail-left">
+              <img src={{event3.pic}}>
+              <h2>{{event3.group}}</h2>
+              <h2>{{event3.time}}</h2>
+              <h2>{{event3.place}}</h2>
+            </a>
+          </ion-item>
         </div>
       </div>
 
