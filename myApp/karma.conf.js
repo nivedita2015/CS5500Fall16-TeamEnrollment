@@ -28,7 +28,8 @@ module.exports = function(config) {
 
 
     // list of files to exclude
-    exclude: [
+    exclude: [ 'www/js/ng-cordova-beacon.min.js',
+               'www/tests/webserver.js'
     ],
 
 
