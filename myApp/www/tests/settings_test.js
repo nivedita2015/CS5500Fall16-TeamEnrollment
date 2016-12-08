@@ -48,7 +48,9 @@ describe('SettingsCtrl',function(){
     it('checks redirection to AllEvents Page', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var ionicPlatform={};
+      var cordovaBluetoothSerial={};
+      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$ionicPlatform:ionicPlatform,$cordovaBluetoothSerial:cordovaBluetoothSerial });
       controller.allEventsPage();
       expect(state.current.name).toBe('preferences.events');
     });
@@ -78,7 +80,9 @@ describe('SettingsCtrl',function(){
     it('checks redirection to Event List Page', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var ionicPlatform={};
+      var cordovaBluetoothSerial={};
+      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$ionicPlatform:ionicPlatform,$cordovaBluetoothSerial:cordovaBluetoothSerial });
       controller.eventPage();
       expect(state.current.name).toBe('event');
     });
