@@ -30,14 +30,17 @@ module.exports = function(config) {
 
 
     // list of files to exclude
-    exclude: [ 
+    exclude: [ 'www/js/ng-cordova-beacon.min.js',
+               'www/tests/webserver.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'www/js/app.js': ['coverage'],
+      'www/js/client_services.js': ['coverage'],
+      'www/js/controllers.js': ['coverage'],
+      'www/js/constants.js': ['coverage'],
       'www/tests/allEvents_test.js': ['coverage'],
       'www/tests/event_details_test.js': ['coverage'],
       'www/tests/event_test.js': ['coverage'],
