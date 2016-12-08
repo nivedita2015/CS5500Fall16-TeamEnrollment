@@ -1,0 +1,6 @@
+{
+    "errors": [
+        "Error: Module cordova-plugin-socialsharing.SocialSharing does not exist.\nat platforms/android/platform_www/cordova.js:1469\n"
+    ],
+    "results": []
+}
