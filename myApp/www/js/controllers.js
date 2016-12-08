@@ -52,7 +52,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     event.preferences = preferences;
     event.showFilterBar=showFilterBar;
     var filterBarInstance;
-    var a=['/android_asset/www/img/ionic.png','/android_asset/www/img/NUlogo.png'];
+    var a=['/android_asset/www/img/NUlogo.png','/android_asset/www/img/basketball.png','/android_asset/www/img/ionic.png'];
 
     function init(){
       getEvents($rootScope.user);
@@ -406,20 +406,20 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       { 
         pic:"/android_asset/www/img/NUlogo.png", 
         group:"Association for Student Welfare", 
-        id:"123",     true:"yes", 
-        change:"The Event will be removed from your preference"   }, 
+        id:"123",     true:"no", 
+        change:"The Event will be added to your preference"   }, 
 
         { 
-          pic:"/android_asset/www/img/ionic.png", 
-          group:"Northeastern Sports Association", 
+          pic:"/android_asset/www/img/basketball.png", 
+          group:"NU BasketBall Club", 
           id:"234",     true:"no", 
           change:"The Event will be added to your preference"   },
 
            { 
              pic:"/android_asset/www/img/ionic.png", 
              group:"Northeastern Sports Association", 
-             id:"345",     true:"yes", 
-             change:"The Event will be removed from your preference"   }, 
+             id:"345",     true:"no", 
+             change:"The Event will be added to your preference"   }, 
       ]
 
      event.alterFavourite=alterFavourite;  
@@ -455,22 +455,24 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
 
   })
-  .controller("BeaconCtrl", function($scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
+  .controller("BeaconCtrl", function($state,$scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
 
     var beacon=this;
-    beacon.eventClick=eventClick;
+    $scope.eventClick=eventClick;
 
     // alert("loaded controller");
 
     $scope.beacons = {};
      $scope.event1= {
+       _id:"5842349d5faf958754a87c9a",
         pic:"/android_asset/www/img/NUlogo.png",
-        group:"Association for Student Welfare",
+        group:"Book Reading",
         time:"11:00 AM", 
         place:"Boston" ,
         bid: "56502a70-62a9-51f9-2784-cb8ccdf83551"};
 
     $scope.event2= {
+      _id:"5848e96b098959afebd8df6f",
       pic:"/android_asset/www/img/ionic.png",
       group:"Northeastern Sports Association",
       time:"5:00 PM",
@@ -478,9 +480,10 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       bid: "d46375f6-6558-f8c1-f944-cf3e8a620c1a"};
 
     $scope.event3= {
+      _id:"5842349d5faf958754a87c9b",
       pic:"/android_asset/www/img/basketball.png",
       group:"BasketBall Basics 1",
-      time:"7:00 AM",
+      time:"11:00 AM",
       place:"Boston" ,
       bid: "954caf6c-3762-cfa8-e122-d492cf67c4fb"};
 
@@ -508,6 +511,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     ];
 
     function eventClick(id){
+      // alert(id);
       $rootScope.eId = id;
       $state.go('eventDetails',{'id':id});
     }
