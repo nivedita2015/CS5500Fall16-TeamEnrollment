@@ -11,7 +11,7 @@
                 "allEventsCtrl",
                 "allevents Controller1"
             ],
-            "time": 20,
+            "time": 24,
             "executedExpectationsCount": 1
         },
         {
@@ -24,7 +24,7 @@
                 "allEventsCtrl",
                 "allevents Controller2"
             ],
-            "time": 4,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -50,7 +50,7 @@
                 "allEventsCtrl",
                 "allevents Controller4"
             ],
-            "time": 4,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -63,7 +63,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 13,
+            "time": 8,
             "executedExpectationsCount": 1
         },
         {
@@ -76,7 +76,7 @@
                 "EventCtrl",
                 "Event Controller"
             ],
-            "time": 3,
+            "time": 7,
             "executedExpectationsCount": 2
         },
         {
@@ -115,7 +115,7 @@
                 "FavCtrl",
                 "Favorites Controller1"
             ],
-            "time": 5,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -128,7 +128,7 @@
                 "FavCtrl",
                 "Favorites Controller2"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -154,7 +154,7 @@
                 "FavCtrl",
                 "Favorites Controller4"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -200,13 +200,14 @@
             "description": "checks redirection to favorites Page",
             "id": "spec15",
             "log": [
-                "forEach@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:321:24",
-                "loadModules@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4601:12",
-                "createInjector@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4523:30",
-                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3074:60",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4641:53",
-                "TypeError: undefined is not a constructor (evaluating '$controller') in http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307 (line 9)",
-                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:1529"
+                "ReferenceError: Can't find variable: cordova in http://localhost:9876/base/www/js/controllers.js?e646831cfe2bef5db5ab8e7d2f50c35f37c44171 (line 9)",
+                "init@http://localhost:9876/base/www/js/controllers.js?e646831cfe2bef5db5ab8e7d2f50c35f37c44171:9:10796",
+                "http://localhost:9876/base/www/js/controllers.js?e646831cfe2bef5db5ab8e7d2f50c35f37c44171:9:11697",
+                "[native code]",
+                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4733:61",
+                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
+                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
+                "http://localhost:9876/base/www/tests/settings_test.js?981e71a4d642c93f9a3654c14a6e5a2bf2665a70:9:1460"
             ],
             "skipped": false,
             "success": false,
@@ -214,8 +215,8 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 5,
-            "executedExpectationsCount": 2
+            "time": 3,
+            "executedExpectationsCount": 1
         },
         {
             "description": "checks redirection to AllEvents Page",
@@ -231,7 +232,7 @@
                 "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:4729"
+                "http://localhost:9876/base/www/tests/settings_test.js?981e71a4d642c93f9a3654c14a6e5a2bf2665a70:9:4591"
             ],
             "skipped": false,
             "success": false,
@@ -256,7 +257,7 @@
                 "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:7422"
+                "http://localhost:9876/base/www/tests/settings_test.js?981e71a4d642c93f9a3654c14a6e5a2bf2665a70:9:7284"
             ],
             "skipped": false,
             "success": false,
@@ -264,7 +265,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 4,
+            "time": 6,
             "executedExpectationsCount": 1
         }
     ]
