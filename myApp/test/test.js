@@ -72,7 +72,7 @@ describe('Login Test with non-existent username password', function() {
 	       console.log(res.body);
          res.should.be.array;
          res.should.have.status(200);
-         assert.lengthOf(res.body,2,'result should have length 2');
+         assert.lengthOf(res.body,3,'result should have length 3');
          res.body[0].should.have.property("_id");
          res.body[0]._id.should.have.equal("5842349d5faf958754a87c9a");
          res.body[0].should.have.property("_id");
@@ -101,7 +101,7 @@ describe('Login Test with non-existent username password', function() {
          console.log(res.body);
          res.should.be.array;
          res.should.have.status(200);
-         assert.lengthOf(res.body,2,'result should have length 2');
+         assert.lengthOf(res.body,3,'result should have length 2');
          res.body[0].should.have.property("_id");
          res.body[0]._id.should.have.equal("5842349d5faf958754a87c9a");
          res.body[0].should.have.property("_id");
