@@ -1,6 +1,8 @@
 describe('SettingsCtrl',function(){
   beforeEach(module('starter.controllers'));
   beforeEach(module('stateMock'));
+  beforeEach(module("ngCordova"));
+  beforeEach(module("ngCordovaMocks"));
 
   var $controller;
   var state;
@@ -18,7 +20,9 @@ describe('SettingsCtrl',function(){
     it('checks redirection to favorites Page', function() {
       var $scope = {};
       var rootScope = {};
-      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope });
+      var ionicPlatform={};
+      var cordovaBluetoothSerial={};
+      var controller = $controller('SettingsCtrl', {$state:state,rootScope:rootScope,$scope: $scope,$ionicPlatform:ionicPlatform,$cordovaBluetoothSerial:cordovaBluetoothSerial });
       controller.favoritesPage();
       expect(state.current.name).toBe('preferences.favorites');
     });

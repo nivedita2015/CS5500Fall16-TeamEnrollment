@@ -82,7 +82,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
           $scope.events = filteredItems;
           $scope.array1=filteredItems;
         },
-        filterProperties: 'name'
+        filterProperties: 'Name'
       });
       console.log($ionicFilterBar);
     };
@@ -98,7 +98,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     }
   })
   .controller('EventDetailsCtrl',function($state,$rootScope,$scope,$cordovaGeolocation,$cordovaSocialSharing,$cordovaCalendar,EventDetailsService) {
-    console.log("inside event details controller");
+    // console.log("inside event details controller");
 
     var eventDetails=this;
     eventDetails.getEventDetails = getEventDetails;
@@ -112,7 +112,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
       var options = {timeout: 10000, enableHighAccuracy: true};
       $cordovaGeolocation.getCurrentPosition(options).then(function(position){
         var latLng = new google.maps.LatLng($scope.event.Latitude,$scope.event.Longitude);
-        alert($scope.event.Latitude+""+$scope.event.Longitude);
+        // alert($scope.event.Latitude+""+$scope.event.Longitude);
         var mapOptions = {
           center: latLng,
           zoom: 17,
@@ -250,23 +250,22 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     // settings.notifyBluetooth=notifyBluetooth;
 
 
-
     function init() {
       $scope.notification = {checked: true};
       // $scope.location = {checked: true};
 
       cordova.plugins.diagnostic.isLocationEnabled(function(available){
         if(available){
-          alert("location on")
+          // alert("location on")
           $scope.location = {checked: true};
         }
         else {
-          alert("location off")
+          // alert("location off")
           $scope.location = {checked: false};
         }
 
       }, function(error){
-        alert("location off")
+        // alert("location off")
         $scope.location = {checked: false};
       });
 
@@ -283,9 +282,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
     function notifyLocation() {
       cordova.plugins.diagnostic.switchToLocationSettings()
         .then(function (success) {
-          alert("true")
+          // alert("true")
         }, function (err) {
-          alert("false")
+          // alert("false")
         })
     }
 
@@ -304,7 +303,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
                 .then(function (success) {
                   $state.go('preferences.settings');
                 }, function (err) {
-                  alert("Bluetooth is disabled");
+                  // alert("Bluetooth is disabled");
                 })
             }
             else {
@@ -458,6 +457,9 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
   })
   .controller("BeaconCtrl", function($scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
 
+    var beacon=this;
+    beacon.eventClick=eventClick;
+
     // alert("loaded controller");
 
     $scope.beacons = {};
@@ -477,7 +479,7 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
 
     $scope.event3= {
       pic:"/android_asset/www/img/basketball.png",
-      group:"BasketBall Basics",
+      group:"BasketBall Basics 1",
       time:"7:00 AM",
       place:"Boston" ,
       bid: "954caf6c-3762-cfa8-e122-d492cf67c4fb"};
@@ -504,6 +506,11 @@ angular.module('starter.controllers', ['starter.services','starter.constant','ui
         change:"The Event will be removed from your preference",
         bid: "954CAF6C-3762-CFA8-E122-D492CF67C4FB"   },
     ];
+
+    function eventClick(id){
+      $rootScope.eId = id;
+      $state.go('eventDetails',{'id':id});
+    }
 
     $ionicPlatform.ready(function() {
 

@@ -11,7 +11,7 @@
                 "allEventsCtrl",
                 "allevents Controller1"
             ],
-            "time": 16,
+            "time": 20,
             "executedExpectationsCount": 1
         },
         {
@@ -50,7 +50,7 @@
                 "allEventsCtrl",
                 "allevents Controller4"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -63,7 +63,7 @@
                 "EventDetailsController",
                 "Event Details Controller"
             ],
-            "time": 12,
+            "time": 13,
             "executedExpectationsCount": 1
         },
         {
@@ -115,7 +115,7 @@
                 "FavCtrl",
                 "Favorites Controller1"
             ],
-            "time": 4,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -128,7 +128,7 @@
                 "FavCtrl",
                 "Favorites Controller2"
             ],
-            "time": 2,
+            "time": 3,
             "executedExpectationsCount": 1
         },
         {
@@ -154,7 +154,7 @@
                 "FavCtrl",
                 "Favorites Controller4"
             ],
-            "time": 3,
+            "time": 2,
             "executedExpectationsCount": 1
         },
         {
@@ -180,7 +180,7 @@
                 "LoginCtrl",
                 "Login Controller"
             ],
-            "time": 3,
+            "time": 5,
             "executedExpectationsCount": 1
         },
         {
@@ -200,17 +200,13 @@
             "description": "checks redirection to favorites Page",
             "id": "spec15",
             "log": [
-                "Error: [$injector:unpr] Unknown provider: $ionicPlatformProvider <- $ionicPlatform <- SettingsCtrl",
-                "http://errors.angularjs.org/1.5.8/$injector/unpr?p0=%24ionicPlatformProvider%20%3C-%20%24ionicPlatform%20%3C-%20SettingsCtrl in http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b (line 4511)",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4511:86",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4516:48",
-                "getService@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4664:46",
-                "injectionArgs@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4688:68",
-                "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
-                "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
-                "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:1184"
+                "forEach@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:321:24",
+                "loadModules@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4601:12",
+                "createInjector@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4523:30",
+                "workFn@http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:3074:60",
+                "http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4641:53",
+                "TypeError: undefined is not a constructor (evaluating '$controller') in http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307 (line 9)",
+                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:1529"
             ],
             "skipped": false,
             "success": false,
@@ -218,8 +214,8 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 2,
-            "executedExpectationsCount": 1
+            "time": 5,
+            "executedExpectationsCount": 2
         },
         {
             "description": "checks redirection to AllEvents Page",
@@ -235,7 +231,7 @@
                 "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:3887"
+                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:4729"
             ],
             "skipped": false,
             "success": false,
@@ -243,7 +239,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 3,
+            "time": 4,
             "executedExpectationsCount": 1
         },
         {
@@ -260,7 +256,7 @@
                 "instantiate@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:4730:31",
                 "$controller@http://localhost:9876/base/node_modules/angular/angular.js?97675784c569203f630eef706dfd0570d8c4071b:10369:39",
                 "http://localhost:9876/base/node_modules/angular-mocks/angular-mocks.js?379b5d4c121a4c986fb630e7d90a3b1684bf4c9c:2221:21",
-                "http://localhost:9876/base/www/tests/settings_test.js?4c341a9806dbcb7166ebcb5b56b5fe6567f8b3ca:9:6580"
+                "http://localhost:9876/base/www/tests/settings_test.js?af90b78b75250b81077083c232c0cc361a818307:9:7422"
             ],
             "skipped": false,
             "success": false,
@@ -268,7 +264,7 @@
                 "SettingsCtrl",
                 "SettingsCtrl"
             ],
-            "time": 5,
+            "time": 4,
             "executedExpectationsCount": 1
         }
     ]
