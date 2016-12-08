@@ -167,7 +167,7 @@ describe('Login Test with non-existent username password', function() {
        .end(function(err, res){
         console.log(res.body);
          res.should.be.array;
-         assert.lengthOf(res.body,2,'result should have length 0');
+         assert.lengthOf(res.body,3,'result should have length 3');
          res.should.have.status(200);
          res.body[0].should.have.property("_id");
          res.body[0]._id.should.have.equal("5842349d5faf958754a87c9a");
@@ -192,6 +192,17 @@ describe('Login Test with non-existent username password', function() {
          res.body[1].should.have.property("Latitude");
          res.body[1].should.have.property("Longitude");
          res.body[1].should.have.property("Location");
+         res.body[2].should.have.property("_id");
+         res.body[2]._id.should.have.equal("5848e96b098959afebd8df6f");
+         res.body[2].should.have.property("Name");
+         res.body[2].should.have.property("Group");
+         res.body[2].should.have.property("_Date");
+         res.body[2].should.have.property("Time");
+         res.body[2].should.have.property("Campus");
+         res.body[2].should.have.property("Description");
+         res.body[2].should.have.property("Latitude");
+         res.body[2].should.have.property("Longitude");
+         res.body[2].should.have.property("Location");
          done();
        });
    });
