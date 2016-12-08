@@ -23,6 +23,8 @@ module.exports = function(config) {
       'www/tests/*.js',
       'www/tests/stateMock.js',
       'www/lib/ngCordova/dist/ng-cordova.js',
+      'platforms/android/platform_www/cordova.js',
+      'platforms/android/platform_www/cordova_plugins.js',
       'www/lib/ngCordovaMocks/dist/ngCordovaMocks.js'
     ],
 
