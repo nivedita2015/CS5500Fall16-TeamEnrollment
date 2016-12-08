@@ -26,20 +26,20 @@ angular.module('stateMock').service("$state", function($q) {
 
   this.go = this.transitionTo;
 
-  this.is = function(stateName) {
-    if (this.current.name === stateName)
-      return true;
-    return false
-  };
+  // this.is = function(stateName) {
+  //   if (this.current.name === stateName)
+  //     return true;
+  //   return false
+  // };
 
   this.expectTransitionTo = function(stateName) {
     this.expectedTransitions.push(stateName);
   };
 
 
-  this.ensureAllTransitionsHappened = function() {
-    if (this.expectedTransitions.length > 0) {
-      throw Error("Not all transitions happened!");
-    }
-  };
+  // this.ensureAllTransitionsHappened = function() {
+  //   if (this.expectedTransitions.length > 0) {
+  //     throw Error("Not all transitions happened!");
+  //   }
+  // };
 });
